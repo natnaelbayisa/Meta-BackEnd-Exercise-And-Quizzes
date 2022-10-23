@@ -1,0 +1,90 @@
+1.
+Question 1
+In git, the repository on your device is known as a Remote.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Remotes are repositories on other devices such as servers. The repository on your device is known as the Local.
+
+2.
+Question 2
+In git, what is the operation used to initially download a repository?
+
+1 / 1 point
+
+clone
+
+
+pull
+
+
+push
+
+Correct
+Correct! The git clone operation is used to download a repository.
+
+3.
+Question 3
+The staged area is used to prepare all your files and changes for committing.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Files and changes are added to the staged area using the git add command.
+
+4.
+Question 4
+Once a file is committed using the git commit operation, it is available on all remote repositories.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! The file is only committed to your local repository. It must be pushed to remote repositories after committing.
+
+5.
+Question 5
+What of the following commands allow you to inspect your current changes before committing?
+
+1 / 1 point
+
+git add
+
+
+git diff
+
+
+git log
+
+Correct
+Correct! git diff is used to inspect changes.
+
+6.
+Question 6
+Forking allows you to contribute to another person or organisation’s repository by creating your own copy of the repository.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Forking is a common practice in open-source projects allowing for contributions from different developers.
+

@@ -1,0 +1,1165 @@
+Why is it better to run Python in Visual Studio Code compared to running it in the Python shell or in the command line or terminal?                   
+    -> VS Code has a code syntax and highlighting feature.
+    -> VS Code has whitespace and indentation helpers.
+    -> VS Code has an auto-completion feature.
+    -> VS Code has a debugging feature.
+
+                    Variables
+Like with any programming language, the naming convention you choose for variables is important when using Python. Why is this so?
+    -> When working together with other developers it can become difficult to know what a variable refers to unless it has a meaningful label. 
+    -> A generic label gives no information about a variable or the context in which it's used. 
+    -> It can be challenging to remember why you used a specific name for a variable when you have to interact with your code months after it was initially written.
+         
+                    Python data types
+    -> Numeric -Integers, Floats, Complex numbers(real and imaginary no's) eg a=10+10j
+    -> Boolean
+    -> Set - unordered and non-index collection and non-repeated values
+    -> Dictionary - key-value structure and stores any value of data
+    -> Sequence - String(it is sequence of characters), List(is a sequence of one or more d.t similar types.), Tuples(similat with List but they are immutable)
+
+    * When python excute an instruction
+        -> it converts to Encoding unicode and then to binary code, finally it prints the output.
+                   
+                Type Casting
+    -> Typecasting is the process of converting one data type to another. Python has two different types of conversions; implicit and explicit.
+    -> Implicit conversion - Implicit data type conversion is performed automatically by Python's compiler to prevent data loss. It will convert, for example, an int to a float if it picks up that the inserted value is a decimal. It's important to note that Python will only be able to convert values if the data types are compatible. int and float are compatible but Strings and int are not. If data types are not compatible, Python will throw a type error. Alternatively,
+    -> Explicit conversion - You do this by using the provided Python functions. There are many functions but some of the most common are string, integer and float.
+    -> ord() -  which returns an integer representing the underlying unicode character.     
+    -> hex() - which converts a given integer to a hexadecimal string. An oct which takes an integer and returns a string representing an oct to a number.
+
+                Control flow
+    -> Control flow refers to the order in which the instructions in a program are executed. All programs have decisions that need to be made. As a result of this, the program will take different actions or directions.
+                in Python, there are two types of control flows.
+    -> First, you can use conditional statements such as if, else, and elif or else if.
+    -> Second, you can use loops such as the for loop and the while loop.
+
+ The if keyword states that if the condition proves to be true, a function is performed. The else keyword catches anything which isn't caught by the preceding conditions. The elif or else if keyword is Python's way of saying if the previous conditions were not true, then try this condition. The for loop checks for specific conditions and then repeatedly executes a block of code as long as those conditions are met. The while loop repeats a specific block of code an unknown number of times until a condition is met.
+     the following are examples of conditional flow controls
+    -> The If, else and elif (else if) statements are conditional flow controls.
+
+                    Match statement
+    -> The match statement compares a value to several different conditions until one of these conditions is met.
+
+                    Looping constructs
+    -> . Python has two different types of looping constructs for iterating over sequences, the For loop and the While loop. Looping is used to iterate through the sequence and access each item inside the sequence.
+
+                    Controlling loops
+So far, you have only looped over sequences based on the length of the data you wanted to iterate over. In many cases, this is not necessary and depending on the amount of the data it can also be quite costly. You'll now examine how you can control the flow of the loop and exit out when a specific condition is met. You will also look at control statements such as break, continue and pass. 
+
+--------------------------------------``week-2``----------------------------------------------------------------->
+                    Function 
+A function is a modular piece of code that can be used repeatedly.
+
+                Variable Scope
+    -> The concept of scoping and Python allows for greater control over elements in your code, which reduces the chances of accidental or unwanted changes.
+    -> Python has different types of scope.
+    ->  In order of ascending coverage, the fourth scopes are local, enclosing, global, and built-in. Together, they're referred to as LEGB. Variables within the built-in and global scope are accessible from anywhere in the code. For example, if there's a variable a in the global scope, it can be called encode at the local level. The purpose of scope is to protect the variable, so it does not get changed by other parts of the code.
+    
+                Function and variable scope
+        Functions and variables
+It is essential to understand the levels of scope in Python and how things can be accessed from the four different scope levels. Below are the four scope levels and a brief explanation of where and how they are used.
+
+                        1. Local scope
+Local scope refers to a variable declared inside a function. For example, in the code below, the variable total is only available to the code within the get_total function. Anything outside of this function will not have access to it.
+
+    def get_total(a, b):
+    #local variable declared inside a function
+    total = a + b;
+    return total
+
+print(get_total(5, 2))
+7
+
+# Accessing variable outside of the function:
+print(total)
+NameError: name 'total' is not defined
+
+                        2. Enclosing scope
+Enclosing scope refers to a function inside another function or what is commonly called a nested function. 
+
+In the code below, I added a nested function called double_it to the get_total function. 
+
+As double_it is inside the scope for the get_total function it can then access the variable. However, the enclosed variable inside the double_it function cannot be accessed from inside the get_total function.
+
+def get_total(a, b):
+    #enclosed variable declared inside a function
+    total = a + b
+
+    def double_it():
+        #local variable
+        double = total * 2
+        print(double)
+
+    double_it()
+    #double variable will not be accessible
+    print(double)
+
+    return total
+
+
+                                    3.Global scope
+Global scope is when a variable is declared outside of a function. This means it can be accessed from anywhere. 
+
+In the code below, I  added a global variable called special. This can then be accessed from both functions get_total and double_it:
+
+special = 5
+
+def get_total(a, b):
+    #enclosed scope variable declared inside a function
+    total = a + b
+    print(special)
+
+    def double_it():
+        #local variable
+        double = total * 2
+        print(special)
+
+    double_it()
+
+    return total
+
+
+                4. Built-in scope
+Built-in scope refers to the reserved keywords that Python uses for its built-in functions, such as print, def, for, in, and so forth.  Functions with built-in scope can be accessed at any level.
+
+
+                            What are data structures?
+This reading introduces you to data structures. So far, you have only stored small bits of data in a variable. This was either an integer, Boolean or a string. 
+
+But what happens if you need to work with more complex information, such as a collection of data like a list of people or a list of companies? 
+
+Data structures are designed for this very purpose.
+ //////////////////////////////////////////add img
+
+
+
+A data structure allows you to organize and arrange your data to perform operations on them. Python has the following built-in data structures: List, dictionary, tuple and set. These are all considered non-primitive data structures, meaning they are classed as objects, this will be explored later in the course. 
+-> dictionary is not a sequence based.
+Along with the built-in data structures, Python allows users to create their own. Data structures such as Stacks, Queues and Trees can all be created by the user. 
+
+Each data structure can be designed to solve a particular problem or optimize a current solution to make it much more performant.
+
+                Choosing and using data structures
+This reading illustrates the importance of chosing the correct data structure for the task at hand.
+
+            Which data structure to choose?
+The tricky part for new developers is understanding which data structure is suited to the required solution. Each data structure offers a different approach to storing, accessing and updating the information stored inside it. There can be many factors to select from, including size, speed and performance. The best way to try and understand which one is more suitable is through an example.
+
+            Example: Employees list
+In this example, there's a list of employees that work in a restaurant. You need to be able to find an employee by their employee ID - an integer-based numeric ID. The function get_employee contains a for loop to iterate over the list of employees and returns an employee object if the ID matches.
+
+employee_list = [{"id": 12345, "name": "John", "department": "Kitchen"}, {"id": 12458, "name": "Paul", "department": "House Floor"}]
+
+def get_employee(id): 
+    for employee in employee_list:
+        if employee['id'] == id:
+            return employee
+
+print(get_employee(12458));
+## OUTPUT
+{'id': 12458, 'name': 'Paul', 'department': 'House Floor'}
+
+The code runs well and will return the user Paul, as its ID, 12458, is matched. The challenge comes when the list gets bigger. 
+
+Instead of two employees, you may have 2000 or even 20,000. The code will have to iterate over the list sequentially until the number is matched. 
+
+You could optimize the code to split the search, but even with this, it still lacks in performance in comparison to other data structures, such as the dictionary.
+
+employee_dict = {
+    12345: {
+        "id": "12345",
+        "name": "John", 
+        "department": "Kitchen"    
+    },
+    12458: {
+        "id": "12458",
+        "name": "Paul", 
+        "department": "House Floor"    
+    }
+}
+
+def get_employee_from_dict(id):
+    return employee_dict[id];
+
+
+print(get_employee_from_dict(12458));
+## OUTPUT
+{'id': 12458, 'name': 'Paul', 'department': 'House Floor'}
+
+Notice how, in this code block, if you change the data structure to use a dictionary, it will allow you to find the employee. The main difference is that you no longer need to iterate over the list to locate them. If the list expands to a much larger size, the seek time to find the employee stays the same. 
+
+This is a prime example of how to choose the right data structure to suit the solution. 
+
+Both work well, but the trade-off to be considered is that of time and scale. The first solution will work well for smaller amounts of data, but loses performance as the data scales. 
+
+The second solution is better suited to large amounts of data as its structure alows for a constant seek time allowing large amounts of data to be accessed at a constant rate.
+
+This example shows that there is no one size fits all solution and careful consideration should be given to the choice of data structure to be used depending on the constraints of the solution.
+
+                    Mutability and Immutability
+Data Structures can be mutable or immutable. The next question you may ask is, what is mutability? Mutability refers to data inside the data structure that can be modified. For example, you can either change, update, or delete the data when needed. A list is an example of a mutable data structure. The opposite of mutable is immutable. An immutable data structure will not allow modification once the data has been set. The tuple is an example of an immutable data structure.
+
+                    Lists
+    -> Lists are a sequence of one or more different or similar datatypes. A list in Python is essentially a dynamic array that can hold any datatype.
+                  
+                    Tuples
+    -> Tuples accept any type of data types like string, double, boolean, integer.
+
+                    Sets
+    -> Sets do not accept duplicate values.
+    -> Collection of not duplicate but a collection of unordered items.
+    -> set is't a sequence. It doesn't contain an ordered index of all elements inside.
+
+                    Dictionaries
+    -> Dupplicate values are ignored.
+    -> In a Python dictionary, each value has a unique identifier. This combination is known as th key-value pair.
+What is a dictionary in Python? In many ways, it's very similar to how an actual dictionary works. In a normal dictionary, to locate a word, you look it up by the first letter and then use the alphabetical ordering system to find its location. Likewise, Python dictionaries are optimized to retrieve values. You may remember how useful Python lists are to access an array of values. Dictionaries access values based on keys and not on index position. Therefore, they are faster and more flexible in operation.
+With a Python dictionary, a key is assigned to a specific value. This is called the key-value pair. The benefits of this method is that it's much faster than using traditional lists. To find an item in a list, you need to keep reviewing the list until you locate the item. But in a Python dictionary, you can go straight to the item you need by using its key. A dictionary is also immutable in that the values can be changed or updated. For example, you could declare the number 1 as the key, and coffee is the item, and then change these to any other number or drink item.
+
+
+                    Ways of iterate over dictionary
+    1. standard
+    2. items()
+    3. values()
+
+                        Args and Kwargs(key word args)
+    -> you could use args to pass in any amount of non-keyword variables.
+    -> You can use kwargs to pass in non-keyword variables.
+    -> You can use kwargs to pass any amount of keyword arguments.
+
+                        Exceptions And Errors
+    -> Syntax errors are caused by human errors such as typos or misspelling.
+    -> exceptions are Known errors that need to be handled. 
+    -> exceptions which are known errors that need to be handled. Syntax errors are usually caused by the developer. It could be the result of a misspelling or a typo in the code.
+    -> They happen during code execution and they can easily go unnoticed by the untrained eye, but exceptions needs to be handled by the developer. They need to deal with any potential issues and the CodeBase to keep the application from failing. 
+                        Exception handling
+    -> handled by try and except like trycatch
+    -> Python allows you to make the except statement more specific. If you want to trap the exception itself you could add the base class exception right after accept. The base class exception is used for all exceptions that are written within Python.
+    -> You can gain access to the exception information by using the as E after exception. The E variable acts as an alias for the exception.
+    -> In Python, you can also get access to the actual type or class of exception that's occurred. 
+    -> Like with any programming language exceptions happen in Python. You can handle more than one exception by chaining the except statement by adding another except statement.​  
+
+                        File handling
+    -> python uses text as defaulat format for file handling.
+    -> Two types of file handling in python open and close
+                       
+                        Open Function
+    -> open function uses Reading, Writing, Creating files
+    -> accept two arguments mode, and file name/file location
+    -> mode indicates what action is required such as Writing or Reading , or creating also specify  if you want the file output
+                        
+                        Mode Sets
+    -> So just passing in any mode for reading or writing a file will automatically set it to a text format.
+
+    -> Mode = "r" -> open and read(text format)
+    -> Mode = "rb" -> open and read(binary format)
+    -> Mode = "r+" -> open for reading and Writing
+    -> Mode = "w" -> open for Writing, and also it overrides the existing value.
+    -> open(<File_Name>, a) -> open for editing or appending data.
+    
+
+                        Close Function
+    -> close() -> not take any arguments.
+    -> another way to open function is -> with open function
+        -> with open("testing.txt", "r") as file:
+    -> in with open function there is no close function is needed.
+
+                            Handle Files
+    -> in python files are handled in two ways either in text or binary format.
+                        Text Format
+    -> text format is more user friendly
+                        Binary Format
+    ->  You won't be able to read files in binary formats, but they are much more compact and therefore result in better performance.
+
+                        Files
+    -> Files are used to permanently stored data.
+    -> Anything stored in the variables of your code exists in random access memory or RAM(random access memory).
+    -> Since RAM loses its data when the computer is turned off, it's important to be able to create files, so data is available for future use or as a permanent record.
+
+                    Reading a File
+    -> read() - reads all lines / print all characters in the string
+    -> default the file is opened in read mode.
+    -> file.read(40) - reads only the first 40 characters 
+    -> readline() - read single line as a string
+    -> file.readline(10) - reads only specified no of  characters on a line.
+    -> readlines() - reads the entire content of the file and returns it an ordered list 
+
+                        read() and readlines()
+    -> The Read method returns the entire contents of the file as a string that will contain all the characters.
+    -> The Readlines method reads the entire contents of the file and then returns it in an ordered list. This is useful because it allows you to iterate over the list or pick out specific lines based on a condition.
+                    Absolute and Relative paths
+    -> When working a different file locations its important to know absolute and relative path.
+
+                    Absolute path
+    -> Absolute paths contain leading forward/, or drive label. An absolute file path includes all the information you need to locate a file, whether you are in that files directory or not. 
+                    Relative path
+    -> Relative paths normally don't contain any reference to the root directory and are normally relative to the calling file. A relative file path only includes the information you need to locate a file in your current working directory.
+
+-------------------------------------`` Week-3 ``------------------------------------------------------------------------>
+                    Procedural programming
+    -> Python allows for object oriented, procedural, and functional programming models, or as they're often called paradigms. 
+    -> procedural programming is an important stepping stone to object oriented programming. 
+    -> The main purpose of a programming model is to structure your code. That structure makes it easier to update the code and create new functionality within the code. But there's no one perfect model that's a solution to coding structures, and sometimes a combination of approaches works best. Procedural programming structures code into procedures, sometimes called subroutines or functional sections of code. Because of this approach, the code is made up of logical steps to complete a specific task.
+    -> n programming, there is a principle called DRY. Don't repeat yourself. It's all about reducing duplication in code.
+
+                        Advantage of Procedural programming
+    -> It's easy for beginners to learn and get started. Procedures can be reused by other parts of the code. Code is easy to understand because each procedure is broken into specific tasks. 
+                         Disadvantage of Procedural programming
+    -> it can be hard to maintain and extend. In some cases, it doesn't relate well to real-world objects. Data is exposed throughout the whole program.
+
+                        Algorithm
+    -> An algorithm is a series of steps to complete a given task or solve a problem.
+    -> The key to understanding and creating an algorithm is to break the problem into smaller parts.
+    -> 
+    -> Once created the steps of an algorithm are the same every time. 
+    -> An algorithm is a series of steps to solve a problem.
+
+                        Recursion
+Recursion refers to a method or a function that will call itself. It is used to resolve problems by breaking the problem down into sub-problems. Let us take a look at some of the most popular types of recursive algorithms.
+
+                        Divide and conquer
+This consists of two parts. The first is breaking the problem down into smaller sub-problems and the second is solving the final solution.
+
+                        Dynamic programming
+This is mainly used for optimization problems. It is similar to the divide and conquer algorithm in that it splits the problems into sub-problems.
+
+                        Greedy algorithm
+This one finds the best solution in each and every step instead of approaching optimization in a global way.
+
+                        Algorithmic Complexity
+Code is measured by time and space. Time is measured by how long it takes and space is about how much memory it uses. Big O notation has different complexities or categories ranging from horrible to excellent. It's used to measure an algorithm's efficiency in terms of time and space.
+    -> constant time. This is an algorithm that will always run under the same time and space regardless of the size. e.g Dictionary, it have a key so don't need to iterate over it.
+    -> Second is a linear time algorithm. This will grow depending on the size of the input. The size in this case, affects the running time of the code.
+    -> Third, a logarithmic time algorithm refers to the running time of the inputs against the number of operations.
+    -> Third, a logarithmic time algorithm refers to the running time of the inputs against the number of operations.
+    -> Fourth, quadratic time refers to a linear operation of each value of the input data squared. This is often a nested list, as in this for loop.
+    -> Fifth and last is exponential time, which is an algorithm that doubles with each iteration. The Fibonacci sequence is a prime example of this. Refactoring code can be a big task, but understanding algorithmic complexity and how it's calculated makes it easier to optimize code.
+
+                        Big-O
+Everything we do needs to be measured. Why you might ask? To make something better you need a metric to start from. If a car company needs to make a faster car they need to know the top speed of the existing car to improve on it. In computer science, Big-O notation is the most fundamental tool to measure the cost of an algorithm. It describes the complexity of the code using algebraic terms.
+
+                        <Image to be inserted>
+
+Big-O has different types of measures as you can see in the diagram above. These measures determine the running speed and cost of your code.
+
+                        Algorithmic complexity
+Algorithmic complexity is a measure of how long an algorithm will take to complete given the size of the input, or what is commonly called n or n times. The n represents the number of elements.  Algorithm complexity can be divided into two types:
+
+    -> Time complexity
+    -> Space complexity
+
+In computer science, time refers to how long an algorithm takes to complete. Space complexity refers to the amount of memory needed to complete the algorithm. When an algorithm is created by a programmer they also need to consider these two critical measures so that the program runs efficiently. You can measure the efficiency by using a concept called Big-O Notation. The below table showcases the fastest to slowest of these different categories:
+
+        Function          Big O Notation
+        
+        constant            O(c)
+        Logarithmic         O(log(n))
+        Linear              O(n)
+        Quadratic           O(n^2)
+        Qubic               O(n^3)
+        Exponential         O(2^n)
+        Factorial           O(n!)
+
+                        1. O(1) - Constant Runtime
+In this case, your algorithm runs the same time, regardless of the given input data set.
+
+An example of this is returning the first element in the given data like in the example below.
+    -> function returnFirst(elements) {
+        return elements[0]
+        }
+    -> The runtime is constant no matter the size of the input given.
+
+                        2. O(n) - Linear Runtime
+Linear runtime occurs when the runtime grows in proportion with the size of the input data set. n is the size of the input data set.
+    -> function constainsValue(elements, value) {
+        for (let element in elements) {
+            if (element === value) return true;
+        }
+        return false
+    }
+
+We see that the time taken to loop through all elements in the array grows with an increase in the size of the array. But what if the element is found before it reaches the last element in the array? Does the runtime complexity change?
+
+Remember that the Big O notation considers the worst-case scenario. In this instance, it's the case where the loops run through all elements in the array. So that is what determines the runtime complexity of the algorithm.
+
+                        3. O(n^2 ) - Quadratic Runtime
+O(n^2 ) denotes an algorithm whose runtime is directly proportional to the square of the size of the input data set.
+An example of this is a nested iteration or loop to check if the data set contains duplicates.
+
+    -> function constainsDuplicate(elements) {
+        for (let element in elements) {
+            for (let item in elements){
+                if (element === item) return true;
+             }
+        }
+        return false
+    }
+
+    -> Deeper nested iterations will produce runtime complexities of O(n^3 ), O(n^4 ) etc
+
+                        4. O(log n) - Logarithmic runtime
+In this case, the runtime it takes for the algorithm to run will plateau no matter the size of the input data set.
+
+A common example of this is a search algorithm like the binary search. The idea of a binary search is not to work with the entire data. Rather, reduce the amount of work done by half with each iteration. The number of operations required to arrive at the desired result will be log base 2 of the input size.
+
+For further information on this runtime complexity, you can check some of the resources at the end of the article.
+
+                        5. O(n log n) - Linearithmic runtime
+Here, the runtime of the algorithm depends on running a logarithm operation n times.
+
+Most sorting algorithms have a runtime complexity of O(n log n)
+
+                        6. O(2^n ) - Exponential runtime
+This occurs in algorithms where for each increase in the size of the data set, the runtime is doubled. For a small data set, this might not look bad. But as the size of the data increase, the time taken to execute this algorithm increases rapidly.
+
+A common example of this is a recursive solution for finding Fibonacci numbers.
+
+A good example of this is searching for a particular value in a data set using an iteration like in the example below.
+
+    -> function fibonacci(num) {
+        if (num <= 1) return 1;
+        return fibonacci(num - 2) + fibonacci(num - 1)
+    }
+
+                        7 O(n!) - Factorial runtime
+In this case, the algorithm runs in factorial time. The factorial of a non-negative integer (n!) is the product of all positive integers less than or equal to n. This is a pretty terrible runtime.
+
+Any algorithm that performs permutation on a given data set is an example of O(n!)
+
+                        Why does it matter?
+You might be wondering why you as a developer need to know about Big O and the importance of applying and understanding it. Badly written code is costly in today's world of scalable solutions. Optimized code has many benefits. For one, it will ensure your user experience is delivered to the highest standard. Faster code means a better experience from a user's perspective. No one likes looking at a spinner on-screen while they wait for items to load.
+
+Learning about and knowing how to apply Big-O to your code will help you grow as a developer and it will improve your code.
+
+                        Funnctional programming
+    -> There are two types of functions traditional and pure.
+
+    -> pure functions will always do the same thing and return the same results no matter how many times they are called.
+    -> Traditional functions can access and modify variables on the global state, but pure functions cannot
+    -> both traditional functions and pure functions can access variables in the local state.
+    -> Traditional functions can change our args, whereas pure functions cannot.
+    -> The outputs of traditional functions does not depend on inputs. 
+    -> The output of pure functions does depend on input.
+    -> functional programming in essence is a programming paradigm that utilizes functions for clean, consistent and maintainable code. Compared to object orientated programming, which we'll learn about later, functional programming differs by design.
+
+Functional programming does not change the data outside the scope of the function. This simply means that the function should avoid modifying the input data or arguments being passed, instead it should only return the completed result of the intended function being called.
+
+Functions are considered standalone or independent and this aids the clean and elegant nature of the code. In fact, many of the strongly typed object orientated languages have incorporated function programming into their structure, in order to support functional programming. The language itself needs to allow function to be passed as an argument and also return a function to its caller. In python functions are what is known as first class citizens, which essentially means they have the same level of strings and numbers, they can be assigned to a variable, passed as an argument or returned to its caller.
+
+                        Attributes of functional programming
+    -> Functional programming does not change the data outside the scope of the function.
+    -> Functional programming utilizes reusable functions for clean and elegant code.
+    -> Functional programming is easy to maintain and saves a lot of development time.
+Pure functions are used in functional programming to assure the integrity of data outside the scope of the pure function. Because a pure function is used in functional programming because it does not change or have any effect on a variable, data, list, or set beyond its own scope.     
+
+                        Pure Functions
+A good coder will try to keep code clean, make it easier to debug, and ensure it's extendable. The great thing is that pure functions can help you do all that.
+It's important to understand that there is a clear difference between traditional and pure functions. A pure function is a function that does not change or have any effect on a variable, data, list, or sets beyond its own scope. For example, if you have a list with the global scope, a pure function cannot add something to that list or alter it in any way.
+
+                        Benefits of pure function
+    -> Known outcome
+    -> Consistent and relable
+    -> Catche
+    -> Multi-threaded programs
+
+                        Recursion
+In programming, recursion is used for solving problems that can be broken down into smaller, repetitive problems. It's especially good for working on things that have many possible branches and too complex for an iterative approach. One good example of this would be searching through a file system.
+
+    -> What is recursion? Recursion is essentially a function that calls itself. Recursion creates a pattern of repeating itself over and over and over.
+Recursion is quite similar to a for loop. It will iterate, or in the case of a recursive function, call itself multiple times. But a warning when you create a recursive function, you must always consider the results. If you don't, it will spin into an infinite loop and suck up all the memory until the program eventually crashes or gets terminated.
+
+                        Advantage of recursive function
+    -> Recursive code can make your code neater and less bulky.
+    -> Complex tasks can be broken down into easier to read sub-problems.
+    -> Generation of sequences can be easier to understand than nested loops.
+                        
+                        Advantage of recursive function
+    -> It can be harder to follow the logic in recursive code.
+    -> In terms of memory, they are expensive and sometimes inefficient. 
+    -> It can also be difficult to debug and step through the code.
+
+
+                            Introduction to OOP 
+    -> Python primarily follows what is known as an object oriented paradigm or model.
+Programming paradigms are a strategy for reducing code complexity and determining the flow of execution. There are several different paradigms such as declarative, procedural, object-oriented, function, logic, event-driven, flow-driven more. These paradigms are not mutually exclusive. Programs and programming languages can opt for multiple paradigms. For example, Python is primarily object-oriented, but it's also procedural and functional. In simple terms, a paradigm can be defined as a style of writing a program.
+the OOP is ability to translate real-world problems into code is arguably the biggest factor in its success. OOP has high modularity, which makes code easier to understand, makes it reusable, adds layers of abstraction and allows for code blocks to be moved between projects.
+
+    -> OOP key components are - classes, objects, and methods.
+
+                        Classes
+A class is a logical code block that contains attributes and behavior. In Python, a class is defined with the class keyword. The attributes can be variables and the behavior can be functions inside of it. You can create instances from these classes which are called objects. In other words, a class provides a blueprint for creating an object. In more practical terms, let's say you want to record the attributes of employees at Little Lemon, such as their position and employment status. You could create a class called employee and conveniently bundle those attributes in one place.
+                        Object 
+An object is an instance of a class and you can create any number of them. The state of an object comprises its attributes and behavior, and each one has a unique identifier to distinguish it from other instances. The attributes and behavior of the class are what define the state of the object. 
+                        Methods 
+methods which are the functions defined inside a class that determine the behavior of an object instance.
+
+
+                        Encapsulation
+The idea of encapsulation is to have methods and variables within the bounds of a given unit. In the case of Python, this unit is called a class. And the members of a class become locally bound to that class. These concepts are better understood with scope, such as global scope (which in simple terms is the files I am working with), and local scope (which refers to the method and variables that are 'local' to a class). Encapsulation thus helps in establishing these scopes to some extent. 
+
+For example, the Little Lemon company may have different departments such as inventory, marketing and accounts. And you may be required to deal with the data and operations for each of them separately. Classes and objects help in encapsulating and in turn restrict the different functionalities.
+
+Encapsulation is also used for hiding data and its internal representation. The term for this is information hiding.  Python has a way to deal with it, but it is better implemented in other programming languages such as Java and C++. Access modifiers represented by keywords such as public, private and protected are used for information hiding. The use of single and double underscores for this purpose in Python is a substitute for this practice. For example, let's examine an example of protected members in Python.
+
+e.g: 
+
+class Alpha:
+
+def __init__(self):
+    self._a = 2.  # Protected member ‘a’
+    self.__b = 2.  # Private member ‘b’
+
+
+self._a is a protected member and can be accessed by the class and its subclasses.
+
+Private members in Python are conventionally used with preceding double underscores: __. self.__b is a private member of the class Alpha and can only be accessed from within the class Alpha.
+
+It should be noted that these private and protected members can still be accessed from outside of the class by using public methods to access them or by a practice known as name mangling. Name mangling is the use of two leading underscores and one trailing underscore, for example:
+
+_class__identifier 
+
+Class is the name of the class and identifier is the data member that I want to access.
+
+
+                        Polymorphism
+Polymorphism refers to something that can have many forms. In this case, a given object. Remember that everything in Python is inherently an object, so when I talk about polymorphism, it can be an operator, method or any object of some class. I can illustrate the case for polymorphism using built-in functions and operations, for example:
+
+string = "poly"
+num = 7
+sequence = [1,2,3]
+new_str = string * 3
+new_num = 7 * 3
+new_sequence = sequence * 3
+
+print(new_str, new_num, new_sequence)
+
+The output is:
+polypolypoly 21 [1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+In the example, I have used the same operator () to perform on a string, integer and a list. You can see the () operator behaves differently in all three cases.
+
+Let's examine one more example.
+
+string = "poly"
+sequence = [1,2,3]
+print(len(string))
+print(len(sequence))
+
+The output is:
+4
+3
+
+The len() function is able to take variable inputs. In the example above it is a string and a list that provides the output in integer format.
+
+                            Inheritance
+Inheritance in Python will be covered later in the course, but the basic template for it is as follows:
+
+class Parent:
+    Members of the parent class
+
+class Child(Parent):
+    Inherited members from parent class
+    Additional members of the child class
+
+As the structure of inheritance gets more complicated, Python adheres to something called the Method Resolution Order (MRO) that determines the flow of execution. MRO is a set of rules, or an algorithm, that Python uses to implement monotonicity, which refers to the order or sequence in which the interpreter will look for the variables and functions to implement. This also helps in determining the scope of the different members of the given class.
+
+                        Abstraction
+Abstraction can be seen both as a means for hiding important information as well as unnecessary information in a block of code. The core of abstraction in Python is the implementation of something called abstract classes and methods, which can be implemented by inheriting from something called the abc module. "abc" here stands for abstract base class. It is first imported and then used as a parent class for some class that becomes an abstract class. Its simplest implementation can be done as below.
+
+from abc import ABC,   
+class ClassName(ABC):
+    pass
+
+    
+                        Abstract classes and methods
+If you have an abstract class, you can ensure the functionality of every class that is derived from it. For example, a vehicle could be an abstract class. You can't create a vehicle, but you can derive a car, a tractor, or a boat from a vehicle. The methods we put in the abstract class are guaranteed to be present in the derived class because they must be implemented. If a vehicle has a turn on engine method, then we assure that any method calls to a derived class that is looking for turn on engine will find it. This could be for reasons of interoperability, consistency, and avoiding code duplication in general. In object oriented programming, the abstract class is a type of class for which you cannot create an instance. Python also does not support abstraction directly. You need to impose a module just to define an abstract class. Furthermore, methods in an abstract class needs to be defined before they can be implemented. With all these limitations, one might wonder why you would use abstract classes at all. One of the key advantages is the ability to hide the details of implementation without sacrificing functionality. Implementation in abstract classes can be done in two ways. One is that, as base abstract classes lack implementation of their own, the methods must be implemented by the derived class. Another possibility is that the super function can be used.
+The module is known as the abstract base class or ABC, and needs to be imported with some code. After that, you can create a class called SomeAbstractClass and pass in the ABC module so that it inherits that class. The next step is to import the abstract method decorator inside the same module. A decorator is a function that takes another function as its arguments and gives a new function as its output. It's denoted by the add sign. Decorators are like helper functions that add functionality to an already existing function.
+-------------------------------------->img
+
+ Any given abstract class can consist of one or more abstract methods. A class that has abstract class as its parents cannot be instantiated unless you override all the abstract methods present in at first.
+
+
+    -> Before implementing an abstract method, the following steps  to take
+        -> Import the abstract base class module     
+        -> Create a class that inherits the abstract base class   
+
+                    Method resolution order
+python has many types of inheritance. The categorization types are based on the number of parents and child classes as well as the hierarchical order, including simple inheritance. There are broadly four types of inheritance. The first type is called a simple inheritance, which you've already dealt with. There is also multiple inheritance, which involves a child class inheriting from more than one parent next is multi level inheritance, which is inheritance taking place on several levels. Then you have hierarchical inheritance, which concerns how several sub classes inherit from a common parent. And finally, you could say that there is fifth type called hybrid inheritance, which mixes characteristics of the others. As these inheritance types demonstrate inheritance becomes increasingly complex as the number of classes in a project grow and become more interdependent.
+So how did developers solve this issue with the use of MRO determines the order in which a given method. Or attributes is passed through in a search of the hierarchy of classes for its resolution or in other words, from where it belongs, the order of the resolution is called linearization of a class. And MRO defines the rules that's follows. The default order in python is bottom to top, left to right when imagining the inheritance of these python classes in a tree structure.
+things become much more complicated when more levels are added to the hierarchy. So developers rely on algorithms to build MROs. Old style classes used in depth, first search algorithm or DFS from python version three onwards, python versions have moved to the new style of classes that rely on the C three linearization algorithm. The implementation of the C three linearization algorithm is complex and beyond the scope of this lesson, but for now, here's an overview of a few rules that it follows. The algorithm follows monotonicity, which broadly means that an inherited property cannot skip over direct parent classes. It also follows the inheritance graph of the class and the super class is visited only after visiting the methods of the local classes.
+    -> Hierarchical, multi level and linear are all major types of inheritance. 
+
+
+                            Working with Methods: Examples
+You have learned how to use objects, classes and the methods inside them.  You have covered these both in cases where there is only one class, as well as when there are multiple classes. You also explored how multiple inheritance works in Python and the role Method Resolution Order(MRO) plays in determining the call for the method. 
+
+The following examples demonstrate how the function call is resolved in cases of multiple inheritance in different scenarios. Note that all the functions have the same names in all of the examples.
+
+Example 1
+
+# Example 1
+class A:
+   def a(self):
+       return "Function inside A"
+
+class B:
+    def a(self):
+        return "Function inside B"
+
+class C(B,A):
+    pass
+
+# Driver code
+c = C()
+print(c.a())
+
+Output:
+Function inside B
+
+
+Class C inherits from classes B and A. When I don't find any function a() inside class C, I should search for classes B and A and its important that I do it in that order.
+
+I will now add one more level to this and note the output.
+
+Example 2
+
+class A:
+    def b(self):
+        return "Function inside A"
+
+class B:
+    def b(self):
+        return "Function inside B"
+
+class C(A, B):
+    def b(self):
+        return "Function inside C"
+    pass
+
+class D(C):
+    pass
+
+d = D()
+print(d.b())
+
+Output:
+Function inside C
+
+Class D inherits from class C, which in turn inherits from classes A and B. Class D accesses the immediate superclass of class D, which is class C and resolves the value of the variable once it's found in that superclass.
+
+Now let’s say I comment out the declaration inside class C.
+
+# def b(self):
+    #     return "Function inside C" 
+
+And replace it with the pass keyword to keep the code functional.
+
+Since there was no value present inside class C either, the function call above would go to A. That is because class C will point to class A as having higher precedence while inheriting.
+
+Now let's take another example of a similar scenario.
+
+Example 3
+
+class A:
+    def c(self):
+        return "Function inside A"
+
+class B:
+    def c(self):
+        return "Function inside B"
+
+class C(A, B):
+    def c(self):
+        return "Function inside C"
+
+class D(A, C):
+    pass
+
+d = D()
+print(d.a)
+
+The output is:
+TypeError: Cannot create a consistent method resolution
+
+Note that this throws an error. In the code above, class D inherits from both class A and class C.
+
+Class C is its immediate superclass, but since this is multiple inheritance, the rules are more complicated and it also has to check the classes passed to it for precedence.
+
+In this particular case, class D is unable to resolve the order that should be followed, while resolving the value for the variable in cases where the variable is not present in the class of the given object.
+
+It results in a TypeError because it's unable to create method resolution order (MRO). MRO is Python’s way of resolving the order of precedence of classes while dealing with inheritance.
+
+Let's examine one final example.
+
+ Example 4
+
+ class A:
+    def d(self):
+        return "Function inside A"
+
+class B:
+    def d(self):
+        return "Function inside B"
+
+
+class C:
+    def d(self):
+        return "Function inside C"
+
+
+class D(A, B):
+    def d(self):
+        return "Function inside D"
+
+
+class E(B, C):
+    def d(self):
+        return "Function inside E"
+
+
+class F(E,D,C):
+    pass
+
+f = F()
+print(f.d())
+print(F.mro())
+
+Output:
+Function inside E
+[<class '__main__.F'>, <class '__main__.E'>, <class '__main__.D'>, <class '__main__.A'>, <class '__main__.B'>, <class '__main__.C'>, <class 'object'>]
+
+The code here is simple. class F directly inherits from its immediate superclass and the first class that is passed to it. The second line then demonstrates the return from the mro() function. 
+
+The examples in this reading demonstrate how code in which multiple inheritance is used, can get complicated and very messy, very fast. Multiple inheritance, with all the advantages and flexibility that it provides, should only be used once you have a strong command of Python as a language to avoid creating 'spaghetti code' that's difficult to understand and update.
+
+---------------------------------------Week-4--------------------------------------------------------------->
+
+                        Module in python 
+    -> A Python module contains statements and definitions.
+    -> Modules in Python can contain both executable statements and functions.
+before you explore how they are used, it's important to understand their value, purpose, and advantages. Modules come from modular programming. This means that the functionality of code is broken down into parts or blocks of code. These parts or blocks have great advantages which our scope, reusability, and simplicity. 
+
+Everything in Python is an object, so the names that you use for functions, variables, and so on become important. Scoping means that modules create a separate namespace. Two different modules can have functions with the same name, and importing a module makes this a part of the global space in the code being executed. Re-usability is the most important advantage of modularity. When you write a piece of code, modules help you avoid the need to write all the functionalities that you may need. Duplication of code, duplication of efforts uses more computer memory and it's less efficient.
+
+One other feature that using modules brings is simplicity. When modules have a little dependency on each other, it helps achieve simplicity. Each module is built with a simple purpose in mind. Modules are defined by their usage. You can also use a regular expression or RE module for managing regular expressions. Simplicity also helps in avoiding interdependency among these modules. If you're working on data visualization, import of a single module like Matplotlib is sufficient for visualizing your data. There are different types of modules that exist in Python. The main difference between these modules is the way the modules are accessed.
+
+    -> Important thing to know is that modules are imported only once during execution.
+    -> Modules can also be executed from within the function. This means that the code inside that module can only be used once the function is executed.
+
+                        Accessing Modules
+Remember that any Python file can be a module. The modules are searched by the interpreter and the following sequence. First, the current directory path. Second, the built-in module directory. Third, the Python path environment variable with a list of directories, and finally, it's investigates the installation dependent default directory. 
+
+                        Namespacing and scoping
+The official Python documentation defines namespace as mapping from names to objects, and scope is the textual region of a Python program where the namespace is directly accessible. At this point, the dictionary with its key value pairs serves as the ideal data structure for the mapping of names and objects. You have also learned how every Python file can be a module. You can view the same module as a place where Python creates a module object. A module object contains the names of different attributes defined inside it. In this way, modules are a type of namespace. Namespaces and scopes can become very confusing very quickly and so it is important to get as much practice of scopes as possible to ensure a standard of quality. There are four main types of scopes that can be defined in Python: local, enclosed, global and built-in. The practice of trying to determine in which scope a certain variable belongs is known as scope resolution. Scope resolution follows what is known commonly as the LEGB rule. Let's explore these. Local, this is where the first search for a variable is in the local scope. Enclosed, this is defined inside an enclosing or nested functions. Global is defined at the uppermost level or simply outside functions, and built-in, which is the keywords present in the built-in module. In simpler terms, a variable declared inside a function is local, and the ones outside the scope of any function generally are global.
+
+While global variables are acceptable, they're discouraged for a number of reasons. When you are working with production code, the project structure can get complex, and working with global variables can be hard to diagnose which lead to what is called the spaghetti code. Other paradigms such as access modifiers, concurrency, and memory allocation are better handled with local variables. While you were just beginning our journey using Python, it is always a good idea to integrate good practices in your code. There are two key words that can be used to change the scope of the variables, global and non-local. The global keyword helps us access the global variables from within the function. Nonlocal is a special type of scope defined in Python that is used within the nested functions only in the condition that it has been defined earlier in the enclosed functions.
+
+                        Modules, libraries and packages
+Modules and packages can easily be confused because of their similarities, but there are a few differences. Modules are similar to files, while packages are like directories that contain different files. Modules are generally written in a single file, but that's more of a practice than a definition. 
+
+Packages are essentially a type of module. Any module that contains the  __path__ definition is a package. Packages, when viewed as a directory, can contain sub-packages and other modules. Modules, on the other hand, can contain classes, functions and data members just like any other Python file. 
+
+Library is a term that's used interchangeably with imported packages. But in general practice, it refers to a collection of packages.
+
+Despite the differences between modules, packages and libraries, you can import any of them using import statements.  
+
+Third-party package add-ons of Python can be found in the Python Package Index. To install packages that aren't a part of the standard library programmers use ‘pip’ (package installer for Python). It is installed with Python by default. To use pip, you need to be familiar with either the terminal if you're using a Mac or the command line interface if you're using Windows. 
+
+Alternatively, you can also use the terminal window present inside your IDE. When you are using the command line or terminal, you must make sure that you are installing packages in the same Python interpreter that you are working with inside your IDE. 
+
+Note: Package names as well as the command line or terminal are case-sensitive.
+
+Once you have installed the package, you will be able to use the package directly inside your Python code. This is a one-time installation and the package will be present as a part of your Python interpreter until you choose to uninstall it.
+
+The packages that you can install often have a number of classes, functions, sub-packages and members. These can be understood by using the package and finding examples that other programmers have posted on different websites. This will give you a better understanding of what functionality within that package needs more attention than others. 
+
+Additionally, it is also a good practice to look up the documentation of the packages. In some cases, you can use the Python Package Index pypi website. In other cases, the packages are built and maintained by open-source communities and you can find their information on a standalone website created for it or on a version control system such as GitHub. Documentation in most of the popular Python libraries today is pretty elaborate and should have good examples to get you started.
+
+                        Sub-packages
+If we are to assume that packages are similar to a folder or directory in our operating system, then the package can also contain other directories. Packages, both built-in and user-defined, can contain other folders within them that need to be accessed. These are named sub-packages. You use dot-notation to access sub-packages within a package you have imported. For example, in a package such as matplotlib, the contents that are used most commonly are present inside the subpackage pyplot. Pyplot eventually may consist of various functions and attributes.
+
+eg:- import matplotlib.pyplot
+
+                        Reload function
+The reload function reloads an imported module in Python. The only precondition is that the argument passed to it must be a module that has already been successfully imported within the program. Previously, you learned how the import statement is only loaded once by the Python interpreter, but the reload function lets you import and reload it multiple times.
+
+                        Popular python packages
+
+Python has an extensive collection of packages. As a developer starting out, it can be overwhelming, but it's important to understand what Python is most widely used for today. The major application areas for Python are data science, AI and machine learning, web frameworks, application development, automation, and hardware interfacing. With this in mind, packages can be grouped into categories. For example, built-in packages, data science, machine learning and AI, we and GUI development.
+built-in packages. These are packages that don't need to be installed separately and can be used as soon as you've installed Python. Almost every project uses one or more of these built-in packages, so, it's worth getting to know them well. 
+The most popular ones are OS, SYS, CSV, JSON, importlib, re, math, and intertools. In the world of data science, the most popular Python packages are NumPy, SciPy, NLTK, and Pandas. This's what we use for data exploration and manipulation. Other packages like Open CV and matplotlib are used for image processing and data visualization. Within the world of machine learning or ML and artificial intelligence or AI, the most popular packages are TensorFlow, PyTorch, and Keras. PyTorch and Keras are currently the most popular for deep learning and neural network implementation. There are other packages such SciPy, Scikit-learn, and Theano. Choosing which package to use will depend on the scale and scope of the project and how familiar you become with the packaging question. 
+
+on to web development. Python today is primarily used for ML, AI, and web development. The most popular packages are flask, which is a lightweight micro-framework, and Django, which is a full-stack framework. Other popular web development packages include cherry pie, pyramid, beautiful soup, and selenium. There are also other packages for robotics, game development, and other specialized domains. For any domain you want to work in, you'll find several Python packages relevant to it. While no one package may be a perfect fit for your projects, the open source community of Python developers is working relentlessly to fill the gaps.
+
+
+                        Popular Packages: Examples
+When I talk about popular packages in Python, it includes both built-in and third-party libraries. Once imported within the program, the usage of these packages follows the same structure and rules as regular code you would encounter without the import. You have explored some of the popular package names in the domains of data science, ML, and Web earlier on in the course. Here are a few examples of using these packages that will help you get comfortable with the idea.
+
+Before you use any package, the first piece of code that you must always use is the import statement. That is true even in the case of built-in packages. For example, if you want to use the json package, you will first add a line such as:
+
+import json
+
+        Numpy
+Assuming there is already an installation for the numpy package, the code for it can be as follows:
+
+import numpy as np
+
+a = np.zeros(10)
+print(a)
+
+b = np.full((2,10), 0.7)
+print(b)
+
+c = np.linspace(0,25,7)
+print(c)
+
+print(type(c))
+
+The output for the code above is:
+
+[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+[[0.7 0.7 0.7 0.7 0.7 0.7 0.7 0.7 0.7 0.7]
+ [0.7 0.7 0.7 0.7 0.7 0.7 0.7 0.7 0.7 0.7]] 
+[ 0.          4.16666667  8.33333333 12.5        16.66666667 20.83333333  25.        ]
+<class 'numpy.ndarray'>
+
+    -> The zeros() function inside numpy creates an array with n number of zeroes inside it.
+
+    -> The full() function creates a two-dimensional matrix of dimensions 2 x 10 consisting only of the values 0.7.
+
+    -> In the example, linspace() function divides the values between 0 and 25 in 7 equal parts. The resultant matrix is in the output.
+
+    -> Finally, when you see the data type of c, it is a special data-type created and used in numpy called as ndarray. If you try the output for a and b, it will also be ndarray as numpy deals exclusively with ndarray, which is a substitute for lists and is far more efficient. 
+
+    -> These are some of the functions provided by numpy.
+
+        Pandas
+Now you will explore the usage of another library that closely works with numpy and other data science libraries called pandas.
+
+import pandas as pd
+
+a = pd.DataFrame({'Animals': ['Dog','Cat','Lion','Cow','Elephant'],
+                    'Sounds':['Barks','Meow','Roars','Moo','Trumpet']})
+
+print(a)
+print(a.describe())
+
+b = pd.DataFrame({
+    "Letters" : ['a', 'b', 'c', 'd', 'e', 'f'],
+    "Numbers" : [12, 7, 9, 3, 5, 1]  })
+
+print(b.sort_values(by="Numbers"))
+
+b = b.assign(new_values = b['Numbers']*3)
+print(b)
+
+O​utput:
+
+    Animals   Sounds
+0       Dog    Barks
+1       Cat     Meow
+2      Lion    Roars
+3       Cow      Moo
+4  Elephant  Trumpet
+
+
+       Animals Sounds
+count        5      5
+unique       5      5
+top        Dog  Barks
+freq         1      1
+
+
+  Letters  Numbers
+5       f        1
+3       d        3
+4       e        5
+1       b        7
+2       c        9
+0       a       12
+
+
+  Letters  Numbers  new_values
+0       a       12          36
+1       b        7          21
+2       c        9          27
+3       d        3           9
+4       e        5          15
+5       f        1           3
+
+
+In the four outputs in this code, I created a pandas DataFrame in the code above called a.
+
+    -> The first output is for the DataFrame called a that displays the output in a very systematic format.
+
+    -> The second output uses the describe() function in pandas that will give the count, frequency, top values and frequency among other values.
+
+    -> In the second DataFrame, b consists of letters and numbers in random order.
+
+    -> The third output is a sorting function that will provide a sorted table leading to shuffling of the data entries in the table.
+
+    -> Lastly, the assign() function takes the values present inside the table, performs an operation over them and creates a new variable called new_values that is then added to the table.
+
+Pandas, just like Numpy is very widely used and has a vast variety of functionalities present in addition to the ones mentioned.
+
+        NLTK
+NLTK as mentioned earlier, is a library in Python used for Natural Language Processing. Here are some of the things you can do with it.
+import nltk
+
+text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+
+# Print statement 1
+print(word_tokenize(text))
+# Print statement 2
+print(nltk.tokenize.sent_tokenize(text))
+
+
+stopwords = stopwords.words("english")
+new_text = []
+for i in text.split():
+    if i not in stopwords:
+        new_text.append(i)
+
+# Print statement 3
+print(new_text)
+
+O​utput:
+
+['Lorem', 'Ipsum', 'is', 'simply', 'dummy', 'text', 'of', 'the', 'printing', 'and', 'typesetting', 'industry', '.', 'Lorem', 'Ipsum', 'has', 'been', 'the', 'industry', "'s", 'standard', 'dummy', 'text', 'ever', 'since', 'the', '1500s', ',', 'when', 'an', 'unknown', 'printer', 'took', 'a', 'galley', 'of', 'type', 'and', 'scrambled', 'it', 'to', 'make', 'a', 'type', 'specimen', 'book', '.']
+
+['Lorem Ipsum is simply dummy text of the printing and typesetting industry.', "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."]
+
+['Lorem', 'Ipsum', 'simply', 'dummy', 'text', 'printing', 'typesetting', 'industry.', 'Lorem', 'Ipsum', "industry's", 'standard', 'dummy', 'text', 'ever', 'since', '1500s,', 'unknown', 'printer', 'took', 'galley', 'type', 'scrambled', 'make', 'type', 'specimen', 'book.']
+
+NLTK is a huge library and it is inadvisable to import all its packages and subpackages. If you examine the code, you will realize that only the required functionalities from the subpackages such as corpus and tokenize are imported within the code.
+
+First a block of text is copied inside the code-block and assigned to a variable called text.
+
+    -> The first function used is word_tokenize(). This takes this text and produces the first part of the output in which the words are ‘tokenized’ or simply separated by a whitespace. The same can be done with the split() function in the string, but the use of the package is far more efficient when it comes to larger blocks of code.
+
+    -> The second function sent_tokenize() takes this block of text and tokenizes by ‘sentences’.
+
+    -> For the third output, I first split the code and remove what is called ‘stopwords’. Stopwords are words in the English language that can be considered redundant and adding little value while you are undertaking natural language processing. These include words such as ‘a’, ‘the’, ‘him’. First I'll create a list of these stopwords and then remove them using a for loop to form a new list called new_text. You will notice the difference by comparing the first and the final output of the code.
+
+We have covered only a couple of examples here from couple of libraries and there is a plethora of options available with different packages in Python. The best way to learn them is through practice and exploration. 
+
+
+                        Data analysis packages
+                the following packages are used for Data Analysis
+    -> Matplotlib, NumPy, Scikit-Learn are used for Data Analysis.
+    -> Python is one of the best languages to use for various data science projects and applications.
+
+Python has emerged as one of the most popular languages with data scientists. One of the main reasons for its popularity is the large number of different open source packages. These have been developed by thousands of contributors collaborating to provide free, usable resources. Many packages are top-rated because they are efficient and provide outstanding functionality. In no particular order of preference, these packages include NumPy, Scipy, Matplotlib, and Scikit-learn. As an example, Scikit-learn is used for predictive learning, and is built on top of other popular packages. It consists of various supervised and unsupervised machine learning algorithms for classification, regression, and SVMs. Modelling data is the primary focus of this library, and it provides popular models such as clustering, feature extraction and selection, validation and dimensionality reduction. Pandas is an acronym for Python data analysis, and this is a data analysis and manipulation tool. It's used primarily for working with datasets and provides functions for cleaning, analyzing, and manipulating data. Using it, I can compare different columns and find the arithmetic mean, max and min values. The primary data structures used in pandas or series and Dataframes. While series or single-dimensional and can be compared to a column in a table, dataframes are multi-dimensional and can potentially store tables efficiently. They are agnostic to the datatypes being stored. Pandas most common applications are reading CSV files and JSON objects and using them within Python code for faster retrieval. Pandas are known to bring speed and flexibility to data analysis. Pandas library is normally imported by the code import pandas as pd. NumPy stands for numerical Python and it's a powerful library forming the base for libraries such as Scikit-learn, Scipy, Plotly, and Matplotlib. Python scientists use the abilities of NumPy, especially when working in scientific domains such as signal, image processing, statistical computing, and quantum computing. NumPy carries out the calculations needed for algebraic areas such as Fourier transforms and matrices. The backbone data structure in NumPy is called ND array or N-dimensional array, which substitutes the conventional use of lists in Python, and is a much faster solution than lists. The dimensions in NumPy are called axes and the number of such axes is called a rank. Conventionally, NumPy is imported with import NumPy as np. Matplotlib is the visualization library used in Python. It can be used to create static, interactive and animated visualizations. Many third-party tools such as ggplot and seaborn extends the functions of matplotlib. These functions are located inside the pyplot stub package. Matplotlib is imported with import matplotlib.pyplot as plt. An example such as libraries to0 uses the matplotlib and NumPy libraries to for instance, display a graphical representation of students in a class or the distribution of their scores.
+
+                        Machine learning, deep learning and AI: PyTorch, TensorFlow
+Artificial Intelligence or AI, is broadly about making machines think like humans. Data science primarily focuses on the management and exploration of data which may include media such as text, audio, images and video. Machine learning or Ml is a subsection of AI and deals with algorithms for training and generating insights from data. Many fields utilize machine learning. Some of the most widely used areas are natural language processing, deep learning, sentiment analysis, recommended engines, computer vision and speech recognition. With the amount of text, image and video data available today, data science and AI in particular are in greater demand than ever. Python is one of the most popular languages used in these domains. The reasons are, seeing tactical efficiency and readability, flexibility with different languages, frameworks and operating systems welcoming and large community of developers. Ability to build ML models without having to understand the intricacies. Use a friendly debug and testing tools and modular structure. These will promote the development of many primarily open source libraries and frameworks. It's important not to get confused with the terms, packages, library and frameworks. A package is a collection of modules and both library and framework are often used interchangeably with packages. Libraries can also be a collection of packages with specific purpose, whereas the term framework is usually used where certain flow and architecture is involved. It's important to remember that all of these pieces of python code are used with the help of import statements. Some of the most popular Ml libraries in use today are in the areas of deep learning and neural networks. Computer vision and image recognition. Natural language processing, data visualization and web scraping. It's important to understand that these are broad categorizations. Most of the libraries associated with them are not restricted to a particular field. Every project is unique and should be treated as such. The right selection of the library can save precious time when coding. 
+
+        examples of some fields that may utilize machine learning are
+        -> Natural language processing
+        -> Sentiment analysis
+        -> Recommender engines
+        -> Speech recognition
+        -> Computer vision
+        -> Deep learning
+
+                        Big Data and Analysis with Python
+With the advent of social media and its widespread acceptance came the unprecedented need for data management. Now billions of gigabytes of data are  produced every day and much of it is generated by the end-users. Organizations recognized the huge potential in harnessing this data using predictive and machine learning algorithms to generate insights. But before tackling that challenge, came the challenge of efficiently and systematically storing and handling this data in a way that made it available for quick access.
+
+Big data is the management of large sets of data, both structured and unstructured. Today, this large amount of data is stored in the form of data warehouses and data lakes, both on servers and in the cloud. The main characteristics that are commonly identified for use of Big Data tools are Volume, Variability and Velocity.
+
+Volume is the size of data under question and, if large enough, may require different handling to traditional data storage and management.
+
+Variability or veracity refers to the inconsistency that may be present in this data. In huge data repositories, it is difficult to intervene manually on every wrong entry and thus enough scope for variability must be defined and established while handling such data.
+
+Velocity is the speed of handling this data. With data sources such as social media which are continually active, there is a need for constant updates as well as robust storage. When there is a need to be processed, it should also not create a bottleneck where data retrieval takes longer. As such, velocity plays a very important role in Big Data.
+
+This is the ability to handle a large amount of heterogeneous data with ease of access and speedy processing. The next step in this process is when this data is analyzed and is broadly called data analysis. The final step is publishing this data in form of reports, visualizations and web pages, as per the requirement.
+
+The whole pipeline can be summarized as below:
+
+    -> Data Source -> Data Storage -> Filter & Transform Data -> Analysis & Storage -> Report & Visualization 
+
+Many fields use machine learning and those fields like deep learning and neural networks rely on open source machine learning libraries that make developers work easier. These libraries are collections of packages and the selection of the right library can save you time when coding. So in the future, think carefully about which library you should pick for a project to make sure that it suits your needs.
+
+Here are several reasons why Python has found a place in the domain of Big Data:
+
+    -> Ease of use: Ease of use is a prerequisite for any large-scale and commonly used technology and language. Python helps setting up and running infrastructure with just a few lines of code. 
+
+    -> Licensing structure and open-source nature: The open source paradigm has picked up immensely in recent years. Python provides many very well developed open-source libraries and frameworks, even for large scale applications. Some organizations prefer this, as it saves on cost, as well as providing easier licensing.
+
+    -> Active community: The Python community today is vast and very supportive. This helps with the swift resolution of issues a user may face, as well as the development of new features when required.
+
+    -> Libraries: Possibly the strongest reason for the acceptance of Python is the host of libraries that provide direct support for Big Data. In addition, there are many packages that also aid in bridging the gap between Python and other languages and tools enabling swift deployment of services.
+
+    -> High compatibility with Hadoop and Spark: Hadoop and its Hadoop distributed file system is arguably one of the best solutions for large-scale storage. The support available in Python has also helped in wider acceptance of Python. The same can be said about Spark as Python has supportive libraries such as PySpark and host of API libraries that facilitate its usage.
+
+    -> High processing speed: Python has support for prototyping and with its Object-oriented methodology, processing in Python is much better in comparison to other languages. With its increase in speed, Python is also able to provide adequate stability in its usage.
+
+    -> Portability and scalability: Broadly as mentioned before, Python’s support for cross-language platforms and operations, its ease of extensibility, various libraries, support for frameworks and API overall, makes it easy to scale and flexible.
+
+    -> Python tools and libraries: Most of the libraries in Python that are used for Big Data are widely common and is associate with Data Sciences and Machine Learning. Big Data includes wide-scale usage and acceptance of libraries such as: Numpy, Pandas, Scikit-learn and Scipy. To name just a few.
+        Additionally, here are a few more libraries that are more specific to a Big Data domain such as:
+
+    -> RedShift and S3: Amazon services are used with their cloud services. S3 is a storage service and RedShift is a data warehousing service.
+
+    -> BigQuery: Developed by Google, BigQuery is a Cloud service library that is useful with RESTful APIs.
+
+    -> PySpark: This is an open-source framework used for large scale data processing and works with resilient distributed datasets.
+
+    -> Kafka: This is a publish-subscribe messaging system that receives logs in the form of packages and is stored in partitioned spaces.
+
+    -> Pydoop: Pydoop provides an interface between Hadoop and Python and support for handling its Hadoop distributed file systems.
+
+
+1.What is Artificial Intelligence (AI)?
+    -> AI is a technology that uses an intelligent computer and simulate human behavior.
+2. What is machine learning?
+    -> Machine learning is type of AI that helps softwares to help for predict the outcomes of sth like weather condition etc. Machine learning is type self learning algorithm that learn from data.
+3. How are AI and machine learning connected?
+    -> AI doesn’t necessarily have to be developed using machine learning  although, machine learning makes  AI much more convenient. 
+4. How do  AI and machine learning work together?
+    -> Machine learning is a subset of AI that help us AI driven applications so they does't separate in doing sth.
+
+                        Python Web Frameworks
+Web frameworks are software applications designed to provide us with a standard way to build, deploy, and support web applications that we can use on the web. They help developers to focus on application logic and routines by automating redundant tasks, which helps cut development time. They also provide easy structuring and default model so they are reliable, stable, and easily maintainable, saving time and effort. Web frameworks are primarily written in high-level code, which removes the overhead required for understanding concepts such as sockets, threading, and protocols. As a result, time is better spent working on application logic instead of routines. Python is a popular framework in web development, thanks to several features such as good documentation, abundant libraries and packages, ease of implementation, code reusability, a secure framework, and easy integrations. The different frameworks in Python are efficient and make it easy to handle tasks such as form processing, routing requests, connection with databases, and user authentication. They also provide debugging and testing tools to handle profiling, test coverage, and test automation, etc. There are mainly three types of web frameworks in Python. These are fullstack, microframeworks and asynchronous. Let's explore each briefly now. Fullstack frameworks are considered a one-stop solution and usually include all the required functionalities. This can include form generations and validators, template layouts, HTTP request handling, WSGI interfaces for connection with web servers and database connection handling. Some of the most popular Python frameworks are Django, Web2py, and Pyramid. Microframeworks are a lighter version of fullstacks that do not offer as many patterns and functionalities. They are usually used in smaller web projects and building APIs. Flask, Bottle, Dash, and CherryPy are some of the popular microframeworks. As the name suggests, asynchronous framework types are used to handle a large sets of concurrent connections. They are mainly built using Async IO networking libraries. Growler, AIOHTTP, and Sanic, are some of the names you'll encounter. Choosing a framework can depend on many factors. This can include things like available documentation, scalability, flexibility, and integration. While this categorization is pretty broad, it's important to remember that each framework in Python has its own unique set of features and functionalities. This can make certain frameworks more suitable than others for a specific project. Two of the most widely used are flask and Django. Let's explore each briefly now. Django is a high level framework that encourages clean design and rapid development. It's a full-stack framework that's rich in features and libraries. It's secure and has templating systems and third party supports. It primarily getting popularity due to its rapid deployment speed. You can quickly build scalable apps without extensive knowledge of low-level programming. Flask is a microframework and better used for smaller projects. It's easy to learn, simple to use, and as a large library of add-ons.
+
+
+                        Testing 
+software testing is a process of evaluating and verifying the various software applications and products in terms of performance, correctness, and completeness. It helps identify bugs, gaps in the product, defects, and missing requirements with set expectations. In the early days of computers, software developers relied heavily on debugging, a process for removing and detecting potential errors. After the 1980s software grew in size, several different testing types of products also grew in parallel depending on the requirements. Testing was primarily done in the later stages of the software lifecycle. Now it's evolved to be integrated at the early stages as well. The efficiency of any testing type is dependent on how well-written it is. The ideal testing scenario is to have the least tests written to find the largest number of defects. While software testing is important in any scenario, the real test of the products comes when it's launched the market, there, it's judged by stakeholders and users. We live in the Internet age, products with bugs, especially in the early stages make consumers lose interests very quickly as many alternatives are available. This is where testing plays an important role. Here are a few reasons why it can help. Testing helps detect poor designs, change inefficient flow or functionality, address scalability concerns, and find security vulnerabilities. Testing helps provide AB testing to find the best suitable options, address compatibility with platforms and devices, provide assurance to stake holders, and a better experience for end users. There are a few good practices that must be followed in testing to achieve optimal results. Test code allowing reusability of tests. Tests must be traceable to the requirements set. Tests written must be purpose-driven, efficient, and allow for repeatability. These testing techniques can then follow a procedural approach according to the type of testing used. The testing lifecycle in general can be broadly described as planning, preparation, execution, and reporting. The steps involved in achieving this can include writing scripts and test cases, compiling test results, correcting defects based on them, and generating reports from our test results. You've already learned about test cases. They are a general sets of actions containing steps, data, pre and post-conditions written for a specific purpose. This purpose can improve functionality, flow, and finding defects. A well-written test case eventually provides good coverage, reusability, better user experience, reduces costs, and increases overall satisfaction. As the tech industry is ever-growing, several test and categories, types, tools, and products have evolved, which are tailored to best meet the requirements of the software in question. For example, a webpage will have different testing needs than an Android-based game. Even among web pages, a social media page will differ from one, say, from financial management. Testing can be categorized by several different factors. For example, depending on the amount we know about the internal implementation, we can call it black box or white box testing. There are also many testing types using practice. These include compatibility, ad hoc, usability, and regression testing.
+there is no one-size-fits-all solution. When testing products, it's also important to understand when to stop. There is no application will ever be 100 percent perfect. Otherwise, a developer may feel the product is well-tested, but realize it's full of bugs and flaws as soon as it's released to the end-users. A few metrics can be established for this purpose, given that there are well-written test cases in place. These include a certain number of tests cycles, passing percentage of test cases, time deadlines, and time intervals between subsequent test failures. Testing in software development can be seen as the anchor of a ship or insurance for your vehicle. You can hope that everything operates smoothly, but often it does not and while you can aim for perfection, there is always potential for human error.
+
+                        Types of testing
+Types of testing, including the four main levels or categories of testing which is units, integration, system and acceptance testing. There are different ways in which you can categorize the different test types. There are white box and black box tests. White box testing is whether tester has knowledge of the code design and functionalities. Black box tests function with no such information and the tester has no idea about the internal implementation. There are also other ways to categorize different tests as functional, non functional, and maintenance tests. Let's explore these. Functional tests are based on the business requirements stated. They determine if the features and functionalities are in line with the expectations. Non functional tests are more complex to define and involve metrics such as overall performance and quality of the product. Maintenance tests occur when the system and its operational environment is corrected, changed or extended. But there are also manual and automated testing methods that are dependent on the scale of the software. The most broadly accepted categorization is in terms of the levels of testing as you move ahead in the software lifecycle, let's delve deeper into these levels of testing. The four main levels of testing are, unit or component testing, integration testing, system testing and acceptance testing. The four types of testing levels build on each other and have a sequential flow. Let's explore these now. In unit or component testing, the program tests specific individual components by isolating them. The components are low level which means that they are closer to the actual written code. They often involve use of automation for continuous integration given their small sizes. So you usually write these tests while writing the code. For example, if the code is in python, unit tests can be written with packages such as pi test, integration testing, combines the unit tests and test the flow of data from one component to another. The key word here is an interface. This means that you test if the data is correctly fetched from a database within the python code, and if you have sent it to the web page. There are different approaches to it such as top down, bottom up and sandwich approaches. Your approach depends on what code level interfaces you attempt first. It builds on the unit testing and a tester deals with it. Next is system testing, which tests all the software you tested against the set requirements and expectations to ensure completeness. This includes measurements of the location of deployed components such as reliability, performance, security and load balancing. It also measures operability in the working environment such as the platform and the operating system. This is the most important stage handled by team of testers. It's also the most critical stage as the shipping of software to the stakeholders and end user happened after this phase.
+The final type of testing is acceptance testing. When the product arrives at this stage, it's generally considered to be ready for deployment. It's expected to be bug free and meet the set standards. The stakeholders and the select few end users are involved in acceptance testing.
+It normally involves alpha, beta and regression testing. One way of approaching this is to give pre-written scenarios to the users. You use the results for improvements and try to find bugs that were missed earlier. All the different testing levels are designed to optimize software at different stages. The key to testing is testing early and testing frequently. While each of the testing phases is important, early detection saves time, effort and money.
+As the code gets increasingly complex mistakes become harder to fix. It doesn't necessarily mean that unit testing will happen only at the beginning and acceptance at a later stage. There are many testing cycles where these levels are approached iteratively. A typical example is the agile model, here you release different versions of the product iteratively and you perform acceptance testing every few weeks. In this video, you learned about some of the types of testing such as a unit testing, integration testing, system testing and acceptance testing. It's important to remember that the purpose of these testing methods is to build a systematic approach for testing and identify faults and improvements as early as possible. This results an improved overall performance and experience.
+
+        The following are the main levels of testing
+    -> Integration testing - Integration testing combines the unit tests and tests the flow of data from one component to another.
+    -> System testing - System testing is testing all the software. 
+    -> Acceptance testing - This is when the stakeholders and a select few end-users are involved in acceptance testing.
+    -> Unit testing - In unit or component testing, the program tests specific individual components by isolating them.
+
+                        Test automation packages
+
+With advancements in technology and increasing drivers towards code automation. In this video, you'll learn about test automation packages and the importance of automated testing. In the past, machines have substituted human efforts in making goods, which helps us save both time and effort. In programming, the tests chosen for automation are the ones that have high repeatability and volume, predictable environments, and data, and determinants outcomes. There are a number of testing types that can be automated. These include units, regression, and integration. An ideal test code must form a bridge between the programming codes and the test cases. Python does a fine job in achieving this in addition to its clean, concise way of coding. There are some well-written frameworks in Python and some are more well-accepted than others. The ideal steps involved in test automation are usually preparing the test environment, running the test scripts, and analyzing the results. Let's now examine some important Python testing frameworks that have grown in popularity over the years. First, let's explore the built-in testing package per unit or unittest. The unittest framework supports test automation, independent testing modules, and aggregation of tests into collections. The first is Pytest and native Python library that is simple, easy to use, and reasonably scalable. Pytest will be demonstrated later in this course. It can handle several functional test types such as unit, integration, and end-to-end. There is support for parameterized testing which enables us to execute unit tests multiple times with different parameters passed. It can run parallel tests and generates HTML, XML, or plain texts reports. You can also integrate it with other frameworks like Pyunits and nose too, and web frameworks like Flask and Django. While primarily used with testing APIs, it's also well used with UI, database connections, and other web applications. Easy creation and quick bug fixes a why Pytest is the most popular testing framework for automation. Next is Robot, which is popular primarily for its keyword-driven development capabilities. These keywords are used in test cases and can be predefined or user-defined. Robot is very versatile and use for acceptance testing, robotic process automation, or RPA, and test-driven development. It can be used for many domains, including Android, APIs, and mainframes. Selenium is another open-source testing framework that has gained popularity over time, and it's primarily driven towards a web applications. It has support for the majority of web browsers and OS. There a browser-specific web drivers that enable testing functionalities like login, button clicks, and filling out forms. It allows the test set to select the speed and execution of tests and it has an option to run specific tests or tests suites. Apart from the popular frameworks Pytest, robot, and selenium, there are many more. It's important to know that a number of these testing frameworks are often used with other tools such as plug-ins, widgets, extensions, test runners, and drivers. These tools help integrate the software pieces being tested and add functionality. Sometimes more than one framework has employed over the code being tested. In this video, you learned about test automation packages. Let's recap quickly. Automation testing is an important reason why the software industry is able to move ahead swiftly and more smoothly. Manual testing provides focused attention and the ability to handle nuances and complex problems with more sophistication. This kind of testing can't be replaced by automated tests yet. It still sometime before test scenarios can be fully automated, but the development of all these frameworks are in line with that endeavor.
+
+
+                        PyTest cheat sheet
+
+Installation
+Run the following on the Terminal:
+
+pip3 install pytest (Mac)
+
+Or
+
+pip install pytest (Windows)
+
+# Nomenclature
+
+Add suffix 'test_' to the file that needs to be tested.
+
+Add suffix 'test_' to the functions to be tested.
+
+Running pytest
+This is the command that has to be executed on the Terminal prompt:
+
+python3 -m pytest test_file.py
+
+Alternative method
+
+py.test will look for the keyword test and run the tests over those files and functions automatically.
+
+py.test test_file.py
+
+When you run pytest for a specific function add     ::    to run a specific function in a given file.
+
+Flags used
+For example, -v is the flag:
+
+python3 -m pytest abc.py -v
+
+Some other flag options are:
+    -v for verbose
+    -q quiet mode
+    -s allows the print statement inside the functions to be executed
+    -x is to flag the tests to stop execution after first failure
+    -m is used to mark a specific function
+    -k is a flag for searching and running tests with a specific keyword
+    --tb is to disable the traceback code of errors
+    --maxfail n specifies maximum number of test fails allowed
+
+        Tips
+    -> The rule of thumb is that the assert statement looks for a Boolean result. You can use in, not in, is, <, >, other than == to check Boolean values. 
+
+    -> You can add multiple assert statements inside a single test function.
+
+Additional reading
+Fixtures
+Fixtures are a type of function that is applied to functions to be tested. These functions must run before that test is executed. The purpose of fixtures is to supply data from multiple sources including URLs and databases to the test before running the test. Fixtures are used in cases where code repeats initialization.
+
+Format:
+
+@pytest.fixture 
+
+Markers
+Markers are used to 'mark' specific functions to be executed by letting users create special names. There are many built-in markers such as xfail, xpass, skip and so on.
+
+They follow a format such as:
+
+@pytest.mark.<markername> 
+
+For example:
+
+@pytest.mark.alpha 
+
+Running the specific marked test in the command line can be done with the following command:
+
+pytest -m <markername> -v 
+
+Which will be as follows for a marker called alpha.
+
+pytest -m alpha -v 
+
+for more "https://docs.pytest.org/en/7.1.x/how-to/usage.html"
+
+
+                        Test-driven development (TDD)
+Software development is time sensetive and the process developers open fine testing for squeezing to the time remaining of the code written. This doesn't leave enough time to test and lead to a software containing bugs written that meet doubt over time. 
+TDD is an alternative programming in which the test are written first and the code is written so the tests will pass. This differs from the convention first writing the code and testing the application progressively.
+TDD follows iterative approach beginning with writing the test cases
+        Steps off TDD 
+    1. Write a test for a feature that fails.
+    2. Write code in accordance with the tests. 
+    3. Run the tests expecting them to fail.
+    4. Evaluating the error and refactor the code as needed.
+    5. Rerun the process.
+This process is also called the RED-GREEN refactor cycle.
+
+The whole point of following this cycle is fail the test -> Rewrite the code ->  Pass the test
+
+You can use package library such as pytest when automation is becomes the priority.
+    -> pytest only requires writing functions and
+    -> unittest requires classes
+         "Unittest" has useful libraries such as "Unittest.mock" that can mock large functions, removing the time and memory overhead.
+This means the py test is advantage of easier because it reuires less effort.
+
+                        Advantages of TDD
+    -> writing  - test firstand refactoring code based on it can show the test cover the code
+    -> forecasting - provides clarity at the beginning, also plays an important rule in integrating components when you add a new features in interfaces in accordance to the components that already there.
+    -> Ease to factor - working in cycles over the code gives the  developer confident easily refactor interms of Additional changes.
+
+Overall smaller code with early bug fixes code extensibility and code eventual ease of debugging over the primary reasons TDD growing and acceptance.
+
+                        TDD and Traditional testing
+    -> In conventional testing, you follow the process of writing code and then writing test cases to ensure the integrity of that code. In test-driven development or TDD, the approach is the other way round, and test case is where you must begin your thinking. The steps involved are as follows. Write test cases with some functionality in mind. Write code in accordance with the test cases ensuring that they pass, and refactor code in case the tests fail. 
+
+            Sub types of variation of test driven development includes:
+    -> Behavior driven
+    -> Acceptance test driven
+    -> Scaling
+    -> Developer test driven developments
+all this used in the software development cycles.

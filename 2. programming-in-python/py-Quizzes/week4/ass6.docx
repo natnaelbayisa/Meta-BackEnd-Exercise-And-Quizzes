@@ -1,0 +1,171 @@
+1.
+Question 1
+Which of the following is not true about Test-driven development?
+
+1 / 1 point
+
+In TDD, the requirements and standards are highlighted from the beginning. 
+
+
+Test-driven development can only have one cycle of testing and error correction.
+
+
+The process can also be called Red-Green refactor cycle.
+
+
+It ensures that the entire code is covered for testing.
+
+Correct
+Correct! The test-driven development can have more than one cycle of testing and error correction
+
+2.
+Question 2
+Which of the following is a built-in package for testing in Python?
+
+1 / 1 point
+
+PyTest
+
+
+Pyunit or Unittest
+
+
+Robot Framework
+
+
+Selenium
+
+Correct
+Correct! The built-in package is called a Pyunit or Unittest.
+
+3.
+Question 3
+Which of the following is an important keyword in Python used for validation while doing Unit testing?
+
+1 / 1 point
+
+lambda
+
+
+async
+
+
+assert 
+
+
+yield
+
+Correct
+Correct! Assert equates to the boolean result of the statements.
+
+4.
+Question 4
+Which of the following ‘V’s’ is not identified as a main characteristic of Big Data?
+
+1 / 1 point
+
+Volume
+
+
+Velocity
+
+
+Variety
+
+
+Variability
+
+Correct
+Correct! Variety is not identified as a main characteristic of Big Data.
+
+5.
+Question 5
+What will be the output of the following piece of code:
+
+from math import pi
+print(math.pi)
+
+There will be no output
+
+
+3.141592653589793
+
+
+NameError: name ‘math’ is not defined
+
+
+ImportError: No module named math
+
+Correct
+Correct! This is the correct output of the code.
+
+6.
+Question 6
+Which of the following is NOT primarily a package used for Image processing or data visualization?
+
+1 / 1 point
+
+Seaborn
+
+
+Scrapy
+
+
+Matplotlib
+
+
+OpenCV
+
+Correct
+Correct! Scrapy is used for web scraping. 
+
+7.
+Question 7
+_______ is/are the default package manager(s) for installing packages in Python.
+
+1 / 1 point
+
+Python Package Index (pypi)
+
+
+Python Standard Library
+
+
+Built-in Module
+
+
+pip
+
+Correct
+Correct! Pip is the default package manager for installing packages in Python.
+
+8.
+Question 8
+If you are working on some codeblock, which of the following can be 'imported' in it from external source? 
+
+Select all that apply.
+
+1 / 1 point
+
+Functions
+
+Correct
+Correct! You can import functions in a codeblock.
+
+
+Modules
+
+Correct
+Correct! You can import modules in a codeblock.
+
+
+Packages
+
+Correct
+Correct! You can import packages in a codeblock.
+
+
+Variables
+
+Correct
+Correct! You can import variables in a codeblock.

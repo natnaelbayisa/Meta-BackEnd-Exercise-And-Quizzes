@@ -1,0 +1,91 @@
+1.
+Question 1
+What makes SQL a popular database language? Select all that apply. 
+
+1 / 1 point
+
+It is a portable programming language.
+
+Correct
+Correct! SQL is a portable language that can be used without any problem on the different operating systems. 
+
+
+It works with different relational database management systems.
+
+Correct
+Correct! SQL works well with different database management systems such as Oracle, MySQL and Postgres.
+
+
+It is an easy programming language to understand and learn. 
+
+Correct
+Correct! It requires a few days or even hours to learn the basics and start running queries and retrieving data.
+
+2.
+Question 2
+Which of the following commands belong to the SQL data manipulation language (DML)? Select all that apply.
+
+1 / 1 point
+
+Create
+
+
+Insert
+
+Correct
+Correct! Insert is a main command of the Data Manipulation Language (DML) category in SQL. 
+
+
+Select
+
+Correct
+Correct! Select is a main command of the Data Manipulation Language (DML) category in SQL. 
+
+
+Update
+
+Correct
+Correct! Update is a main command of the Data Manipulation Language (DML) category in SQL.
+
+3.
+Question 3
+The SELECT command should be used to retrieve data from a database table. 
+
+1 / 1 point
+
+True
+
+
+False 
+
+Correct
+Correct! The SELECT command is used to select data from a database table. The data returned is stored in a result table, called the result-set.
+
+4.
+Question 4
+Which SQL syntax should be used to create a student table?
+
+1 / 1 point
+
+CREATE TABLE Student
+
+
+CREATE Student TABLE
+
+Correct
+Correct! This is the only way to create a student table.
+
+5.
+Question 5
+Choose the correct syntax to create a college database in SQL.
+
+1 / 1 point
+
+CREATE COLLEGE DATABASE
+
+
+CREATE DATABASE COLLEGE 
+
+Correct
+Correct! The database name must follow the DATABASE keyword.
+

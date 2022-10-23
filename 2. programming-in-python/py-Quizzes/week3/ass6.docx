@@ -1,0 +1,100 @@
+1.
+Question 1
+What was the part that you were not able to complete? Specify the line numbers in the 8 lines of code.
+
+The expected code for the program is as follows:
+
+class MyFirstClass():
+    print("Who wrote this?")
+    index = "Author-Book"
+    def hand_list(self, philosopher, book):
+        print(MyFirstClass.index)
+        print(philosopher + " wrote the book: " + book)
+whodunnit = MyFirstClass()
+whodunnit.hand_list("Sun Tzu", "The Art of War")
+
+
+
+
+​1
+
+
+None
+
+
+​4
+
+
+​6
+
+
+​7
+
+
+​3
+
+
+​8
+
+
+​2
+
+
+​5
+
+
+2.
+Question 2
+Which of the following is the class variable in the code above?
+
+1 / 1 point
+
+MyFirstClass
+
+
+index
+
+
+philosopher
+
+
+whodunnit
+
+Correct
+Correct! This is the class variable as it is declared within the class
+
+
+3.
+Question 3
+How will you modify the code below if you want to include a “year” of publication in the output?
+
+class MyFirstClass():
+    print("Who wrote this?")
+    index = "Author-Book"
+    def hand_list(self, philosopher, book):
+        print(MyFirstClass.index)
+        print(philosopher + " wrote the book: " + book)
+whodunnit = MyFirstClass()
+whodunnit.hand_list("Sun Tzu", "The Art of War")
+
+Insert your suggestions below
+class MyFirstClass():
+print("Who wrote this?")
+index = "Author-Book"
+def hand_list(self, philosopher, book, year):
+print(MyFirstClass.index)
+print(philosopher + " wrote the book: " + book + "Published on " + str(year) )
+whodunnit = MyFirstClass()
+whodunnit.hand_list("Sun Tzu", "The Art of War", 1990)
+
+ans:
+Correct
+Modify line numbers 4, 6 and 8 such as:
+
+def hand_list(self, philosopher, book, year):
+
+print(philosopher + " wrote the book: " + book + “in the year ” + year)
+ 
+
+whodunnit.hand_list("Sun Tzu", "The Art of War", “5th century BC”)
+

@@ -1,0 +1,36 @@
+﻿1.Dynamic content is faster to generate than static content.
+
+A. True
+
+B. False
+
+2.Single Page Applications allow users to interact with a website without re-downloading the entire webpage.
+
+A. True
+
+B. False
+
+3.React applications are built using reusable pieces of code called ______________.
+
+A. Elements
+
+B. Components
+
+C. Code snippets
+
+4.To improve performance, React uses a ______________ to reduce updates to the browser DOM.
+
+A. New DOM
+
+B. Copy DOM
+
+C. Virtual DOM
+
+5.React applications have at least 1 component called the ______________ component.
+
+A. Origin
+
+B. Tree
+
+C. Root
+

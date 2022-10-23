@@ -1,0 +1,94 @@
+1. Python is a dynamically typed language. What does this mean?
+
+A. Python requires you to explicitly set the correct data type  and value before assigning a variable. 
+
+B. Python does not require a type for a variable declaration. It automatically      assigns the data type at run time. 
+
+C. Python requires that you specify the type of variable before it being assigned. 
+
+D. Python supports both functional and object oriented programming. 
+
+2. How do you create a block in Python?
+
+A. A block is created using a colon following by a new line and indentation
+
+B. A block is created by a new line
+
+C. A block is created using a semi colon and a new line
+
+D. A block is created using a semi colon and indentation
+
+3. When declaring variable in Python, can a variable name contain white space?
+
+A. Yes
+
+B. No
+
+4. How can a variable be deleted in python?
+
+A. The del keyword
+
+B. The def keyword
+
+C. A variable cannot be deleted
+
+D. The remove keyword
+
+5. In Python, how can you convert a number to a string?
+
+A. int()
+
+B. float()
+
+C. str()
+
+D. enumerate()
+
+6. An Integer - int in Python can be converted to type Float by using the float function?
+
+A. True
+
+B. False
+
+
+
+
+
+7. What is the purpose of break in a for loop in Python?
+
+A. To terminate the code
+
+B. It controls the flow of the loop and stops the current loop from executing any further.
+
+C. The break statement will suspend the code until continue is run. 
+
+D. The break keywork is used to debug a for loop. 
+
+8. An enumerate function is used to provide the index of the current iteration of a for loop.
+
+A. True
+
+B. False
+
+9. What will be the output of the code below:
+
+a = isinstance(str, "aa")
+
+print(a)  
+
+A. It will throw an error. 
+
+B. “aa”  
+
+10. Select all the valid input() formats among the following.
+
+Select all that apply  
+
+A.  "" = input("My name is: " + name)  
+
+B. name = input("What is your name? ")  
+
+C.  input("")  
+
+D.  input()  
+

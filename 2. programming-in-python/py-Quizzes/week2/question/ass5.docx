@@ -1,0 +1,50 @@
+1. What function allows reading and writing files in Python?
+
+A. output()
+
+B. read_write()
+
+C. open()
+
+D. input()
+
+2. Which method allows reading of only a single line of a file containing multiple lines?
+
+A. read()
+
+B. readall()
+
+C. readlines()
+
+D. readline()
+
+3. What is the default mode for opening a file in python?
+
+A. read and write
+
+B. read mode
+
+C. copy mode
+
+D. write mode
+
+4. What is the difference between write and append mode?
+
+A. Nothing, they are both the same.
+
+B. Write mode overwrites the existing data. Append mode adds new data to the existing file.
+
+C. Write mode will append data to the existing file. Append will overwrite the data. 
+
+D. Write mode will not allow edits if content already exists. Append mode will add new data to the file.
+
+5. What error is returned if a file does not exist?
+
+A. LookupError
+
+B. FileNotFoundError
+
+C. AssertionError 
+
+D. Exception
+

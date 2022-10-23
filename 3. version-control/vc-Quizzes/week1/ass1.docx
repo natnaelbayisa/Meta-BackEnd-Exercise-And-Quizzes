@@ -1,0 +1,98 @@
+1.
+Question 1
+Which of the following are the benefits of using Version Control? 
+
+Select all that apply.
+
+1 / 1 point
+
+Identity
+
+Correct
+Correct! Version Control allows you to identify who made changes to a file, when they were made and what changes occurred.
+
+
+Revert / Rollback
+
+Correct
+Correct! Version Control allows you to set your files to a previous state at a specific point in time.
+
+
+Collaboration
+
+Correct
+Correct! Version Control allows multiple developers to collaborate on a codebase with each other.
+
+2.
+Question 2
+When multiple developers work on the same file, a merge conflict will never occur.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! When a conflict occurs, it will need to be resolved by a developer.
+
+3.
+Question 3
+Revision History is a record of all changes within a project. It allows you to pinpoint who made the changes, when they were made and what was changed.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! When files are changed, the changes are tracked through the Revision History.
+
+4.
+Question 4
+Which of the following are centralised Version Control Systems? Select all that apply.
+
+1 / 1 point
+
+Concurrent Versions System
+
+Correct
+Correct! CVS is a centralised version control system.
+
+
+Mercurial
+
+
+Subversion
+
+Correct
+Correct! Subversion is a centralised version control system.
+
+
+Git
+
+5.
+Question 5
+Which of the following complements Version Control during software development? Select all that apply.
+
+1 / 1 point
+
+Continuous Integration
+
+Correct
+Correct! Continuous Integration is used to automatically integrate code changes.    
+
+
+Continuous Delivery
+
+Correct
+Correct! Continuous Delivery automatically packages the application and prepares it for deployment.
+
+
+Continuous Deployment
+
+Correct
+Correct! Continuous Deployment helps to deploy the application to customers frequently.

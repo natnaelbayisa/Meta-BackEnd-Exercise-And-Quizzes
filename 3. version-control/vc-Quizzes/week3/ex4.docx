@@ -1,0 +1,180 @@
+1.
+Question 1
+Which of the following is a Centralised Version Control System?
+
+1 / 1 point
+
+Subversion
+
+
+Git
+
+
+Mercurial
+
+Correct
+That's correct! Subversion is a Centralised Version Control System.
+
+2.
+Question 2
+In Bash, which of the following commands will list the contents of a directory?
+
+1 / 1 point
+
+cd
+
+
+mkdir
+
+
+ls
+
+Correct
+That's correct! The ls command is the list command.
+
+3.
+Question 3
+In Bash, which of the following commands will move a file?
+
+1 / 1 point
+
+pwd
+
+
+mv
+
+
+touch
+
+Correct
+That's correct! The mv command will move a file.
+
+4.
+Question 4
+In Bash, which of the following is used to send the output of one command as the input to another command?
+
+1 / 1 point
+
+Pipe
+
+
+Grep
+
+
+Uniq
+
+Correct
+That's correct! A pipe can pass the output of a command as the input to another.
+
+5.
+Question 5
+Which Git command is used to initally download a repository to a directory?
+
+1 / 1 point
+
+git clone
+
+
+git pull
+
+
+git push
+
+Correct
+That's correct! The git clone command will initially download a repository to a local directory.
+
+6.
+Question 6
+Which Git command is used to move local changes to the Git staging area?
+
+1 / 1 point
+
+git add
+
+
+git commit
+
+
+git restore
+
+Correct
+That's correct! The git add command will add your local changes to the staging area.
+
+7.
+Question 7
+Which of the following Git commands can be used to create a local branch named test? Select all that apply.
+
+1 / 1 point
+
+git branch test
+
+Correct
+That's correct! The git branch test command will create a local branch named test.
+
+
+git checkout -b test
+
+Correct
+That's correct! The git checkout -b test command will create a local branch named test and switch the current branch to the test branch.
+
+
+git push origin test
+
+8.
+Question 8
+Which Git command is used to check changes in a file line by line?
+
+1 / 1 point
+
+git status
+
+
+git diff
+
+
+git remote -v
+
+Correct
+That's correct! The git diff commands allows you to inspect file changes line by line.
+
+9.
+Question 9
+In the following differential output, which is the first deleted line?
+
+@@ @@
+Red
++Blue
+-Green
+-Yellow
+
+
+
+Red
+
+
+Blue
+
+
+Green
+
+
+Yellow
+
+Correct
+That's correct! The Green line is the first deleted line.
+
+10.
+Question 10
+True or false. When submitting changes from your forked repository on Github to the original repository, you submit a pull request.
+
+1 / 1 point
+
+true
+
+
+false
+
+Correct
+That's correct! Submitting a pull request is a popular workflow for contributing to open-source repositories.
+
+

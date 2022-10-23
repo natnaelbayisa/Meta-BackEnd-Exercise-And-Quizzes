@@ -1,0 +1,107 @@
+1.
+Question 1
+State whether the following statement is True or False:
+
+“Integration testing is where the application or software is tested as a whole and tested against the set requirements and expectations to ensure completeness”
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Integration testing is where the application or software is tested as a whole and tested against the set requirements and expectations to ensure completeness.
+
+2.
+Question 2
+Which of the following is NOT primarily one of the four levels in testing?
+
+1 / 1 point
+
+Integration testing
+
+
+Acceptance testing
+
+
+Regression testing
+
+
+Unit testing
+
+
+System testing
+
+Correct
+Correct! Regression testing is a type of stress testing that ensures stability of code.
+
+3.
+Question 3
+Which of the following can be considered a valid testing scenario? (Select all that apply.)
+
+1 / 1 point
+
+Check for negative value acceptance in numeric field 
+
+Correct
+Correct! Checking for negative value acceptance in numeric field is considered a valid testing scenario.
+
+
+Deletion or form updation should request confirmation
+
+Correct
+Correct! Deletion or form updation requesting confirmation is considered a valid testing scenario.
+
+
+Broken links and images should be checked before loading a webpage
+
+Correct
+Correct! Checking broken links and images before loading a webpage is considered a valid testing scenario.
+
+
+If the webpage resizes appropriately according to the device in use
+
+Correct
+Correct! If the webpage resizes appropriately according to the device in use is considered a valid testing scenario.
+
+4.
+Question 4
+What can be considered as an ideal testing scenario?
+
+1 / 1 point
+
+Writing the least number of tests to find largest number of defects.
+
+
+Using the minimal number of testing tools to find defects.
+
+
+Designing test cases in the shortest amount of time.
+
+
+Finding the maximum bugs and errors. 
+
+Correct
+Correct! Writing the least number of tests to find largest number of defects is the ideal testing scenario.
+
+5.
+Question 5
+Which job roles are not always a part of the testing lifecycle working on an application or product?
+
+1 / 1 point
+
+Project Manager
+
+
+Tester
+
+
+Stakeholder
+
+
+Programmers other than tester
+
+Correct
+Correct! Stakeholders and end-users may or may not participate in the testing lifecycle.

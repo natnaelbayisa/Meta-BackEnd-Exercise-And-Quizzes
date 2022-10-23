@@ -1,0 +1,68 @@
+1.If a library depends on another library, it forms a ______________.
+
+A. Framework Tree
+
+B. Dependency Tree
+
+C. Dependency Document
+
+D. Library Box
+
+2.How many columns does Bootstrap's responsive grid consist of?
+
+A.10
+
+B. 8
+
+C. 14
+
+D. 12
+
+3. To change the style of a Bootstrap component, you use  ______________.
+
+A. an infix
+
+B. a modifier
+
+4.To improve performance, web servers can keep a copy of dynamic content in a ______________.
+
+A. Cloud
+
+B. Cache
+
+C. DOM
+
+5.What are the two main approaches for serving code and resources in a Single Page Application called? Select two.
+
+A. Packets
+
+B. Bundling
+
+C. Code Boxing
+
+D. Code Splitting
+
+6.React is a ______________ that can be used to create single page applications.
+
+A. Library
+
+B. Framework
+
+7.Components allow developers to improve development efficiency by reusing code.
+
+A. True
+
+B. False
+
+
+8.A React application is built up of a tree of components called the Component ______________.
+
+A. Branch
+
+B. Root
+
+C. Hierarchy
+
+D. Library
+
+

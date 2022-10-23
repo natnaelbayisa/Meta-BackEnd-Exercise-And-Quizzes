@@ -1,0 +1,188 @@
+1.
+Question 1
+What is the most used database type in computing?
+
+1 / 1 point
+
+Flat File Database
+
+
+Relational Database
+
+
+NoSQL Database
+
+Correct
+Correct! Relational databases are the most popular type of databases because of their simplicity, robustness and scalability.
+
+2.
+Question 2
+Which one of the following is an advantage of storing data in tables?
+
+1 / 1 point
+
+Tables provide a simple and clear view of data 
+
+
+Tables let you store large amounts of data.
+
+
+Tables offer the ability to encrypt data.
+
+Correct
+Correct! Tables are a very good technique to organize data as it provides a simple and clear view of data in the database. 
+
+3.
+Question 3
+In a bookshop database, the complete information about one specific book is referred to as a ______________.
+
+1 / 1 point
+
+Column
+
+
+Record
+
+
+Table
+
+Correct
+Correct! In a bookshop database, a record of data contains all available information about a specific book.
+
+4.
+Question 4
+What makes SQL a very popular database language? Select all that apply.
+
+1 / 1 point
+
+SQL requires very little coding skills to use.
+
+Correct
+Correct! SQL requires less coding skill in comparison with other programming languages.
+
+
+SQL works with different relational database management systems.
+
+Correct
+Correct. SQL can be used with different relational database management systems.
+
+
+SQL is a portable programming language.
+
+Correct
+Correct. SQL can be used with any laptop or computer that has MySQL installed.
+
+5.
+Question 5
+Which SQL command is used to update data in a database table? 
+
+1 / 1 point
+
+MODIFY command 
+
+
+EDIT command 
+
+
+UPDATE command 
+
+Correct
+Correct! The UPDATE command is used to modify or update data contained within a table in the database. 
+
+6.
+Question 6
+Which of the following database management systems uses the SQL language? Select all that apply.
+
+1 / 1 point
+
+MySQL
+
+Correct
+Correct. MySQL database management system uses SQL. 
+
+
+Oracle
+
+Correct
+Correct. Oracle database management system uses SQL.
+
+
+PostgreSQL
+
+Correct
+Correct. PostgreSQL database management system uses SQL.
+
+7.
+Question 7
+What is the importance of a candidate key in a database? 
+
+1 / 1 point
+
+A candidate key can be used to drop a table.
+
+
+A candidate key can be used to uniquely identify rows in a table.
+
+
+A candidate key can be used to encrypt data in a table.
+
+Correct
+Correct! A candidate key is a column that contains unique value in each row of the table, which makes it suitable to be chosen as a primary key. 
+
+8.
+Question 8
+In the following student table, which attribute could be used as a primary key?
+
+Student first name      Student last name       Mobile number
+Carl                    Merlo                   07445532123
+Mark                    Nero                    07456532327
+
+
+
+Mobile number
+
+
+Student last name
+
+
+Student first name
+
+Correct
+Correct! Since the mobile phone number is unique for each student, then it can be chosen as primary key. 
+
+9.
+Question 9
+CREATE TABLE student is the right syntax to create a student table in SQL.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! This is the right way to create a student table in SQL.
+
+10.
+Question 10
+Choose the right syntax to create a club database in SQL. Select all correct answers.
+
+1 / 1 point
+
+create club database
+
+
+create database club
+
+Correct
+Correct! You can use small letters as SQL is not a case sensitive language, however, the convention is to use capital letters for the SQL commands and keywords. 
+
+
+CREATE CLUB DATABASE
+
+
+CREATE DATABASE CLUB
+
+Correct
+Correct! You can use capital letters as SQL is not a case sensitive language. 

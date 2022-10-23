@@ -1,0 +1,55 @@
+1.
+Question 1
+A college database contains a table called “Students” that has three columns: username, full name and email address. The username column contains alphanumeric values such as “St001” and has a fixed length of five characters. Select the correct SQL syntax for the username column.
+
+1 / 1 point
+
+username CHAR(5)
+
+
+username VARCHAR(5)
+
+Correct
+Correct! The username has a fixed length of 5 characters. 
+
+2.
+Question 2
+Which of the following SQL statements uses the right syntax to create the Student table in a college database with character limits? 
+
+1 / 1 point
+
+CREATE TABLE students (username CHAR(5), fullName VARCHAR(100), email VARCHAR(255)); 
+
+
+CREATE TABLE students (username CHAR, fullName VARCHAR, email VARCHAR); 
+
+Correct
+Correct! This is the right SQL statement, because it defines all columns with suitable character lengths.
+
+3.
+Question 3
+You are sourcing feedback from students on college services. Each student can provide up to 10000 characters worth of feedback in an online form, which will then be stored in a database. Identify the correct SQL syntax to create the “Feedback” column.
+
+1 / 1 point
+
+article CHAR(10000)
+
+
+article TEXT(10000)
+
+Correct
+Correct! TEXT is a string datatype that can be used to define columns requiring less than 65535 characters such as the body content of an article.
+
+4.
+Question 4
+TINYTEXT is a string data type used to define columns with small letter characters only. 
+
+1 / 1 point
+
+False
+
+
+True
+
+Correct
+Correct! With TINYTEXT, columns can hold any type of character and a maximum length of 255 characters.

@@ -1,0 +1,154 @@
+1.
+Question 1
+True or False: A class can serve as a base class for many derived classes. 
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Theoretically it can be superclass for infinite subclasses.  
+
+2.
+Question 2
+In case of multiple inheritance where C is a derived class inheriting from both class A and B, and where a and b are the respective objects for these classes, which of the following code will inherit the classes A and B correctly? (Select all that apply)
+
+1 / 1 point
+
+class C(B, A)
+
+Correct
+Correct! Code works irrespective of the order the classes are passed. 
+
+
+class(a, B)
+
+
+class C(A, B)
+
+Correct
+Correct! Code works irrespective of the order the classes are passed. 
+
+
+class (a, b)
+
+3.
+Question 3
+In Example 3 of the previous exercise, if we had modified the code to include a global variable ‘a = 5’ as follows:
+
+a = 5
+class A:
+      a = 7
+      pass
+
+class B(A):
+      pass
+
+class C(B):
+      pass
+
+c = C()
+print(c.a())
+
+Question 3
+In Example 3 of the previous exercise, if we had modified the code to include a global variable ‘a = 5’ as follows:
+
+13
+a = 5
+class A:
+      a = 7
+      pass
+
+class B(A):
+      pass
+
+class C(B):
+      pass
+
+c = C()
+print(c.a())
+Will the code work and what will be the output if it does?
+
+1 / 1 point
+
+Yes and it will print the value 7
+
+
+Yes and it will print the value 5
+
+
+No
+
+Correct
+Correct! As the print statement is over the object c. 
+
+
+4.
+Question 4
+What function can be used other than mro() to see the way classes are inherited in a given piece of code?
+
+1 / 1 point
+
+class()
+
+
+info()
+
+
+help()
+
+
+dir()
+
+Correct
+Correct! help() can be used other than mro() to see the way classes are inherited in a given piece of code.
+
+5.
+Question 5
+The super() function is used to? (Select all that apply)
+
+1 / 1 point
+
+call child class __init__()
+
+Correct
+Correct! It is called over child class __init__() and refers parent class __init__()
+
+
+call different parent class method
+
+
+called over the __init__() method of the class it is called from
+
+Correct
+Correct. That will refer the __init__() of parent class. 
+
+6.
+Question 6
+What is the type of inheritance in the code below:
+
+class A():
+    pass
+class B(A):
+    pass
+class C(B):
+    pass
+
+
+
+Single
+
+
+Multiple
+
+
+Hierarchical
+
+
+Multi-level
+
+Correct
+Correct! Multi-level is the type of inheritance in the code

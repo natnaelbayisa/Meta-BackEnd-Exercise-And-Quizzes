@@ -1,0 +1,98 @@
+1.
+Question 1
+Which of the following can be used for commenting a piece of code in Python?
+
+Select all the correct answers.
+
+1 / 1 point
+
+( # ) - Hashtag
+
+Correct
+Correct! Hashtags is used for commenting. 
+
+
+({ } ) – Curly braces
+
+
+( @ ) – at sign
+
+
+(‘’’ ‘’’) – Triple quotations
+
+Correct
+Correct! These are called as docstrings and used for commenting. 
+
+
+2.
+Question 2
+What will be the output of running the following code:
+
+value = 7
+class A:
+    value = 5
+a = A()
+a.value = 3
+print(value)
+
+
+
+3
+
+
+7
+
+
+None
+
+
+5
+
+Correct
+Correct! This will be the output for value.
+
+3.
+Question 3
+What will be the output of the following code:
+
+bravo = 3
+b = B()
+class B:
+    bravo = 5
+    print("Inside class B")
+c = B()
+print(b.bravo)
+
+
+
+Error
+
+
+3
+
+
+No output
+
+
+5
+
+Correct
+Correct! NameError: name 'B' is not defined.
+
+4.
+Question 4
+Which of the following keywords allows the program to continue execution without impacting any functionality or flow?
+
+1 / 1 point
+
+break
+
+
+skip
+
+
+pass
+
+Correct
+Correct! It can be used in class, function declarations as well as conditional statements.
+

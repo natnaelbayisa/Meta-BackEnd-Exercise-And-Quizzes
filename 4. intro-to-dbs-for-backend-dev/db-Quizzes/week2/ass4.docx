@@ -1,0 +1,75 @@
+1.
+Question 1
+A soccer club’s database includes a “Players” table. The table contains a “Player number” column that records the jersey number of each player in the team. Each jersey number is a whole number. Identify the correct data type for this column.
+
+1 / 1 point
+
+DECIMAL
+
+
+TINYINT 
+
+Correct
+Correct! TINYINT is an integer data type that accepts whole numbers only.
+
+2.
+Question 2
+In a sports club database, the “Players” table includes a date of birth column that records the date of birth for each player. The right SQL data type to define the player date of birth is DOB VARCHAR(100).
+
+1 / 1 point
+
+False
+
+
+True
+
+Correct
+Correct! The Date is the right data type in this case. 
+
+3.
+Question 3
+Which one of the following SQL statements makes use of the correct data types to create a "Players" table in a soccer club’s database?
+
+1 / 1 point
+
+CREATE TABLE players (playerNumber INT, fullName VARCHAR(100), date_of_birth DATE);
+
+
+CREATE TABLE players (playerNumber Decimal, fullName VARCHAR(100), date_of_birth DATE);
+
+
+CREATE TABLE players (playerNumber INT, fullName VARCHAR(100), date_of_birth CHAR);
+
+Correct
+Correct! All columns have been defined with suitable data types.
+
+4.
+Question 4
+A soccer club’s database includes a staff table with three columns: username, full name and title. The username contains alphanumeric values such as: “Staff001” and has a fixed length of eight characters. Select the right SQL syntax.
+
+1 / 1 point
+
+username VARCHAR(7)
+
+
+username CHAR(7)
+
+Correct
+Correct! Because the username has a fixed length of 7 characters. 
+
+5.
+Question 5
+The following SQL statement can be used to create a table called “Players”, with a default value of “Miami” for the city column.
+
+CREATE TABLE players (playerName VARCHAR(100), city VARCHAR(50) DEFAULT “Miami”, age INT);
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! This SQL statement can be used to create a table called “Players”, with a default value of “Miami” for the city column.
+

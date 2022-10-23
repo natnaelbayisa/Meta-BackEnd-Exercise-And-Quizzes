@@ -1,0 +1,188 @@
+1.
+Question 1
+The code that runs on the web server is commonly known as _____________.
+
+1 / 1 point
+
+Hardware
+
+
+Software
+
+Correct
+Well done. The code is the software and the physical components are the hardware.
+
+2.
+Question 2
+In the web browser, what is the role of HTML?
+
+1 / 1 point
+
+To describe the content of the web page
+
+
+To provide interactivity and data processing
+
+
+To describe the visual look and layout
+
+Correct
+Well done. HTML describes the content of the web page.
+
+3.
+Question 3
+Which of the following issues does UDP solve? Select all that apply.
+
+1 / 1 point
+
+Out of order data
+
+
+Corrupted data
+
+Correct
+Well done. UDP prevents data corruption but data can still arrive out of order or not arrive at all.
+
+
+Lost data
+
+
+4.
+Question 4
+What will display on the web page inside the web browser for the following HTML document?
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon</title>
+</head>
+<body>
+    <p>Our Menu</p>
+</body>
+</html>
+
+
+
+
+Little Lemon
+
+
+Our Menu
+
+Correct
+Well done. The content inside the body element displays on the web page.
+
+
+5.
+Question 5
+Which of the following image elements is correct?
+
+<image src="dog.png">
+<img href="cat.png">
+<img src="mouse.png">
+
+
+<image src="dog.png">
+
+
+<img href="cat.png">
+
+
+<img src="mouse.png">
+
+Correct
+Well done. The image element is defined using the img tag and src attribute.
+
+6.
+Question 6
+In the following CSS rule, what is the width: 50%; part of the rule known as?
+
+div {
+    width: 50%;
+}
+
+
+Property
+
+
+Selector
+
+
+Attribute
+
+Correct
+Well done. CSS Properties are defined inside the curly brackets.
+
+7.
+Question 7
+What is the margin-box width for the following CSS rule?
+
+div {
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+20 pixels
+
+
+40 pixels
+
+
+60 pixels
+
+Correct
+Well done. The margin-box width is the content width + padding width + border width + margin width.
+
+8.
+Question 8
+True or False. The libraries which our application depends on can be combined into a single file using code bundling.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Well done. Code bundling helps to optimise the delivery of libraries to the web browser.
+
+9.
+Question 9
+In the following HTML, Bootstrap grid CSS class col-xl-6 is applied to the div element. What is the xl part of the class known as?
+
+<div class="col-xl-6">
+
+</div>
+
+Infix
+
+
+Modifier
+
+
+Component
+
+Correct
+Well done. Infixes represent the responsive breakpoints in the Bootstrap grid.
+
+10.
+Question 10
+React stores a representation of the browser DOM in memory. What is this representation called?
+
+1 / 1 point
+
+The Virtual DOM
+
+
+The Memory DOM
+
+
+The Copy DOM
+
+Correct
+Well done. The virtual DOM is used to represent the browser DOM in memory.
+

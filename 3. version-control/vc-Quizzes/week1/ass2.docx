@@ -1,0 +1,138 @@
+1.
+Question 1
+What is Revision History in Version Control?
+
+1 / 1 point
+
+A record of all changes in a project
+
+
+A record of all bugs in a project
+
+
+A record of all users in a project
+
+Correct
+Correct! Revision History is a record of all changes within a project. It allows you to pinpoint who made the changes, when they were made and what was changed.
+
+2.
+Question 2
+When using a Distributed Version Control System, a connection to a central server is always required to perform an action.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! In a DVCS, you can work in an offline state and only connect to a server to push and pull changes.
+
+3.
+Question 3
+A Version Control system allows you to roll back your files back to a specific point in time. 
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Revert/Rollback is a common feature in version control systems.
+
+4.
+Question 4
+When using a Centralised Version Control system, for other developers to see your changes you must commit them to a central server.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! All actions must be done through the central server.
+
+5.
+Question 5
+Version Control is inefficient when multiple developers work on one project.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Version Control combined with testing and automation allows a development team to work efficiently.
+
+6.
+Question 6
+__________________ automatically packages an application and prepares it for deployment.
+
+1 / 1 point
+
+Continuous Deployment
+
+
+Continuous Delivery
+
+
+Continuous Integration
+
+Correct
+Correct! Continuous Delivery automatically packages the application and prepares it for deployment.
+
+7.
+Question 7
+Which of the following are distributed Version Control Systems? Select all that apply.
+
+1 / 1 point
+
+Git
+
+Correct
+Correct! Git is a distributed version control system.
+
+
+Concurrent Versions System
+
+
+Mercurial
+
+Correct
+Correct! Mercurial is a distributed version control system.
+
+
+Subversion
+
+8.
+Question 8
+What are the main benefits of having a staging environment?
+
+1 / 1 point
+
+A staging environment mimics the production environment which allows for more accurate testing to find any possible issues. 
+
+Correct
+Correct! Having the same setup as the production environment gives peace of mind that the changes being introduced are not going to cause issues when released to production. 
+
+
+It allows developers to add new features directly to production. 
+
+
+It provides a safe place to test and verify changes prior to being deployed to a live production environment.
+
+Correct
+Correct! Staging is its own environment and any changes made to it do not affect the production environment in any way. It is completely isolated.
+
+
+It can allow teams to demo or showcase new features in a controlled environment.
+
+Correct
+Correct! Staging can be used to demo new features and changes without impacting the production site. 

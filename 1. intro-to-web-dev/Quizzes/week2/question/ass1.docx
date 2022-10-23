@@ -1,0 +1,51 @@
+﻿1.An HTML document begins with ______________.
+
+
+A. The html tag
+
+
+B. The DOCTYPE declaration
+
+
+C. The head tag
+
+
+D. The body tag
+
+
+2.To display a link to another HTML document, the ______________ tag is used.
+
+A. link
+
+B. html
+
+C. anchor (a)
+
+D. img
+
+3. To add an image to a webpage, the ______________ tag is used.
+
+A. img
+
+B. image
+
+C. anchor (a)
+
+D. link
+
+4. To represent the HTML document in JavaScript, the browser builds  _____________.
+
+A. an HTML Element Model
+
+B. an HTML Script
+
+C. Document Object Model
+
+5. Which of the following answer choices improves web accessibility for people with disabilities? Select all that apply.
+
+A. Correct HTML structure
+
+B. Accessible Rich Internet Application (ARIA) techniques
+
+C. Appropriate use of HTML elements
+

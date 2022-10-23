@@ -1,0 +1,113 @@
+﻿1.The code that runs on the web server is commonly known as _____________.
+
+A. Hardware
+
+B. Software
+
+2.In the web browser, what is the role of HTML?
+
+A. To describe the content of the web page
+
+B. To provide interactivity and data processing
+
+C. To describe the visual look and layout
+
+3.Which of the following issues does UDP solve? Select all that apply.
+
+A. Out of order data
+
+B. Corrupted data
+
+C. Lost data
+
+4.What will display on the web page inside the web browser for the following HTML document?
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Little Lemon</title>
+</head>
+<body>
+    <p>Our Menu</p>
+</body>
+</html>
+
+A. Little Lemon
+
+B. Our Menu
+
+5.Which of the following image elements is correct?
+
+<image src="dog.png">
+<img href="cat.png">
+<img src="mouse.png">
+
+A. <image src="dog.png">
+
+B. <img href="cat.png">
+
+C. <img src="mouse.png">
+
+
+
+
+
+
+
+
+
+6.In the following CSS rule, what is the width: 50%; part of the rule known as?
+
+div {
+    width: 50%;
+}
+
+A. Property
+
+B. Selector
+
+C.Attribute
+
+
+7.What is the margin-box width for the following CSS rule?
+
+div {
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+A. 20 pixels
+
+B. 40 pixels
+
+C. 60 pixels
+
+8.True or False. The libraries which our application depends on can be combined into a single file using code bundling.
+
+A. True
+
+C. False
+
+9.In the following HTML, Bootstrap grid CSS class col-xl-6 is applied to the div element. What is the xl part of the class known as?
+
+<div class="col-xl-6">
+
+</div>
+
+A. Infix
+
+B. Modifier
+
+C. Component
+
+10.React stores a representation of the browser DOM in memory. What is this representation called?
+
+A. The Virtual DOM
+
+B. The Memory DOM
+
+C. The Copy DOM
+

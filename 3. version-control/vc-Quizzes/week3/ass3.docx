@@ -1,0 +1,142 @@
+1.
+Question 1
+The git add command will add files and changes to the staged area.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! git add will add your changes to the staged area.
+
+2.
+Question 2
+What git command will show you the current state of the local working directory?
+
+1 / 1 point
+
+git clone
+
+
+git status
+
+
+git pull
+
+Correct
+Correct! Git status will show the state of the working directory. 
+
+3.
+Question 3
+What command do you use to upload changes to a remote repository?
+
+1 / 1 point
+
+git push
+
+
+git clone
+
+
+git commit
+
+Correct
+Correct! git push will upload changes to a remote repository.
+
+4.
+Question 4
+The git diff command will show the revision history of a repository.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct. git diff is used to inspect current changes or changes between two specific commits. The git log command will show the revision history.
+
+5.
+Question 5
+Which command is used to download the latest changes from a remote repository?
+
+1 / 1 point
+
+git pull
+
+
+git push
+
+Correct
+Correct! git pull will download the latest changes.
+
+6.
+Question 6
+You want to create a new branch named “feature”. Which of the following commands can you use?
+
+1 / 1 point
+
+git checkout -b feature
+
+Correct
+Correct! This will create the branch and move you into that branch.
+
+
+git clone feature
+
+
+git branch feature
+
+Correct
+Correct! This is will create the branch. You will need to use git checkout to move into the branch.
+
+7.
+Question 7
+You’re working on a clothing store application and run the git diff command on your local repository. It outputs the lines below. Which clothing item was removed as part of these changes?
+
+@@ -4,8 +4,8 @@
+ * Hat
+-* Shoes
++* Dress
+ * Watch
+
+
+
+Watch
+
+
+Shoes
+
+
+Dress
+
+
+Hat
+
+Correct
+Correct!  The Shoes line was removed and the Dress line was added.
+
+8.
+Question 8
+What command in git can be used to show all changes made by each developer?
+
+1 / 1 point
+
+git blame
+
+
+git clone
+
+
+git diff
+
+
+git log
+
+Correct
+Correct! Git blame will show all changes made on a specific file. 
+

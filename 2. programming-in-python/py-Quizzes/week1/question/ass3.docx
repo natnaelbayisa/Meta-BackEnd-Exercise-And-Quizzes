@@ -1,0 +1,18 @@
+﻿1. Python for loops work on any type of sequence data type including strings.
+
+A. True
+
+B. False
+
+2. The enumerate function is used to provide the index of current iteration of a for loop.
+
+A. True
+
+B. False
+
+3. A break statement can be used to exit out of a for loop based on a certain condition being satisified.
+
+A. True
+
+B. False
+

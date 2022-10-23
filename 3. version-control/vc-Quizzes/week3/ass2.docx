@@ -1,0 +1,54 @@
+1.
+Question 1
+In git, the default branch of a repo is called the ____________.
+
+1 / 1 point
+
+Primary Branch
+
+
+Secondary Branch
+
+
+Super Branch
+
+
+Main Branch
+
+Correct
+Correct! The default branch is known as the main branch, or, master branch on older repositories.
+
+2.
+Question 2
+What is the request to merge forked changes called?
+
+1 / 1 point
+
+Push Request
+
+
+Code Request
+
+
+Pull Request
+
+Correct
+Correct! You open a pull request to request merging of your forked changes.
+
+3.
+Question 3
+When you clone a forked repository, what does origin refer to?
+
+1 / 1 point
+
+The forked repository
+
+
+Another developer’s repository
+
+
+The original repository
+
+Correct
+Correct! The origin will always default to the clone URL. In this case, the forked repository is the origin.
+

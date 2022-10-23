@@ -1,0 +1,845 @@
+                        What is a database?
+    -> A collection of organized data stored and accessed electronically. 
+    -> A database is a form of electronic storage in which data is organized systematically. It stores and manipulates data electronically to make it more manageable, efficient, and secure. 
+
+                        Object oriented databases
+    -> Data stored in the form of objects
+        e.g - onlinebook store.
+It’s possible to represent data according to OO concepts like inheritance and parent-child relationships among data. For example, an Author and Customer are both descendants of Person. Thus, a person is a generic entity that can represent both an Author and a Customer.
+
+                        Graph databases
+    -> Data stored in the fotm of nodes.
+    -> The relationship betwrrn nodes are called edges.
+
+                        Document databases
+    -> Data stored as JSON objects.
+
+            Where are the databases themselves stored?
+A database can be hosted on a dedicated machine within the premises of an organization, or it could be hosted on the Cloud. Cloud databases are currently a more popular choice. This is because they allow you to store, manage, and retrieve data to a Cloud platform and access data through the Internet. They all provide a lower-cost option for data management and other similar options.
+
+                        Primary Key
+Primary Key field contains unique values that cannot be replicated elsewhere in the table. This avoids potential confusion between tables with similarities in data.
+
+                        Relational databases
+    -> Used for storing structured data in tabular format.
+    -> Relational databases have limitations when it comes to storing data because they mostly store structured data.
+
+In a relational database system, data is stored in tables. The columns of the table hold attributes of the data. Each record usually has a value for each attribute, making it easy to establish the relationships between data points. In a relational database, each row in the table is a record with a unique ID attribute called the primary key. A relational database stores and provides access to data that are related to one another using an attribute known as a foreign key. 
+Here’s an example of what a Relational Database would look like. Here, there are tables with attributes/ columns that store rows/records of data in them. The relationships between data in tables are established using key columns known as foreign keys that are themselves primary key(s) of a given table. For example, the primary key of the PROFESSOR table is PROF_ID and in the CLASS table, it’s there as a foreign key. It creates the relationship between the PROFESSOR table and the CLASS table. Another example, the COURSE_ID is the primary key of the COURSE table, and it is there in the CLASS table as a foreign key. It establishes the relationship between the COURSE table and the CLASS table.   
+
+                        NoSQL databases
+    -> No sequel databases are a type of database that store data in a variety of different formats.
+    -> Essentially they provide databases with a flexible structure.  This makes scaling easy by facilitating a change to the database structure itself without the need for complex data models.
+    -> No sequel databases are used by social media platforms, the Internet of Things, artificial intelligence and other applications that generate massive amounts of unstructured data types of no sequel databases include document databases. Key value databases and graph databases. 
+
+                         These are some of the advantages of NoSQL databases:
+
+    -> Higher scalability
+    -> Distributed
+    -> Lower costs
+    -> A flexible schema
+    -> Can process unstructured and semi-structured data 
+    -> Has no complex relationships 
+
+Over time there were different types of NoSQL databases that were introduced:
+    -> Document databases store data in documents similar to JSON (JavaScript Object Notation) objects. Each document contains pairs of fields and values. The values can typically be a variety of types including things like strings, numbers, booleans, arrays, or objects. 
+    -> Key-value databases are a simpler type of database where each item contains keys and values. 
+    -> Wide-column databases store data in tables, rows, and dynamic columns.
+    -> Graph databases store data in nodes and edges. Nodes typically store information about people, places, and things, while edges store information about the relationships between the nodes. 
+
+                        Big data
+    -> Big data is complex data that can increase in volume with time. In other words is data that can grow exponentially with time. Where does this kind of complex data come from? Social media platforms, Online shopping sites and other services generate massive amounts of data every second of the day as they capture the actions of billions of users around the world and with the internet of things or IOT more and more devices are connected to the Internet, generating even more and more data. This is how complex data or big data is created. All this data is highly unstructured or semi structured.
+    -> Traditional database systems could deal with structured data using tables, records and relationships. But big data is a whole new challenge. Big data is a combination of structured, semi structured and unstructured data collected from many different sources and it adds more power to data because it can address complex business problems that traditionally structured data can't handle.
+    -> Big data helps to provide unique insights that can help to improve decision making. So it's highly valued across many industries. For example, the manufacturing sector processes big data to predict equipment failure by evaluating the current state of machinery, assess production processes by monitoring the production line, respond to customer feedback proactively and anticipate future demands by monitoring current sales, retail processes, big data to anticipate customer demand, improve customer experience, analyze customer behavior and spending patterns and identify pricing improvement opportunities. And the telecommunications sector utilizes big data analytics and network usage analytics to plan for infrastructure investments, design new services that meet customer demands, analyze service quality data to predict customer satisfaction and plan for customer retention mechanisms now that you're familiar with big data and how it helps to power businesses.
+
+                        Cloud databases
+    -> Organizations are moving to the cloud to free themselves from the difficulties of dealing with the infrastructure of physical servers like maintenance and storage costs. 
+    -> Some examples of cloud storage services include Dropbox and iCloud. With these cloud storage services, it's possible to store documents and other data on the cloud, a much more affordable solution.
+    -> Another trend and databases is business intelligence or B. I. Traditionally databases were just a means of storing data, but organizations now utilize their data with business intelligence related technologies and strategies with these technologies, organizations can analyze their data and extract valuable information to help them to make informed business decisions. New trends are constantly emerging in database technology and they'll keep advancing with time. But for now these were a few of the leading trends that you should be aware of
+
+                    How does a database interpret or read and execute instructions given using SQL?
+    -> A database interprets and make sense of SQL instructions with the use of a Database Management System or DBMS. As a web developer, you'll execute all SQL instructions on a database using a DBMS. The DBMS takes responsibility for transforming SQL instructions into a form that's understood by the underlying database. 
+
+                        What is Structured Query Language?
+    ->  SQL is the standard language that can be used with all databases. It's particularly useful when working with relational databases, which require a language that can interact with structured data. Some examples of relational databases that SQL can interact with include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. 
+    -> can be divided into many subsections or sub languages. These include DDL or data definition language. DML also known as data manipulation language. DQL or data query language. And DCL also called data control language. Let's take a closer look at these languages and their commands starting with data definition language or DDL.
+                        
+                        DDL - Data Definition Language
+        -> But what does it mean to define data? Before you can store data in the database. You need to create the database and related objects like tables in which your data will be stored. For this, the DDL part of SQL has a command named create.
+        -> DDL create command storage objects in a database, like tables.
+        
+        -> If you might need to modify the structure of a table by adding a new column. You can perform this task with the DDL alter command.
+        -> DDL Alter command modify the structure of a table Object in a database.
+        
+        -> You can remove an object like a table from a database using the DDL drop command.
+        -> DDL Drop command removing an existing object from the database 
+
+                        DML Data Manipulation Language
+        -> DML commands are used to manipulate data in the database, like inserting updating or deleting data. Most crude operations fall under DML.
+        -> To add data to a table, you can use the insert command.
+        -> DML INSERT command insret records of data into a database table.
+
+        -> If you need to edit data that's already inserted into a table, just deploy the update command 
+        -> DML UPDATE command edit data that already exists in a database model.
+
+        -> And you can specify data to be removed by using the delete command. 
+        -> DML DELETE command delete one or more rows  of data from a table.
+
+                        DQL Data Query Language
+        -> To read data stored in a database, you can use data query language.
+        -> DQL defines a select command to be able to retrieve data. Select lets you retrieve data from one or multiple tables letting you specify the data fields that you want based on preferred filter criteria.
+
+                        DCL Data Control Language
+        -> Data control language to control access to the database. For example, using DCL commands, you control access to data stored in the database. Grant and revoke DDL commands are used to give users access privileges to data, and to revert access privileges already given to users. 
+
+                        Advantages of SQL
+        -> SQL can run on any computer once you've database software installed. 
+        -> SQL is a portable language. Once you write your code, it can then be used in any hardware, on any operating system or platform wherever you need. If you write SQL code in a desktop and then move it to a production server environment, it will run the same in both locations.
+        -> SQL is a comprehensive language that covers all areas of database management administration. For example, it allows you to create databases, insert, update, and delete data, retrieve and share data among multiple users and manage database security. This is made possible through subsets of SQL like DDL or Data Definition Language, DML, also known as Data Manipulation Language, DQL or Data Query Language, and DCL, also known as Data Control Language. 
+        -> The final advantage of SQL is that it lets database users process large amounts of data quickly and efficiently.
+
+Generally SQL is a simple, standard, portable, comprehensive, and efficient language that can be used to communicate and work with relational databases. 
+
+
+                        Common SQL Commands
+The objective of this reading is to teach you how to name and explain the main commands in SQL. SQL is the most widely used database query language. It is designed for retrieving and managing data in a relational database. SQL can be used to perform different types of operations in the database such as accessing data, describing data, manipulating data and setting users roles and privileges (permissions). 
+Here you will learn about the main commands used in SQL. At a later stage you will explore relevant examples of how to use these commands with a detailed explanation of the SQL syntax for key operations such as to create, insert, update and delete data in the database. 
+The SQL Commands are grouped into four categories known as DDL, DML, DCL and TCL depending on their functionality, namely the type of operation they’re used to perform.  Let’s explore these commands in greater detail.
+
+                        Data Definition Language (DDL)
+The SQL DDL category provides commands for defining, deleting and modifying tables in a database. Use the following commands in this category.
+
+                        CREATE Command
+Purpose: To create the database or tables inside the database
+Syntax to create a table with three columns:
+CREATE TABLE table_name (column_name1 datatype(size), column_name2 datatype(size), column_name3 datatype(size));
+
+                        DROP Command 
+Purpose: To delete a database or a table inside the database. 
+Syntax to drop a table: DROP TABLE table_name; 
+
+                        ALTER Command 
+Purpose: To change the structure of the tables in the database such as changing the name of a table, adding a primary key to a table, or adding or deleting a column in a table.
+
+    1. Syntax to add a column into a table: ALTER TABLE table_name ADD (column_name datatype(size)); 
+
+    2. Syntax to add a primary key to a table: ALTER TABLE table_name ADD primary key (column_name);
+
+                        TRUNCATE Command
+Purpose: To remove all records from a table, which will empty the table but not delete the table itself. 
+
+Syntax to truncate a table: TRUNCATE TABLE table_name;
+
+                        COMMENT Command
+Purpose: To add comments to explain or document SQL statements by using double dash (--) at the start of the line. Any text after the double dash will not be executed as part of the SQL statement. These comments are not there to build the database. They are only for your own use.   
+
+Syntax to COMMENT a line in SQL: 
+    --Retrieve all data from a table
+    SELECT * FROM table_name; 
+
+                        Data Manipulation Language (DML)
+The SQL DML commands provide the ability to query, delete and update data in the database.  Use the following commands in this category.
+
+SELECT Command Purpose: To retrieve data from tables in the database. 
+
+Syntax to select data from a table: SELECT * FROM table_name;
+
+                    INSERT Command
+Purpose: To add records of data into an existing table. 
+Syntax to insert data into three columns in a table:
+
+INSERT INTO table_name (column1, column2, column3) VALUES (value1, value2, value3);
+
+                    UPDATE Command 
+Purpose: To modify or update data contained within a table in the database. 
+Syntax to update data in two columns:
+
+UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+
+                    DELETE Command
+Purpose: To delete data from a table in the database.
+
+Syntax to delete data: DELETE FROM table_name WHERE condition;
+
+                    Data Control Language (DCL)
+You use DCL to deal with the rights and permissions of users of a database system. You can execute SQL commands to perform different types of operations such as create and drop tables. To do this, you need to have user rights set up. This is called user privileges. This category deals with advanced functions or operations in the database. Note that this category can have a generic description of the two main commands. Use the following commands in this category:
+GRANT Command to provide the user of the database with the privileges required to allow users to access and manipulate the database.
+
+REVOKE Command to remove permissions from any user.
+
+                    Transaction Control Language (TCL) 
+The TCL commands are used to manage transactions in the database. These are used to manage the changes made to the data in a table by utilizing the DML commands. It also allows SQL statements to be grouped together into logical transactions. This category deals with advanced functions or operations in a database. Note that this category can have a generic description of the two main commands. Use the following commands in this category:
+
+
+COMMIT Command to save all the work you have already done in the database. 
+ROLLBACK Command to restore a database to the last committed state.
+
+                    Characteristics of a database table
+    -> A table relates to other tables in the same database.
+        -> In a database that holds multiple tables, the tables are referred to as “relations” because they“relate” to one another.​
+    -> A table is structured as a series of rows and columns.
+        -> Data in a table is organized into rows and columns.​
+    -> A table is sometimes also known as an “entity.”
+        -> A table also often referred to as an “entity” in a more logical sense.
+NOTE: A table is the most basic type of database object in relational databases. It is responsible for storing data in the database. Like any other table, a database table also consists of rows and columns. 
+
+
+                        What are data types?
+Every column in a table has a data type. These data types are defined by SQL or Structured Query Language. A data type defines the type of value that can be stored in a table column. 
+For example, here are some of the data types that are available:
+
+    -> Numeric data types such as INT, TINYINT, BIGINT, FLOAT, REAL. 
+    -> Date and time data types such as DATE, TIME, DATETIME. 
+    -> Character and string data types such as CHAR, VARCHAR. 
+    -> Binary data types such as BINARY, VARBINARY. 
+
+            Miscellaneous data types such as: 
+Character Large Object (CLOB) for storing a large block of text in some form of text encoding.   
+Binary Large Object (BLOB) for storing a collection of binary data such as images. 
+Here’s an example of a table. This is the student table that stores data about a student such as:
+
+    student ID,  
+    first name,  
+    last name,  
+    date of birth,  
+    home address, and
+    faculty.
+These are the table's columns. 
+
+There are also six rows within this table; one for each student. In other words, the table contains the records of six students.
+The student ID would probably have a data type of INT, for example. First name and last name would have a data type of VARCHAR and date of birth would have a data type of DATE..
+
+                        Tables in a relational database
+In a relational database there are multiple tables representing the structure of the back end of a software system. For example, in the context of a Student Information System, the tables might include Student, Teacher, Class and Subject.
+In relational database terminology a table is also known as a relation. A table row or a record is also known as a tuple. For example, the student relation above has six tuples.
+Each table or relation in a database has its own schema. Schema simply means the structure. The structure includes:
+the name of the table or relation,  
+
+    -> its attributes,  
+    -> their names and 
+    -> data type. 
+
+                        What is a primary key?
+In a table, there is a field or column that is known as a key which can uniquely identify a particular tuple (row) in a relation (table). This key is specifically known as a primary key.
+For example, in the student table, the student ID allows you to uniquely identify a particular row. The other columns like first name, last name, date of birth and others could contain duplicate or repeating data for multiple students. Therefore, they can't be used to uniquely identify a given student record. So, the student ID is the primary key of the student table.
+In some cases, the primary key can comprise more than one column or field. This happens when a single column cannot make a record in a table uniquely identifiable. For example, in the table below, the EMP_ID values aren’t unique, so the column is not unique by itself. Thus, this column alone cannot be used as the primary key of this table. However, the EMP_ID and DEPT_ID columns together can make a record unique. Therefore, the primary key of this table is EMP_ID and DEPT_ID. This is also known as a composite primary key.
+
+                         What is a foreign key?
+Tables in a database do not stay isolated from each other. They need to have relationships between them. Tables are linked with one another through a key column (the primary key) of one table that’s also present in the related table as a foreign key. For example, the student table and the department table are linked via the student ID which is the primary key of the student table that’s also present in the Department table as a foreign key.   
+
+                        Integrity constraints
+Every table in a database should abide by rules or constraints. These are known as integrity constraints.
+There are three main integrity constraints:
+
+1. Key constraints
+2. Domain constraints
+3. Referential integrity constraints
+
+                        What are key constraints?
+In every table there should be one or more columns or fields that can be used to fetch data from tables. In other words, a primary key. The key constraint specifies that there should be a column, or columns, in a table that can be used to fetch data for any row. This key attribute or primary key should never be NULL or the same for two different rows of data. For example, in the student table I can use the student ID to fetch data for each of the students. No value of student ID is null, and it is unique for every row, hence it can be the key attribute.
+
+                        What are domain constraints?
+Domain constraints refer to the rules defined for the values that can be stored for a certain column. For instance, you cannot store the home address of a student in the first name column. Similarly, a contact number cannot exceed ten digits.
+
+                        What are referential integrity constraints?
+When a table is related to another table via a foreign key column, then the referenced column value must exist in the other table. This means, according to the student and department examples, that values should exist in the student ID column in the student table because the two tables are related via the student ID column.
+
+In this reading, you learned more about tables in a relational database as you explored the table in terms of its structure, data types, constraints, and the role of primary and foreign keys. 
+
+                        What is database structure?
+Database structure refers to how data is arranged in a database. Within a database, related data are grouped into tables, each of which consists of rows (also called tuples) and columns, like in a spreadsheet.
+The structure of a database consists of a set of key components. These include:
+
+    -> Tables or entities, where the data is stored. 
+    -> Attributes which are details about the table or entity. In other words, attributes describe the table.  
+    -> Fields, which are columns used to capture attributes. 
+    -> A record, which is one row of details about a table or entity. 
+    -> And the primary key, which is a unique value for an entity. 
+
+                        Table
+A table contains all the fields,attributes and records for a type of entity. A database will most probably contain more than one table.
+
+                        Fields
+Column headings are known as fields. Each field contains a different attribute. For every table, a unit of data is entered into each field. It’s also known as a column value. Each column has a data type. For example, the “agent_name” column has a data type of text, and the “commission” column has a numeric data type.
+
+                        Column value or unit of data
+Each individual piece of data entered into a column is a unit of data. These units are also called data elements or column values.
+
+                        Records
+A record consists of a collection of data for each entity. It’s also known as a row in the table.
+
+                        Data types
+To keep the data consistent from one record to the next, an appropriate data type is assigned to each column. The data type of a column determines what type of data can be stored in each column.
+Data types are also a way of classifying data values or column values. Different kinds of data values or column values require different amounts of memory to store them. Different operations can be performed on those column values based on their datatypes.
+
+Some common data types used in databases are:
+    -> Numeric data types such as INT, TINYINT, BIGINT, FLOAT, REAL. 
+    -> Date and time data types such as DATE, TIME, DATETIME. 
+    -> Character and string data types such as CHAR, VARCHAR.
+    -> Binary data types such as BINARY, VARBINARY. 
+    -> And miscellaneous data types such as: 
+        -> Character Large Object (CLOB), for storing a large block of text in some form of text encoding.  
+        -> and Binary Large Object (BLOB), for storing a collection of binary data such as images. 
+
+                        Logical database structure
+The logical structure of a database is represented using a diagram known as the Entity Relationship Diagram (ERD). It is a visual representation of how the database will be implemented into tables during physical database design, using a Database Management System (DBMS) like MySQL or Oracle, for example. 
+A part of the logical database structure is how relationships are established between entities. These relationships are established between the instances of the entities. Accordingly, there can be three ways in which entity instances can be related to each other:
+
+    -> One-to-one relationships 
+    -> One-to-many relationships 
+    -> Many-to-many relationships
+This is also known as cardinality of relationships. The logical database structure which is represented using an ERD also depicts these relationships.
+
+                        Physical database structure
+In the physical database structure, where entities are implemented as tables, the relationships are established using a field known as a foreign key. A foreign key is a field in one table that refers to a common field in another table (usually the primary key). 
+Let’s take the example of a database that contains two tables: student and department. The student table has a primary key of “Stud_id”, which is also present in the Department table as a foreign key. Therefore, the two tables are related to each other via the “Stud_id” field.
+
+                        Key attribute
+    -> This is a value used to uniquely identify an individual record of data in a table. 
+                        
+                        Candidate key attribute
+    -> This is any attribute that contains a unique value in each row of the table. In the case of the staff table, both the staff I. D. And contact numbers are examples of candidate keys. 
+
+                        Composite key 
+    -> A composite key is a key that is composed of two or more attributes to form a unique value in each new role in the staff table. An example of a composite key is a combination of the staff name and staff title.
+    ->  A composite key is usually considered when a single attribute key can't be identified, A relational database must also contain a primary key.
+An alternate key also known as the secondary key is a candidate key that was not selected to be the primary key. Just like a primary key. It's a column that contains a unique value in each field. For the staff table, the contact number is a secondary key on each roll and finally there's a foreign key. The foreign key is an attribute on the table that references a unique key in another table. Typically a foreign key reference is the primary key of another table.
+
+-------------------------------->>>>>>>>>>>>>>> WEEK - 2 ---------------------->>>>>>>>>
+
+                        Database constraints
+    -> Limit the type of data that can be stored in a table.
+    e.g not null
+
+-------------------------------->>>>>>>>>>>>>>> WEEK - 3 ---------------------->>>>>>>>>
+
+                        SQL Arithmetic Operator Examples
+In this reading, you’ll learn more about the arithmetic operators that can be used with SQL. You’ve learned about the arithmetic operators in SQL that are used to perform basic mathematical operations such as addition, subtraction, multiplication and division. You’ve also explored the modulus operator, which gives the remainder of a mathematical division. The main objective of this reading is to present some more examples of how arithmetic operators can be used. It also includes more advanced scenarios.  
+
+                        Arithmetic operators
+Arithmetic operators are useful when you want to perform mathematical operations on the data in tables while you retrieve them by writing SQL SELECT queries. In SQL, arithmetic operators are used to perform mathematical operations on data. To be more specific, they’re used with numerical data stored in database tables.
+Arithmetic operators can be used in the SELECT clause as well as in the WHERE clause in a SQL SELECT statement. When an operator is used in the WHERE clause, it’s intended to perform the operations on specific rows only. This is because the WHERE clause in SQL is used to filter out data that a particular SQL statement is working on.
+
+All arithmetic operators are used on numerical operands for performing:
+    -> Addition 
+    -> Subtraction 
+    -> Multiplication
+    -> Division 
+    -> Modulus 
+
+            Using the addition operator:
+The SQL addition operator performs the mathematical addition operation on numerical data within columns in a table. For example, if you want to add the values of two instances of numerical data from two separate columns in the table, then you need to specify the two columns as the first and second operand. The syntax is as follows:
+    -> SELECT column_name1 + column_name2 FROM table_name; 
+
+            Using the subtraction operator
+The SQL subtraction operator performs mathematical subtraction on numerical data within columns in a database table. If you want to subtract the values of one numerical column from the values of another numerical column, you must specify both columns as the first and second operands along with the subtraction operator. The syntax is as follows:    
+    -> SELECT column_name1 - column_name2 FROM table_name; 
+
+            Using the multiplication operator
+The SQL multiplication operator performs the mathematical multiplication operation on the numerical data typed columns in a database table. If you want to multiply the values of two numerical columns, you must specify both columns as the first and second operand with the multiplication operator between them.
+Let’s say in the employee table, you want to generate the tax amounts for each employee if these amounts are doubled.
+You would write a SQL SELECT statement like this.
+    -> SELECT tax * 2 FROM employee;
+
+            Using the division operator
+The division operator divides the numerical values of one column by the numerical values of another column. The syntax of using the division operator is as follows:
+    -> SELECT column_name1 Division_Operator column_name2 FROM table_name;  
+
+            Using the modulus operator
+The modulus operator (%) behaves as it’s expected in SQL by giving the remainder when the numerical values of one column is divided by the numerical values of another column. The syntax is as follows:
+    -> SELECT column_name1 % column_name2 FROM table_name;   
+
+                        SQL comparison operators
+These comparison operators are:
+
+Operator                What it does
+=                       Checks for equality
+<> or !=                Checks for not inequality
+>                       Check if something is greater than
+>=                      Check if something is greater than or equal
+<                       Check if something is less than
+<=                      Check if something is less than or equal
+
+            Using the equality operator
+You can use the = operator to test for equality in a query. It compares the equality of two expressions. The equal operator is used in the WHERE clause condition of a SELECT statement.
+    -> SELECT * FROM employee WHERE employee_id = 1; 
+    -> SELECT * FROM employee WHERE employee_name = 'James';  
+
+            Using the inequality operator
+The inequality operator does the opposite of what the equal operator does. It compares two non-null expressions and returns true if the value of the left expression is not equal to the right one. If not, it returns the value of false.
+There are two ways in SQL in which it can be used, <> or != and both methods result in the same outcome. 
+
+For example, let’s say you want to determine which employee receives a salary that does not equate to 24000. 
+    -> SELECT * FROM employee WHERE salary <> 24000; u can use like >, <, <=, >= 
+
+                        Types of ordering / sorting
+            The ORDER BY clause
+The ORDER BY clause is useful when you want to sort or order the results obtained when running a SQL SELECT query. Data in a database become more meaningful when they are ordered or sorted in a specific order. Ordered data helps people make more accurate business decisions effectively and efficiently. 
+In SQL, there’s the ORDER BY clause that can help you achieve this. If you run a SQL SELECT query, you get a set of unsorted results. If you want to sort them, you need to add the special ORDER BY clause into the SQL SELECT statement. 
+    -> SELECT * FROM Employee ORDER BY <order by column name>;
+After the ORDER BY keyword, you need to specify the column name based on the data that needs to be sorted. Optionally, you can specify the keywords ASC or DESC after the column name. This is to indicate if the ordering should be in ascending or descending order.
+Ascending and descending order are the two main types of ordering. If ASC or DESC are not specified, the data is sorted by default in ascending order. The ASC and DESC keywords sort the data based on the order by column, taking into consideration the data type of column or field, namely integer, numeric, text and dates. 
+
+            Working with the ORDER BY clause
+Let’s review some example scenarios that use the ORDER BY clause using the tables in the sample database. You can give SQL SELECT statements using the ORDER BY clause with ASC and DESC keywords as required for these scenarios.
+
+            Sorting by a single column
+In the customer table, the data is sorted by default in ascending order within the customer ID field. The customer ID field is numeric, so the data is sorted in ascending numeric order. Now let’s examine how to order this data in the descending order of the Customer ID field. 
+    -> SELECT * FROM employee ORDER BY id DESC;  ASC is default
+
+            Ordering by multiple columns
+You can also sort data by multiple columns and apply different sort orders to them. Let’s say you want to sort invoice data by both billing city and invoice date. To do this, run the following query:
+    -> SELECT * FROM employee ORDER BY name ASC, salary DESC;    
+
+                        The WHERE clause
+The WHERE clause is useful when you want to filter data in a table based on a given condition in the SQL statement.The WHERE clause in SQL is there for the purpose of filtering records and fetching only the necessary records. This can be used in SQL SELECT, UPDATE and DELETE statements.
+The filtering happens based on a condition. The condition can be written using any of the following comparison or logical operators.
+
+
+                        Logical operators   
+
+Operator            Description
+
+ALL                 Used to compare a single value to all the values in another value set.
+AND                 Allows for the existence of multiple conditions in an SQL statement's WHERE clause.
+ANY                 Used to compare a value to any applicable value in the list as per the condition.
+BETWEEN             Used to search for values that are within a set of values, given the minimum value and the maximum value.
+EXISTS              Used to search for the presence of a row in a specified table that meets a certain criterion.
+IN                  Used to compare a value to a list of literal values that have been specified.
+LIKE                Used to compare a value to similar values using wildcard operators.
+NOT                 Reverses the meaning of the logical operator with which it is used. For example: NOT EXISTS, NOT BETWEEN, NOT IN, etc. This is a negate operator.
+OR                  Used to combine multiple conditions in an SQL statement's WHERE clause.
+IS NULL             Used to compare a value with a NULL value.
+UNIQUE              Searches every row of a specified table for uniqueness (no duplicates).
+
+
+                        The DISTINCT keyword
+DISTINCT is useful for retrieving a set of unique values when there are duplicate column values in a table. It is used with the SELECT statement, so it’s commonly referred to as SELECT DISTINCT. In short, what DISTINCT does is to findunique values within a column, or columns, of a table.
+
+Let’s look at some examples of how the DISTINCT keyword behaves using a few data retrieval scenarios from the table in the sample database.
+
+                        Using SELECT DISTINCT on a single column
+If there’s a table named employee with the same name repeated in many instances, you can run the following query to identify what they are:
+    -> SELECT DISTINCT name FROM employee ORDER BY name;
+
+                        Using SELECT DISTINCT on multiple columns
+If you inspect the values in the name and slary, you’ll notice that the same salary repeats for a single salary. You can run the following code to verify this.
+    -> SELECT DISTINCT name, salary FROM employee ORDER BY name, salary;
+Note: The ORDER BY clause is added here to sort the values for easy reference.
+
+                        NULL values in a DISTINCT column
+Let’s say there are NULL values in a DISTINCT column(s). For example, in the BillingCity column. You can run the same query as before to get the unique billing cities within the billing countries.
+    -> SELECT DISTINCT BillingCountry, BillingCity FROM invoices ORDER BY BillingCountry, BillingCity; 
+
+Provided that for some records the BillingCity column has NULL values, you’ll receive records with a combination of some value for BillingCountry and NULL for BillingCity.
+
+So, it's important to know that SELECT DISTINCT treats any NULL values in the DISTINCT column(s) as unique. Therefore, in this case, it looks for a combination of unique BillingCountry and BillingCity values. Any NULL values in the BillingCity column are considered unique values. For example, Argentina – NULL could be one unique combination and Australia – NULL could be another.
+
+                        Using DISTINCT with SQL aggregate functions
+DISTINCT can also be used with SQL aggregate functions like COUNT, AVG, MAX and so on. In this case, you must specify an expression that’s written using some aggregate function. Therefore, it’s not only column names that you can use DISTINCT with but also with expressions. 
+What if you want to find out the number of unique countries of the customers in the customer table? Run a SELECT statement that uses the aggregate function COUNT on the country column along with DISTINCT.
+For example: SELECT COUNT(DISTINCT country) FROM customers; 
+
+The result that you get is the number of unique countries that the customers come from. Using DISTINCT on the country column/field gives a unique list of countries and the COUNT aggregate function counts the number of results.
+Here are some important points to remember in terms of SELECT DISTINCT:
+
+    -> When only one column or expression is provided in the DISTINCT clause, the query will return the unique values for that column. 
+
+    -> When more than one column or expression is provided in the DISTINCT clause, the query will retrieve unique combinations for those columns. 
+
+    -> The DISTINCT clause doesn't ignore NULL values in DISTINCT column(s). NULL values are considered as unique values by DISTINCT. 
+
+
+-------------------------------->>>>>>>>>>>>>>> WEEK - 4 ---------------------->>>>>>>>>
+
+                        What is a database schema?
+Designing the schema or structure of a database is the very first step in designing a database system. Database schema is about the structure of a database. In other words, how data is organized in a database. Data in a database is organized into tables that have columns and rows. Each column or field has a defined data type, and the tables are related to each other. The simplest way of understanding database schema is to think of it as the blueprint of a database. Before anyone can use a database to store and manipulate data, the database schema must first be designed. This process of database schema design is also known as data modeling.
+Usually, the database schema is designed by database designers. The database schema is just the skeleton of the database, and it doesn’t store any actual data. Once the designers have provided the database schema, the developers can understand how the data should be stored by the application that they are implementing.
+
+Database schema can be broadly divided into three categories. 
+
+    1. Conceptual or logical schema that defines entities, attributes and relationships. 
+    2. Internal or physical schema that defines how data is stored in a secondary storage. In other words, the actual storage of data and access paths. 
+    3. External or view schema that defines different user views. 
+
+                        Conceptual or logical schema
+The conceptual or logical schema describes the structure of the entire database for all the users. It describes the structure in terms of entities and features of the entities and the relationships between them. An Entity Relationship Diagram (ER-D) is usually drawn to represent the logical schema of a database. At this level, details about the physical storage and retrieval of data are hidden, and the database structure is described only at a concept level. The software developers work with the database at this level.
+
+------------>>logical-schema.png 
+
+This depicts the employee and department entities in the database along with their attributes and how these two entities are related to each other. This is just a simple example and there’ll be more entities in a real database.   
+
+                        Internal or physical schema
+The internal or physical schema describes the physical storage of the database. It represents the entire database but at a very low level. This means it describes how the data is really stored on disk in the form of tables, columns and records. It defines what data is stored in the database and how.
+Here’s an example of what’s meant by an internal schema.
+
+------------>> physical-schema.png
+This example depicts how the employee table should physically store its data. A real database would have more tables and the internal schema would describe the physical representation of all those tables in the entire database.   
+
+                        External or view schema
+The external or view schema describes the database like an external user would want to see it. This schema only describes the part of the database that the specific user is interested in. It hides the nonrelevant details of the database from a user. For example, a user from the sales department will see only sales-related data in a database. There can be many external schemas of a single database for different users. Examine the following example of view schema.
+
+------------>> external-schema.png
+
+There are three different schemas of how three different users want to view the employee table. Though this example only includes the employee table, in the actual database there’ll be many tables, namely employee, department, job, invoice and so on. The different view schemas will have different subsets of the database. 
+Also, these different view schemas will have different subsets of the attributes in the tables. For example, User1’s view schemas could have employee, department and job tables. User2’s view schema could have employee, department and invoice tables. And User3’s view schemas could have all four tables. The attributes of tables that are available to these three different user view schemas could be different as well.
+These three levels of schema are also known as the three-schema architecture. It can be diagrammatically depicted like this.
+
+------------>> all-schema.png
+
+                        Why are database schemas important?
+A database schema helps database engineers to organize data into well-defined tables with relevant attributes in them. It also shows the interrelationships between tables and depicts the data types that each column must have. A well-designed database schema makes life easier for database engineers as well as developers. It helps to:
+
+    -> Maintain a clean set of data in the database related to an application. 
+    -> Avoid reverse-engineering of the underlying data model from time to time. 
+    -> Write efficient queries to retrieve data for reporting purposes, analytics and so on. 
+In other words, it prevents you from ending up with a database design that requires a database engineer to do a lot of reverse-engineering down the line, wasting time and effort that leads to increased costs for organizations.
+
+                        Database schema
+Building a database schema is the first step in database design. It is essential especially when you are dealing with relational databases because you want a solid structure for your database before you can move forward. A database schema is like a blueprint of how data in a database will look and be stored. 
+A schema consists of what’s known as schema objects. Schema objects could be things like tables, columns and relationships, at a minimum. Data types, views, stored procedures, primary keys and foreign keys are also schema objects.
+Basically, a database schema consists of:
+
+    -> all the important data pertaining to a given scenario and their relationships, 
+    -> unique keys for all entries and database objects, 
+    -> and a name and data type for each column in a table. 
+
+            Building a database schema for a restaurant booking scenario
+When building a database schema for a restaurant booking system there are a few things you must consider. You must consider that customers make reservations for tables and those tables have orders associated with them. An order will have associated menu items that belong to a menu. And the orders are served by a waiter. 
+
+                        The logical database schema
+Now let’s examine how to build a logical database schema for this scenario. In an example like this, database engineers usually draw a diagram known as ER-D (Entity Relationship Diagram).
+The logical database schema consists of entities that become tables in the physical database design. Each entity has a set of attributes and one of them (sometimes even two) makes each entity instance, or row of data, unique. These attributes are known as the primary key. These primary key attributes are also present in other tables that the table relates to. In the related table, this key is known as the foreign key.
+This is the logical schema or the ER-D for the scenario.
+
+------------>>  building-schema.png
+
+                        The physical database schema
+Now let’s build the physical database schema for this scenario based on the logical database schema that was designed in the previous section. The first step is to create the restaurant database.
+To create the restaurant database, the CREATE DATABASE SQL syntax is as follows:
+    
+    -> CREATE DATABASE restaurant;
+
+The next step is to create the tables inside this database. The tables and their fields or columns that need to be created are found in the logical database schema. Appropriate data types must be used when defining table columns. This enables memory allocation to take place correctly during physical data storage.
+So, let’s examine the syntax for creating each table.
+The first table ‘tbl’ represents a tablein the restaurant. It has a unique ID and a location – where it’s placed in the restaurant. The unique ID is the primary key of this table.
+
+    -> CREATE TABLE tbl( 
+
+    table_id INT, 
+
+    location VARCHAR(255), 
+
+    PRIMARY KEY (table_id) 
+
+);
+
+This next table contains data about waiters who work in the restaurant. They have a unique ID, a name, their contact number and which shift they usually work. The primary key of the table is the unique ID assigned to the waiter.   
+
+    -> CREATE TABLE waiter( 
+
+    waiter_id INT, 
+
+    name VARCHAR(150), 
+
+    contact_no VARCHAR(10), 
+
+    shift VARCHAR(10), 
+
+    PRIMARY KEY (waiter_id) 
+
+); 
+
+The following syntax creates the table that stores data about orders for each table. It has the order ID and table ID fields. As well as a date_time field to capture the date and time of the order and the ID of the waiter who’s supposed to serve that table, for that order.
+
+    -> CREATE TABLE table_order( 
+
+    order_id INT, 
+
+    date_time DATETIME, 
+
+    table_id INT, 
+
+    waiter_id INT, 
+
+    PRIMARY KEY (order_id), 
+
+    FOREIGN KEY (table_id) REFERENCES tbl(table_id), 
+
+    FOREIGN KEY (waiter_id) REFERENCES waiter(waiter_id) 
+
+); 
+
+This table stores data about customers. It has a customer ID, name, NIC number to store the National Identity Card number and the contact number fields. The primary key is the unique customer ID field.
+
+    -> CREATE TABLE customer( 
+
+    customer_id INT, 
+
+    name VARCHAR(100), 
+
+    NIC_no VARCHAR(12), 
+
+    contact_no VARCHAR(10), 
+
+    PRIMARY KEY (customer_id) 
+
+); 
+
+The reservation table associates an order with a customer. It has a unique ID, a date and time, number of guests or pax expected, the order_id, table_id and the customer_id. Its primary key is the unique reservation_id. This table is linked with the tbl, table_order and customer tables.
+
+    -> CREATE TABLE reservation( 
+
+    reservation_id INT, 
+
+    date_time DATETIME, 
+
+    no_of_pax INT, 
+
+    order_id INT, 
+
+    table_id INT, 
+
+    customer_id INT, 
+
+    PRIMARY KEY (reservation_id), 
+
+    FOREIGN KEY (order_id) REFERENCES table_order(table_id), 
+
+    FOREIGN KEY (table_id) REFERENCES tbl(table_id), 
+
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id) 
+
+); 
+
+This menu table stores all the menus of the restaurant. It has a menu_id which is the unique field that contains descriptions of the menu and its availability.
+
+    -> CREATE TABLE menu( 
+
+    menu_id INT, 
+
+    description VARCHAR(255), 
+
+    availability INT, 
+
+    PRIMARY KEY (menu_id) 
+
+); 
+
+Every menu can have unique menu items and these menu items are stored against the menu, in the menu_item table. A menu items also has description, price and availability fields. This table links with the menu table.
+
+    -> CREATE TABLE menu_item( 
+
+    menu_item_id INT, 
+
+    description VARCHAR(255), 
+
+    price FLOAT, 
+
+    availability INT, 
+
+    menu_id INT, 
+
+    PRIMARY KEY (menu_item_id), 
+
+    FOREIGN KEY (menu_id) REFERENCES menu(menu_id) 
+
+); 
+
+This final table captures the menu items ordered for a specific order. It has the order_id, menu_item_id and the quantity ordered. It has a composite primary key of order_id and menu_item_id field combination and its linked with the table_order and menu_item tables.
+
+    -> CREATE TABLE order_menu_item( 
+
+    order_id INT, 
+
+    menu_item_id INT, 
+
+    quantity INT, 
+
+    PRIMARY KEY (order_id,menu_item_id), 
+
+    FOREIGN KEY (order_id) REFERENCES table_order(order_id), 
+
+    FOREIGN KEY (menu_item_id) REFERENCES menu_item(menu_item_id) 
+
+); 
+
+These CREATE TABLE statements create all the tables within the reservation database. The important thing to note is how the relationships are established between the tables. Each table is defined with a primary key, and that in turn becomes the foreign key in the related table.
+In conclusion, this is how a basic database structure or schema can be created using SQL DDL (Data Definition Language) syntaxes.
+
+                        What is the relational model?
+The relational model is built around three main concepts which are: 
+    -> Data,  
+    -> Relationships,  
+    -> and constraints.
+It describes a database as “a collection of inter-related relations (or tables)”. It is still a dominant model used for data storage and retrieval. In essence, it is a way of organizing or storing data in a database. SQL is the language that’s used to retrieve data from a relational database.
+
+                        Fundamental concepts of the relational model
+            Relation
+A relation represents a file that stores data. It’s also known as a table. Within a table there are rows and columns. Each row represents a group of related data values. A row, or record, is also known as a tuple. Columns in a table are also known as fields or attributes. These columns define or describe a row. Therefore, a record or a row consists of a set of attributes.
+
+        COLUMN 1    COLUMN 2    COLUMN 3
+ROW 1
+ROW 1
+ROW 1
+
+            Column
+A table stores pieces of data or facts as columns. In other words, the principal storage unit of a database is a column (attribute). When determining the columns for your table, think about the pieces of data that need to be stored within that table. Each column is a generic representation of the piece of data that needs to be stored. Each table cell that becomes a part of a row will have a specific instance of a piece of data.
+
+            Domain
+The domain is a set of acceptable values that a column is allowed to contain. The domain depends on the data type of the column. Namely whether it is numeric, or text based. The domain of ID has a set of acceptable and possible values that are numeric such as1, 2 and 3. The domain of First Name has a set of acceptable and possible values that are text based, which is people’s first names. In the ID column, it’s not possible to store values such as “John” or “001”. Similarly, the First Name column can’t accept any numeric pieces of data.
+
+            Record or tuple
+A record, also known as a tuple, is a row within a table. If a table has columns for ID, First Name and Last Name, then one record or tuple would have one person's ID, first name and last name. Another record would have another person’s full personal information.
+
+            Key
+Each row or tuple has one or more attributes, known as a relation key, that can uniquely identify a specific row. This is also known as the primary key.
+
+            Degree
+Degree is the number of columns or attributes within a relation. A student table that stores the student's name, address, phone number and email address would have a degree of four.
+
+            Cardinality
+Cardinality refers to how many records there are within a particular table in a database. If you have 100 students in your student table, with all their information organized into individual rows, then that table has a cardinality of 100.
+
+            What are constraints?
+In the relational model, every relation needs to meet three conditions. These three conditions must be met for a relation to be valid. They are called relational integrity constraints and they are: 
+
+    1. Key constraints 
+    2. Domain constraints 
+    3. Referential integrity constraints 
+
+            Key constraints
+The key constraint revolves around the key attribute(s). In the relational model, a key attribute is an identifier that can be used to refer to a record. It must also be unique for each record. For example, you can use the Student ID in the student table as the key. This means that there can’t be two students with the same Student ID. If so, it would be invalid and cause an issue when it comes to accessing or retrieving the data. Also, a key attribute cannot have NULL values. This is the requirement that should be met by the Key constraint.
+
+            Domain constraints
+Domain constraints are all about the requirement of inserting values that have a valid data type. There are a variety of data types that can be included within a table, namely numeric, text and data, in the case of the example. If an attempt is made to store an incorrect data typed value to an attribute, it’s declared a violation of domain constraints. For instance, if an attribute requires a numeric value to be entered, and the value you are attempting to enter uses letters instead of numbers, then it would be invalid.
+
+            Referential integrity constraints
+A database has multiple tables that refer to one another. Referential integrity constraints are based on the concept of foreign keys. A foreign key is a key attribute present in a table, which is also a primary key of another table to which it needs to be linked. Through this key, it references the other table to which it’s related. For example, the order ID is present in the Order_Item table as a foreign key, which is also the primary key of the order table. So, the order table and the Order_Item table are related to each other because the Order_Item table references the order table via the order ID attribute. The referential integrity constraint states that if a relation refers to a key attribute of another relation, then that key element must exist. In other words, there must be matching values in the two tables for that attribute.
+
+                        Types of relationships
+In the relational model, there are three types of relationships that can exist between tables.
+
+    1. One-to-one 
+    2. One-to-many 
+    3. Many-to-many 
+
+            One-to-one
+In order to understand one-to-one relationships, let’s take the example of two tables: Table A and Table B. A one-to-one (1:1) relationship means that each record in Table A relates to one, and only one, record in Table B. Likewise, each record in Table B relates to one, and only one, record in Table A. 
+Here is a diagram that illustrates the example:
+
+------>> one-to-one.png
+
+Here, every country has one, and only one, capital. And every capital belongs to one and only one country.
+
+            One-to-many
+If there are two tables, Table A and Table B, a one-to-many (1:N) relationship means a record in Table A can relate to zero, one, or many records in Table B. Many records in Table B can relate to one record in Table A. 
+Let’s examine the following relationship between customers and orders.
+
+------>> one-to-many.png
+
+Here, each customer can place many orders. Many records in the order table can relate to only one record in the customer table. 
+
+            Many-to-many
+If there are two tables, Table A and Table B, a many-to-many (N:N) relationship means many records in Table A can relate to many records in Table B. And many records in Table B can relate to many records in Table A. Let’s examine this example of many-to-many relationship between customer and product with the use of a diagram. In the diagram, customers can purchase various products, and products can be purchased by many customers.
+
+------>> many--to-many.png
+
+Usually, many-to-many relationships are not kept in a data model. They are broken down into two one-to-many relationships by introducing a junction or middle table.
+
+To conclude, there are many benefits to the relational database model. This includes the ability to design and develop a meaningful system of information, and the ability to access and retrieve every single piece of data stored in the database. 
+
+
+    -> PRI comes from primary; this means it’s a primary key. 
+    -> UNI comes from unique; this means it’s a unique key. 
+    -> MUL comes from multiple. If the key is MUL, it means that the related column is permitted to contain the same value in multiple cells of that column. 
+
+In this reading, you learned how to choose the primary key from a set of candidate keys. In addition, you learned how to alter the structure of the table to associate two tables by using the foreign key.
+
+
+                        Entity relationship diagrams (ERD)
+The relational database model organizes information into tables to ensure a good data structure to maintain consistency and accuracy, which makes the design of the tables and their relationships very crucial. The relational database design is very well connected with the entity relationship modelling process including entities, attributes and relationship identification and definition. The entity-relationship diagram (ER-D) is commonly used to represent and document the entity relationship models.
+The use of entity relationship diagrams helps to provide the big picture of your database. It also ensures the data requirements and operations are well defined and documented in your project. In addition, the ER-D represents a blueprint that guides database developers through the implementation of the actual database in a relevant database management system such as Oracle and MySQL. 
+The entities, attributes and relationships between entities can be shown in a variety of diagrammatic formats in the ER diagrams. In this reading, you’ll review the most used shapes and symbols.
+
+            Entity representation
+In the ER-D, a box with two compartments is used to represent the entity and its related attributes. The top compartment represents the entity name, and the bottom compartment includes the related attributes. 
+            Entity
+            +Attribute1
+            +Attribute2
+            +Attribute3
+For example, a college enrollment system contains a database with information about the students, and the courses available in each department.
+
+In this case, you can have three entities represented in three separate boxes: 
+
+    -> the student entity, 
+    -> the course entity, 
+    -> and the department entity.
+
+    Department  Course   Student  
+
+There’s no point in considering entities or attributes that will not be used in your project. You should only capture data that helps the users of your database system to complete certain tasks and activities.
+
+            Relationship representation
+The ER diagram uses different styles of lines to define the distinct types of relationships between entities. The line style depends on the cardinality of the relationship, which refers to the number of elements in a set of data as clarified in the following three cases.
+
+1:1 (one-to-one): The ER-D uses a straight-line representation for a one-to-one cardinality relationship. For example, each passenger on a train should have only one ticket. 
+
+            Entity------1:1------Entity
+
+1:N (one-to-many): The ER-D is a straight line with a crow’s foot notation on one side only to represent a one-to-many cardinality relationship. For example, one parent can have many children. 
+
+            Course----1:N----Student
+
+M:N (many-to-many): The ER-D is a straight line with crow’s foot notations on both sides of entities to represent a many-to-many cardinality relationship. For example, many players play many games.
+
+            Entity>------M:N------<Entity
+
+Based on this explanation, how would you depict the relationship between the student, course, and department entities introduced earlier in the college enrolment system example? Remember that many students may enroll in one course, and one department may offer many courses.
+
+            Attributes representation
+Each entity has a set of attributes that hold relevant information about it. Each attribute must be defined with a data type. 
+In the college enrolment example, you can list the following attributes followed by relevant data types:
+    -> The department attributes: department number, department name and head of department.
+    -> The course attributes: course ID, course name, and course credits.
+    -> The student attributes: student ID, name, and date of birth.
+
+                        Data normalization
+The normalization process aims to minimize data duplications, avoid errors during data modifications and simplify data queries from the database. The three fundamental normalization forms are known as:
+
+    -> First Normal Form (1NF)   
+    -> Second Normal Form (2NF)   
+    -> Third Normal Form (3NF)
+In this reading, you will learn how to apply the rules that ensure that a database meets the criteria of these three normal forms.
+The following example includes fictitious data required by a Medical Group Surgery based in London to generate relevant reports. Doctors work in multiple regions and various councils in London. And once a patient books an appointment, they are given a slot ID at their local surgery. There might be multiple surgeries in the same council but with different postcodes, where one or more councils belong to a particular region. For example, East or West London.  
+
+---------> n1.png
+
+The data listed in the table are in an unnormalized form. Repeating groups of data appear in many cases, for instance, doctors, regions and council names. There are also multiple instances of data stored in the same cell such as with the patient name and total cost columns. This makes it difficult to update and query data.  Moreover, it is not easy to choose a unique key and assign it as a primary key.
+Creating this unnormalized table is possible and can be written in SQL form as follows.    
+
+CREATE TABLE Surgery  (DoctorID VARCHAR(10), DoctorName VARCHAR(50), Region VARCHAR(20), PatientID VARCHAR(10), PatientName VARCHAR(50), SurgeryNumber INT, Council  VARCHAR(20), Postcode VARCHAR(10), SlotID VARCHAR(5), TotalCost Decimal);
+
+            First normal form  
+To simplify the data structure of the surgery table, let’s apply the first normal form rules to enforce the data atomicity rule and eliminate unnecessary repeating groups of data. The data atomicity rule means that you can only have one single instance value of the column attribute in any cell of the table.
+
+The atomicity problem only exists in the columns of data related to the patients. Therefore, it is important to create a new table for patient data to fix this. In other words, you can organize all data related to the patient entity in one separate table, where each cell of any column contains only one single instance of data as depicted in the following example.
+
+----> n2.png
+
+This table includes one single instance of data in each cell, which makes it much simpler to read and understand. However, the patient table requires two columns: the patient ID and the Slot ID together to identify each record in a unique way. This means that you need a composite primary key in this table. To create this table in SQL you can write the following code:  
+
+CREATE TABLE Patient  (PatientID VARCHAR(10) NOT NULL, PatientName VARCHAR(50), SlotID VARCHAR(10) NOT NULL, TotalCost Decimal,  CONSTRAINT PK_Patient PRIMARY KEY (PatientID, SlotID));  
+
+Once you have removed the patient attributes from the main table, you just have the doctor ID, name, region, surgery number, council and postcode columns left in the table.   
+
+-----> n3.png
+
+You may have noticed that the table also contains repeating groups of data in each column. You can fix this by separating the table into two tables of data: the doctor table and the surgery table, where each table deals with one specific entity.   
+
+            Second normal form  
+In the second normal form, you need to avoid any partial dependency relationships between data. Partial dependency refers to tables with a composite primary key. Namely a key that consists of a combination of two or more columns, where a non-key attribute value depends only on one part of the composite key. 
+
+            Third normal form  
+For a relation in a database to be in the third normal form, it must already be in the second normal form (2NF). In addition, it must have no transitive dependency. This means that any non-key attribute in the surgery table may not be functionally dependent on another non-key attribute in the same table. In the surgery table, the postcode and the council are non-key attributes, and the postcode is dependent on the council. Therefore, if you change the council value, you must also change the postcode. This is called transitive dependency, which is not allowed in the third normal form.
+

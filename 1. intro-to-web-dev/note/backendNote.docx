@@ -1,0 +1,450 @@
+Back end developers are responsible for creating and maintaining functionality when users request information or when the website needs to communicate to another part of the web architecture.
+A back end developer will facilitate the interaction of the website and the content stored in database. As a result, back end development requires different languages, skills and tools. While these can vary, they generally consist of knowledge relating to back end programming language, database management systems, API's and web servers. 
+Full stack developers have relevant expertise in the planning architecture, design, development, deployment and maintenance of the website or web. 
+
+                    Internet
+These network switches then connect to more network switches until you have something called an interconnected network. This interconnected network has another name that you might be familiar with. It's called the Internet.
+
+                            web-Server
+A web server has many functions which includes website storage and administration, data storage, security and managing email. Another primary function is to handle something known as a web request. When you open a browser on your device and type the name of the website, it's the job of the web server to send you back to that website's content. This process is known as the request response cycle
+ role of web server -> the primary roles of a web server is to respond to web requests from the client.
+
+Data center -> uses power, internet, and catche for 24 hrs.
+
+webpage -> A web page is a document that displays images, texts, videos and other content in the web browser,
+website -> a website is a collection of webpages that link together.
+
+HTLML, CSS -> HTML structures the content you see, CSS controls the colors and style and JavaScript is responsible for the user interaction.
+        -> works by using something called markup tags. These tags describe the content that is displayed in the browser window, this content can be things like headings, paragraphs, images and even multimedia elements such as audio and video, the way html describes the content is known as markup. CSS is short for cascading style sheets and adds visual enhancements like colors and layout to the web page, this is commonly known as styling. It works by enhancing the HTML elements and telling them how to display.
+JS -> That's correct! JavaScript executes the logic of websites such as processing, click events and animating elements. 
+   ->  JavaScript provides web developers with tools for interactivity, data processing, control and action.
+   -> it is the powerhouse of a web page.
+
+what is browser ?
+    ->  It works by sending a request to a web server and then receives a response containing the content that is to be displayed on the screen of your device. Once the browser is open on your device, there is the address bar where you input the address of the website that you want to visit. The address is commonly known as the Uniform Resource Locator or URL for short. The URL contains the protocol or the HTTP, the domain name, usually the name of the website, and the file path, or the path to the page that is displayed. When you make a request using this URL, the browser and server communicate using a protocol known as the Hypertext Transfer Protocol or HTTP.
+
+Types of web hosting 
+    -> Shared, virtual private, Dedicated, and cloud hostings.
+        By now, you know that websites and files are stored on web servers located in datacenters. But what if you wanted to create your own website? Do you really need your own datacenter with specialized hardware and software? Thankfully, the answer is no. Developers can launch websites to the Internet using something known as web hosting. Web hosting is a service where you place your website and files on the hosting companies web server. You're essentially renting the space in return for stable and secure storage. You don't need to be accompanied to use a web host. Individuals can rent space too. In this video, you will learn about the different types of web hosting services that you can use for your websites and web applications. First, let me share with you some of the different hosting options available. These can include shared hosting, virtual private hosting, dedicated hosting, and Cloud hosting. Let's explore each of these hosting types in a little more detail now. The cheapest form of web hosting is known as shared hosting. You pay for a location on a web server containing many web hosting accounts with shared hosting. This means that you also share the service processing power, memory, and bandwidth with other websites that might slow your performance. This option is best for a small website with a small number of visitors. Many developers also use this as a low-cost sandbox environment to practice deploying or hosting their personal websites. Some companies offer free shared hosting, but with limitations and often have advertisements embedded in the webpages. Sites with more considerable demands use virtual private surface or VPS. A VPS is a virtual server with dedicated CPU, memory, and bandwidth resources. It will be running on a hardware server with other VPS instances but as the resources are fixed per VPS instance, your website is unlikely to be impacted by the performance of other VPS instances. A VPS instance will be more expensive than shared hosting. The next option up is to use dedicated hosting. This will be a hardware server that is dedicated to you only. All hardware, CPU, memory, and bandwidth resources are yours to use. Generally, this option is more expensive than a VPS hosting. The last type of web hosting is something you may have heard of. Cloud hosting and the Cloud has grown in popularity over the last decade and is often mentioned in various news and services you use. With Cloud hosting, your website is run in something called a Cloud environment, which spans across multiple physical and virtual servers. If a physical or virtual server fails, your website will run on a different server and stay online. The main advantage of Cloud hosting is that you can use as many resources as you need without hardware limitations. However, you pay based on resource use. For example, if you transfer a file from the Cloud to a web browser, you'll pay for the bandwidth used for that transfer at a fractional cent cost per megabyte. While this can quickly become more expensive, is allows websites and web applications to scale their costs as popularity grows. This is how many of the major web applications operate. In this video, you learned about web hosting and the different hosting options available to individuals and companies. Soon you will build your very first website. Are you excited to get it hosted so you can share it with the world? For more information on web hosting and Services, please see the additional reading at the end of this lesson.
+Ip packets -> also called data grams.
+    -> have IP header and Ip data (payload)
+    -> have destination Ip address and Source IP address
+data -> contains data of the packet and some of the other protocols which will cover in a moment.
+    -> may be arrive out of order, damaged/corrupted, or dropped/lost.
+    -> To solve this problems the payload part of the packets contains other protocols too.
+    -> another message in the payload of the ip packet.
+
+                        The two most protocols are
+    *TCP and the User Datagram Protocol, also known as UDP. TCP can solve all three of the previously mentioned issues but at the cost of a small delay when sending the data. This protocol is used for sending the data that must arrive correctly and in order such as a text or image files. UDP solves the corrupt packet issue but packets can still arrive out of order or not arrive at all. This protocol is used for sending data that can tolerate some data loss such as voice calls or live video streaming. Both of these protocols contain payloads that contain further protocols inside of them and there you have it.
+    * Transmission control protocol(TCP) -> TCP is used for data that must arrive correctly and in order like text and images.
+    * User data protocol (UDP) -> UDP is used for sending data that can tolerate data loss like voice calls or live video streaming.
+    * coz of TCP and UDP -> IP packets arrive in order, Doesn't become damaged or corrupted, Doesn't get dropped or lost during transit.
+
+HTML Documents -> HTML Documents are transferred from the web server to the web browser using HTTP.
+Images  -> Images are transferred to and from the web server using HTTP.
+Files   -> Files are transferred to and from the web server using HTTP.
+HTTP -> status codes are contain in the header.
+     ->After the request line, the HTTP headers are followed by a line break.
+
+                            HTTP Request headers
+Host: example.com​
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:50.0) Gecko/20100101 Firefox/50.0
+Accept: */*
+Accept-Language: en​
+Content-type: text/json
+
+    -> The Host header specifies the host of the server and indicates where the resource is requested from.
+
+    -> The User-Agent header informs the web server of the application that is making the request. It often includes the operating system (Windows, Mac, Linux), version and application vendor.
+
+    -> The Accept header informs the web server what type of content the client will accept as the response.
+
+    -> The Accept-Language header indicates the language and optionally the locale that the client prefers.
+
+    -> The Content-type header indicates the type of content being transmitted in the request body.
+
+                            HTTP Request Body
+HTTP requests can optionally include a request body. A request body is often included when using the HTTP POST and PUT methods to transmit data.
+
+                            HTTP Responses
+When the web server is finished processing the HTTP request, it will send back an HTTP response.
+
+The first line of the response is the status line. This line shows the client if the request was successful or if an error occurred.
+
+HTTP/1.1 200 OK​ 
+
+The line begins with the HTTP protocol version, followed by the status code and a reason phrase. The reason phrase is a textual representation of the status code.
+                                
+                                status codes 
+    -> Informational 100-199 ->100 continue, web client shoud continue the request or ignore the response if the request is already finished
+    -> Successful 200-299 ->200 Ok, Successfully processed, based on GET - Found/included, POST - Successfully transmitted, Put - Successfully transmitted, Delete - Deleted
+    -> Redirection 300-399 ->301 Moved Permanently & 302 Found, 302 indicates temporary redirection and 301 Moved Permanently.
+    -> Client error 400-499 -> 400 - Submit bad data to the web server, 401 - loginto the system before the request, 403 - valid but the web server refuse to process it, 404 - the request resource is not found on the web server. 
+    -> Server error 500-599 -> 500 Internal server error, server fail to process the request.
+
+                            HTTP Status Codes
+The first digit of an HTTP status code indicates the category of the response: Information, Successful, Redirection, Client Error or Server Error.
+
+1XXX informational
+        status code         Reason Phrase           Description
+
+            100             Continue                The server received the request headers and should continue to send the request body.
+            101             Switching Protocols     The client has requested the server to switch protocols and the server has agreed to do so.
+
+2XXX
+        status code         Reason Phrase          Description
+            
+            200             OK                       Standard response returned by the server to indicate it successfully processed the request.
+            201             Created                  The server successfully processed the request and a resource was created.
+            202             Accepted                 The server accepted the request for processing but the processing has not yet been completed.
+            204             No Content               The server successfully processed the request but is not returning any content.
+
+
+3XXX    
+
+
+        status code         Reason Phrase          Description
+            
+            301             Moved Permanently       This request and all future requests should be sent to the returned location.
+            302             Found                   This request should be sent to the returned location.
+
+
+4XXX
+
+        status code         Reason Phrase          Description
+
+            400              Bad Request            The server cannot process the request due to a client error, e.g., invalid request or transmitted data is too large.
+            401              Unauthorized           The client making the request is unauthorized and should authenticate.
+            403              Forbidden              The request was valid but the server is refusing to process it. This is usually returned due to the client having insufficient permissions for the website, e.g., requesting an administrator action but the user is not an administrator.
+            404              Not Found              The server did not find the requested resource.
+            405              Method Not Allowed     The web server does not support the HTTP method used.
+5XXX
+
+        status code         Reason Phrase               Description
+
+            500              Internal Server Error      A generic error status code given when an unexpected error or condition occurred while processing the request.
+            502              Bad Gateway                The web server received an invalid response from the Application Server.
+            503              Service Unavailable        The web server cannot process the request.
+
+                    HTTP Response Headers
+Following the status line, there are optional HTTP response headers followed by a line break.
+
+Similar to the request headers, there are many possible HTTP headers that can be included in the HTTP response.
+
+Date: Fri, 11 Feb 2022 15:00:00 GMT+2​
+Server: Apache/2.2.14 (Linux)​
+Content-Length: 84​
+Content-Type: text/html​
+
+    -> The Date header specifies the date and time the HTTP response was generated.
+
+    -> The Server header describes the web server software used to generate the response.
+
+    -> The Content-Length header describes the length of the response.
+
+    -> The Content-Type header describes the media type of the resource returned (e.g. HTML document, image, video).
+
+                    HTTP Response Body
+Following the HTTP response headers is the HTTP response body. This is the main content of the HTTP response.
+
+This can contain images, video, HTML documents and other media types.
+
+HTTP/1.1 200 OK​
+Date: Fri, 11 Feb 2022 15:00:00 GMT+2​
+Server: Apache/2.2.14 (Linux)​
+Content-Length: 84​
+Content-Type: text/html​
+
+<html>​
+  <head><title>Test</title></head>​
+  <body>Test HTML page.</body>​
+</html>
+
+HTTPS -> used encryption method to secure the request and response.   
+
+
+Other Internet Protocols
+Hypertext Transfer Protocols (HTTP) are used on top of Transmission Control Protocol (TCP) to transfer webpages and other content from websites.
+This reading explores other protocols commonly used on the Internet.
+
+Dynamic Host Configuration Protocol (DHCP)
+You've learned that computers need IP addresses to communicate with each other. When your computer connects to a network, the Dynamic Host Configuration Protocol or DCHP as it is commonly known, is used to assign your computer an IP address.
+Your computer communicates over User Datagram Protocol (UDP) using the protocol with a type of server called a DHCP server. The server keeps track of computers on the network and their IP addresses. It will assign your computer an IP address and respond over the protocol to let it know which IP address to use. Once your computer has an IP address, it can communicate with other computers on the network.
+
+Domain Name System Protocol (DNS)
+Your computer needs a way to know with which IP address to communicate when you visit a website in your web browser, for example, meta.com. The Domain Name System Protocol, commonly known as DNS, provides this function. Your computer then checks with the DNS server associated with the domain name and then returns the correct IP address.
+
+Internet Message Access Protocol (IMAP)
+Do you check your emails on your mobile or tablet device? Or maybe you use an email application on your computer?
+Your device needs a way to download emails and manage your mailbox on the server storing your emails. This is the purpose of the Internet Message Access Protocol or IMAP.
+
+Simple Mail Transfer Protocol (SMTP)
+Now that your emails are on your device, you need a way to send emails. The Simple Mail Transfer Protocol, or SMTP, is used. It allows email clients to submit emails for sending via an SMTP server. You can also use it to receive emails from an email client, but IMAP is more commonly used.
+
+Post Office Protocol (POP)
+The Post Office Protocol (POP) is an older protocol used to download emails to an email client. The main difference in using POP instead of IMAP is that POP will delete the emails on the server once they have been downloaded to your local device. Although it is no longer commonly used in email clients, developers often use it to implement email automation as it is a more straightforward protocol than IMAP.
+
+File Transfer Protocol (FTP)
+When running your websites and web applications on the Internet, you'll need a way to transfer the files from your local computer to the server they'll run on. The standard protocol used for this is the File Transfer Protocol or FTP. FTP allows you to list, send, receive and delete files on a server. Your server must run an FTP Server and you will need an FTP Client on your local machine. You'll learn more about these in a later course.
+
+Secure Shell Protocol (SSH)
+When you start working with servers, you'll also need a way to log in and interact with the computer remotely. The most common method of doing this is using the Secure Shell Protocol, commonly referred to as SSH. Using an SSH client allows you to connect to an SSH server running on a server to perform commands on the remote computer.
+All data sent over SSH is encrypted. This means that third parties cannot understand the data transmitted. Only the sending and receiving computers can understand the data.
+
+SSH File Transfer Protocol (SFTP)
+The data is transmitted insecurely when using the File Transfer Protocol. This means that third parties may understand the data that you are sending. This is not right if you transmit company files such as software and databases. To solve this, the SSH File Transfer Protocol, alternatively called the Secure File Transfer Protocol, can be used to transfer files over the SSH protocol. This ensures that the data is transmitted securely. Most FTP clients also support the SFTP protocol.
+
+
+                    Website and Web application
+Their difference is level of interactivity and dynamic content.
+ website -> more informative,
+ webApplication -> In comparison to a standard website a web application is more dynamic, interactive, and personalized.
+
+            Frameworks and Libraries
+    ->Frameworks and libraries give you the opportunity to reuse existing web app functions. This can result in faster development, fewer errors, and more time for you to spend on the essential features of your application
+
+Libraries -> Re-usable code, specific functionality, time saving.
+framworks -> structure. eg. express, django, ASP.NET, Rails, Spring
+    -> handle receiving http requests.
+
+                types of API
+    -> Browse (Web), REST, and Sensor-based APIs.
+    -> Sensor-based APIs are used in IOT(internet of things)
+    -> APIs are also known as gateways or middleware because they act as a bridge between systems.
+    -> elAPI is a set of functions that an application component or service can provide.
+    -> critical type of API is REST API it is a set of principles used to build highly efficient APIs,
+    -> fetch, Canvas, History, Web Storage APIs.
+
+
+                From CSS Version 3, there are five main ways to reference a color.
+
+    ->  By RGB value,
+
+    -> By RGBA value,
+
+    -> By HSL value,
+
+    -> By hex value and
+
+    -> By predefined color names.
+
+                            RGB value
+
+RGB is a color model that adds the colors red (R), green (G) and blue (B) together to create colors. This is based on how the human eye sees colors.
+
+Each value is defined as a number between 0 and 255, representing the intensity of that color.
+
+For example, the color red would have the RGB value of 255,0,0 since the intensity of the red color would be 100% while blue and green would be 0%.
+
+The color black then would be 0,0,0 and the color white 255,255,255.
+
+p { 
+  color: rgb(255, 0, 0); 
+}​
+
+
+                    RGBA value
+
+RGBA is an extension of RGB that add an alpha (A) channel. The alpha channel represents the opacity, or transparency, of the color.
+
+p { 
+  color: rgba(255, 0, 0, 128); 
+}​
+
+
+                        HSL value
+
+HSL is a newer color model defined as Hue (H), Saturation (S) and Lightness (L). The aim of the model is to simplify mental visualization of the color that the value represents.
+
+Think of a rainbow that has been turned into a full circle. This represents the Hue. The Hue value is the degree value on this circle, from 0 degrees to 360 degrees. 0 is red, 120 is green and 240 is blue.
+
+p { 
+  color: hsl(0, 100%, 50%);
+}​
+
+                    working with libraries
+
+ The link tag includes an H ref attribute to link the CSS library I'm including. I also included a rail attribute to specify that the link is for a style sheet. Bootstrap also provides a JavaScript library that enables enhanced functionality, such as drop-downs and tooltips.
+
+How do you make sure you're using the same versions the rest of your team is using? This is where package managers come in. A package manager is a tool that automatically downloads and installs dependencies. We also refer to dependencies as packages. A package manager also provides the capability to publish your own packages.
+
+    -> As a developer, deploying your application to a web server, you will use a bundling tool to gather all your dependencies and combine them so that they can be referenced from your HTMLfile.  
+    -> types of bundles are Gulp and Webpack.
+
+                Intro to responsive design
+Responsive design is a set of three practices that allows a website to automatically change its visuals. In other words, to respond based on the device it is displayed on. It is the combination of three techniques, flexible grids, fluid images and media queries. Firstly, flexible grids are made up of columns, gutters and margins. The space between the columns is called the gutter and the spaces between the content and the left and right edges of the screen are called margins. Instead of defining website Element sizes based on pixels, flexible grids are defined in percentage values, allowing them to adjust depending on screen size. Next you have fluid images by setting the CSS max width property of images to 100%. The images will scale down smaller if they're containing column becomes narrower than the images size but never grow larger. This enables an image to scale down to fit in a flexibly sized column rather than overflow it but not grow larger and become pixelated if the column becomes wider than the image. Finally, there are media queries that are part of CSS. They allow developers to query the display size orientation and aspect ratio to conditionally apply CSS rules. For example, if you wanted your website background to appear blue on a screen size less than or equal to 700 pixels. Like on a mobile phone, you could use a media rule to set the background depending on the size of the screen. Remember that I said responsive design is the combination of flexible grids, fluid images and media queries. When these elements are used together, you build a website that will automatically adjust its layout based on the device, thus delivering a responsive grid. In responsive design, the pixel value specified is often referred to as the breakpoint. A breakpoint is the point at which a website's content and layout will adapt to provide the best possible user experience. A Breakpoint can function in different ways across three different grids a fixed grid fluid or for with grids and lastly, hybrid grids. Let's explore each of these now, firstly, a fixed grid has fixed with columns and flexible margins. The fixed grid has a fixed content with that doesn't change in a specific breakpoint range while the flexible margins occupy the remaining space on screen. Then we have fluid or full width grids with fluid with columns and fixed gutters and side margins. The fluid grid has a flexible content with that goes edge to edge as per the screen size. In a fluid grid, columns either grow or shrink to adapt to the available space. And finally there are hybrid grids that have both fluid width and fixed with components. Many responsive design frameworks provide multiple CSS rules based on different device sizes to provide the best visual experience. Now you know the importance of responsive design. In the next few videos, you're going to learn more about bootstrap, the world's most Popular framework for building responsive mobile 1st Sites.
+                Media queries
+    -> The media queries that are a part of the CSS version 3 specification that allows developers to query display size, orientation and aspect ratio.  
+there are media queries that are part of CSS. They allow developers to query the display size orientation and aspect ratio to conditionally apply CSS rules. For example, if you wanted your website background to appear blue on a screen size less than or equal to 700 pixels. Like on a mobile phone, you could use a media rule to set the background depending on the size of the screen. Remember that I said responsive design is the combination of flexible grids, fluid images and media queries. When these elements are used together, you build a website that will automatically adjust its layout based on the device, thus delivering a responsive grid. In responsive design, the pixel value specified is often referred to as the breakpoint.
+
+
+            Bootstrap
+    -> Bootstrap is a library of CSS and JavaScript code that you can combine to quickly build visually appealing websites.
+    -> Extra small <576px ___________default of bootstrap
+    -> Small sm =>576px
+    -> Medium md => 768px
+    -> Large lg =>992px
+    -> Extra-large xl =>1200pxl
+    -> Extra-extra-large xxl =>1400pxl
+
+    -> Remember that Bootstrap uses a 12 column grid system.
+    -> To change the style of a Bootstrap component, you use a modifier.
+    
+                            Modifier in bootstrap
+    -> Primary, secondary, success, info, warning, danger, light, and dark.
+
+    -> A point at which a website's content and design will adapt in order to provide the best user experience is called a 
+        Breakpoint.
+    -> A responsive breakpoint is the point at which a website's content and design will adapt in order to provide the best user experience.
+
+
+                    Static and dynamic content
+a web server sends the website's content to your browser. The content can be static or dynamic. Static content is files that the server transfers just as they are stored on the web server, such as videos or images. Dynamic content, on the other hand, is generated when the HTTP request is made. For example, the content may be generated based on input from a user, or when you visit a news website, it would be based on the current date. What actually happens, is that the web server communicates with another kind of server, called an application server or a back-end. The application server generates the dynamic content that the web server sends back to the user's browser.
+    -> n website design, dynamic content is usually generated from the application server.
+                    Caching
+A saved copy of dynamic content readily available up on request.
+
+                SPA(single page application) approaches to serving code
+    -> Two main approaches for serving code and resources in a Single Page Application called bundlimg and code splitting.
+    -> Bundling and lazy loading
+    -> Bundling will return all resources immediately and lazy loading returns only the minimum required resources.
+    -> With bundling, when the browser requests the application, the server returns and loads all necessary HTML, CSS, and JavaScript immediately. With lazy loading, the browser requests the application and the server returns only the minimum HTML, CSS, and JavaScript needed to load the application.
+    -> In a single-page application, different pages are broken into templates, also known as views. Each view will have HTML code that can be updated by the application.
+
+                what is react?
+    -> It's js library (web framework).
+    -> allows us to define components.
+    -> React component is a small piece of a user interface
+    -> A React application is built up of a tree of components called the Component Hierarchy. 
+                React component helps us to
+    -> Isolated development,
+    -> Isolated testing, and 
+    -> Re-using  components.
+                Benefits of using spa(single page application) in react
+    -> Simplify testing,
+    -> maintain code in the long term.
+    -> write less code to implement functionality in a web browser.
+    -> Re-use components
+
+                Why did fb engineers create react?
+There are a lot of JavaScript Model-View-Controller (MVC) frameworks out there. Why did we build React and why would you want to use it?
+
+React isn't an MVC framework.
+React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time.
+
+React doesn't use templates.
+Traditionally, web application UIs are built using templates or HTML directives. These templates dictate the full set of abstractions that you are allowed to use to build your UI.
+
+React approaches building user interfaces differently by breaking them into components. This means React uses a real, full-featured programming language to render views, which we see as an advantage over templates for a few reasons:
+
+JavaScript is a flexible, powerful programming language with the ability to build abstractions. This is incredibly important in large applications.
+
+By unifying your markup with its corresponding view logic, React can actually make views easier to extend and maintain.
+
+By baking an understanding of markup and content into JavaScript, there’s no manual string concatenation and therefore less surface area for XSS vulnerabilities.
+
+We've also created JSX, an optional syntax extension, in case you prefer the readability of HTML to raw JavaScript.
+
+React updates are dead simple.
+React really shines when your data changes over time.
+
+In a traditional JavaScript application, you need to look at what data changed and imperatively make changes to the DOM to keep it up-to-date. Even AngularJS, which provides a declarative interface via directives and data binding requires a linking function to manually update DOM nodes.
+
+React takes a different approach.
+
+When your component is first initialized, the render method is called, generating a lightweight representation of your view. From that representation, a string of markup is produced and injected into the document. When your data changes, the render method is called again. In order to perform updates as efficiently as possible, we diff the return value from the previous call to render with the new one and generate a minimal set of changes to be applied to the DOM.
+
+The data returned from render is neither a string nor a DOM node — it's a lightweight description of what the DOM should look like.
+
+We call this process reconciliation. Check out this jsFiddle to see an example of reconciliation in action.
+
+Because this re-render is so fast (around 1ms for TodoMVC), the developer doesn't need to explicitly specify data bindings. We’ve found this approach makes it easier to build apps.
+
+HTML is just the beginning.
+Because React has its own lightweight representation of the document, we can do some pretty cool things with it:
+
+Facebook has dynamic charts that render to <canvas> instead of HTML.
+
+Instagram is a “single page” web app built entirely with React and Backbone.Router. Designers regularly contribute React code with JSX.
+
+We've built internal prototypes that run React apps in a web worker and use React to drive native iOS views via an Objective-C bridge.
+
+You can run React on the server for SEO, performance, code sharing and overall flexibility.
+
+Events behave in a consistent, standards-compliant way in all browsers (including IE8) and automatically use event delegation.
+
+Head on over to https://reactjs.org to check out what we have built.
+
+
+    -> React updates the virtual DOM and compares it to the previous version of the virtual DOM. If a change has occurred, only that element is updated in the browser DOM. Changes on the browser DOM cause the displayed webpage to change.  
+
+By now you've learned, that you can build components in React to develop user interfaces. But how do React components turn into the elements on the web page that you use. Remember when your web browser receives an HTML page, it constructs a DOM, to represent it. But updating the DOM is considered expensive, because it is very time intensive for the web browser to do so. Every time the browser DOM is updated, it causes the browser to re compute the page. Yet many big and popular websites still load in no time today. How can it be? In this video, I will explain how React solves the problem, by computing its own virtual DOM.
+Play video starting at :: and follow transcript
+Let's start with how React components relate to the website displayed in your browser. A reality component, has a one to one relationship to an HTML element that is displayed on the webpage. But how does React keep track of which HTML elements need to be updated. This is where reacts virtual DOM comes into play. When React builds out its tree of components, it builds out its own dome in memory called the virtual DOM. The virtual DOM is a representation of the browser DOM that is kept in memory. React uses this virtual DOM to update the browser DOM, only when it needs to. This ensures that your application is fast and responsive to user input. Let me explain how it works, React checks to see if the HTML components in the virtual DOM matches the browser DOM. If a change is required, the browser dome is updated. If nothing has changed, then no update is performed. This process is called reconciliation. Let's break down what happens when you update a component and React. Firstly, the virtual DOM is updated. Then React, compares the virtual DOM to the previous version of the virtual DOM, and determines which elements have changed. The changed elements, and only those elements are updated in the browser DOM. Changes on the browser DOM, cause the displayed web page to change. In this video, you have learned that, React constructs and updates a virtual DOM. So that the browser will only update certain HTML elements, instead of recreating the entire page.
+
+
+                                        The Virtual DOM
+React builds a representation of the browser Document Object Model or DOM in memory called the virtual DOM. As components are updated, React checks to see if the component’s HTML code in the virtual DOM matches the browser DOM. If a change is required, the browser DOM is updated. If nothing has changed, then no update is performed.
+
+As you know, this is called the reconciliation process and can be broken down into the following steps:
+
+Step 1: The virtual DOM is updated.
+
+Step 2: The virtual DOM is compared to the previous version of the virtual DOM and checks which elements have changed.
+
+Step 3: The changed elements are updated in the browser DOM.
+
+Step 4: The displayed webpage updates to match the browser DOM.
+
+As updating the browser DOM can be a slow operation, this process helps to reduce the number of updates to the browser DOM by only updating when it is necessary.
+
+But even with this process, if a lot of elements are updated by an event, pushing the update to the browser DOM can still be expensive and cause slow performance in the web application.
+
+The React team invested many years of research into solving this problem. The outcome of that research is what’s known as the React Fiber Architecture.
+
+The Fiber Architecture allows React to incrementally render the web page. What this means is that instead of immediately updating the browser DOM with all virtual DOM changes, React can spread the update over time. But what does "over time" mean?
+
+Imagine a really long web page in the web browser. If the user scrolls to the bottom, the top of the web page is no longer visible. The user then clicks a button on the bottom of the web page that updates some text on the top of the web page.
+
+But the top of the page isn’t visible. Therefore, why update it immediately?
+
+Perhaps there is text currently displayed on the bottom of the page that also updates when the button is clicked. Wouldn’t that be a higher priority to update than the non-visible text?
+
+This is the principle of the React Fiber Architecture. React can optimize when and where updates occur to the browser DOM to significantly improve application performance and responsiveness to user input. Think of it as a priority system. The highest priority changes, the elements visible to the user, are updated first. While lower priority changes, the elements not currently displayed, are updated later.
+
+While you’re unlikely to interact with the virtual DOM and Fiber Architecture yourself, it’s good to know what’s going on if issues occur during the development of your web application.
+
+There are many tools available to help you investigate how React is processing your webpage. The official React Developer Tools web browser plugin developed by Meta will be one of the key tools in your developer toolbox. So, if you do have to look deeper into the code, you’ll have the right toolbox available to help you. These tools will be explored later on. 
+
+                        Alternatives to React
+React is a library and not a framework. This means you'll often use other JavaScript libraries with it to build your application. In this reading, you will be briefly introduced to some JavaScript libraries commonly used with React.
+
+Lodash
+Official Website - lodash.com
+
+As a developer, there's a lot of logic you'll commonly write across applications. For example, you might need to sort a list of items or round a number such as 3.14 to 3. Lodash provides common logic such as these as a utility library to save you time as a developer.
+
+                    Luxon
+Official Website - moment.github.io/luxon/#/
+
+You'll be working with dates and times often as a developer. Think of viewing a list of orders and when they were placed, or displaying a calendar schedule for an event. Dates and times are everywhere.
+
+Luxon helps you work with dates and times by providing functions to manipulate and display them. For example, think of how dates are formatted in different countries. In the United States the format is Month Day Year but in Europe it is Day Month Year. This is one area where Luxon can help you display the date in the user's local format.
+
+
+                    Redux
+Official Website - redux.js.org
+
+When building a web application, you'll need to keep track of its state. Think of when you shop online. The web application tracks items currently in your shopping cart. When you remove an item from the cart, the application needs to update what displays on the screen. This is where Redux comes in. It helps you manage your application state and even has advanced features such as undo and redo.
+
+                    Axios
+Official Website - axios-http.com
+
+    -> Axios is a simple promise based HTTP client for the browser and node.js Axios provides a simple to use library in a small package with a very extensible interface.
+
+As a developer you'll be communicating with APIs over HTTP frequently. The Axios library helps to simplify sending HTTP requests and processing the response. It also provides advanced features allowing you to cancel requests and to change data received from the web server before your application uses the data.
+
+                    Jest
+Official Website - jestjs.io
+    ->  Jest is a delightful javascript testing framework with a focus on simplicity.
+It is good practice to write automated tests for your code as a professional developer. The jest library helps you to do this and works with many libraries and frameworks. It also provides reporting utilities such as providing information on how much of your code is tested by your automated tests.

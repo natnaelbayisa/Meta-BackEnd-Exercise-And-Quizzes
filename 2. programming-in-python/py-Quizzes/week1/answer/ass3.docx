@@ -1,0 +1,41 @@
+1.
+Question 1
+Python for loops work on any type of sequence data type including strings.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! Python for loops work on any type of sequence data type including strings.
+
+2.
+Question 2
+The enumerate function is used to provide the index of current iteration of a for loop.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! An enumerate function is used to provide the index of current iteration of a for loop.
+
+3.
+Question 3
+A break statement can be used to exit out of a for loop based on a certain condition being satisified.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Correct! A break statement is used to exit out of a for loop based on a certain condition being satisified. 
