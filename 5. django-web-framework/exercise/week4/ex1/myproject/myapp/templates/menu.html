@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,8 +10,10 @@
 
   <body>
     <!-- Add heading code -->
-    <h1 style="color: #495e57">About</h1>
+    <h1 style="color: #495e57">Menu</h1>
     <!-- Add paragraph code -->
-    <p>{{content.about_us}}</p>
+    <p>{{content.about_menu}}</p>
+    <!-- Add image code -->
+    <img src="{% static 'img/icon.png' %}" />
   </body>
 </html>
