@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- for  -->
+    <h1>For loop</h1>
+    <ul>
+      {% for lang in langs %}
+      <li>{{ lang }}</li>
+      {% endfor %}
+    </ul>
+
+    <!-- forloop.counter: -->
+    <h1>forloop.counter</h1>
+    <ul>
+      {% for lang in langs %}
+      <li>{{ forloop.counter }} : {{ lang }}</li>
+      {% endfor %}
+    </ul>
+
+    <!-- forloop.revcounter -->
+    <h1>forloop.revcounter</h1>
+    <ul>
+      {% for lang in langs %}
+      <li>{{ forloop.revcounter }} : {{ lang }}</li>
+      {% endfor %}
+    </ul>
+
+    <!-- forloop.first -->
+    <h1>forloop.first</h1>
+    <ul>
+      {% for lang in langs %}
+      <li>{{ forloop.first }} : {{ lang }}</li>
+      {% endfor %}
+    </ul>
+
+    <!-- forloop.last -->
+    <h1>forloop.last</h1>
+    <ul>
+      {% for lang in langs %}
+      <li>{{ forloop.last }} : {{ lang }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

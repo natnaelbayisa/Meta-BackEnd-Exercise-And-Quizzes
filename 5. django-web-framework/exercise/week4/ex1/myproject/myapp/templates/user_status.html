@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-
   <body>
-    <h1>Welcome</h1>
-
-    <section>
-      <article>
-        <h1 style="background-color: #ee9972">About</h1>
-
-        <p style="background-color: #fbdabb">{{about}}</p>
-      </article>
-    </section>
+    {% if user == "admin" %}
+    <h2>Welcome {{ user }}</h2>
+    {% else %}
+    <h2>Welcome Guest. You dont have admin access</h2>
+    {% endif %}
   </body>
 </html>
