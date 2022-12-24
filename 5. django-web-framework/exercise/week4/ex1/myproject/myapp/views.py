@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Menu
 # Create your views here.
 
 def about(request): 
@@ -39,4 +39,13 @@ def user_status(request):
 # dct refers to dictionary context
 def dictionary(request):
     dct = {'digits': ['One', 'Two', 'Three'],'tens': ['Ten', 'Twenty', 'Thirty']}  
+<<<<<<< HEAD
     return render(request, "dct.html", dct)
+=======
+    return render(request, "dct.html", dct)
+
+def menu_by_id(request):
+    newMenu = Menu.objects.all()
+    newMenu_dict = {'menu': newMenu}
+    return render(request, "menuCard.html", newMenu_dict)
+>>>>>>> 5b58c1a (type of loops)
