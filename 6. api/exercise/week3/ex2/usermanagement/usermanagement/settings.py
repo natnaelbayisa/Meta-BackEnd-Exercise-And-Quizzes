@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-nhl2gtj5ywkb1kod07=+ldb270&^3c%*j%=((rztkx9txqc+pr'
+SECRET_KEY = 'django-insecure-t!hu-^g383f48(v1$ffa8eb$g30$lk2+#$%57#bsdvs89uj#oz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'usermanagementAPI',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +125,43 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+
+    'DEFAULT_FILTER_BACKENDS': [
+        'rest_framework.filters.OrderingFilter',
+        'rest_framework.filters.SearchFilter',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 3,
+
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+       'rest_framework_simplejwt.authentication.JWTAuthentication',
+       'rest_framework.authentication.TokenAuthentication',
+       'rest_framework.authentication.SessionAuthentication',
+    ),
+
+    'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle',
+    ],
+
+# anon-> anonymous user
+    'DEFAULT_THROTTLE_RATES': {
+        'anon':'2/minute',
+        'user':'5/minute',
+        'ten':'10/minute'
+    }
+}
+
+DJOSER = {
+    "USER_ID_FIELD": "username",
+    # "LOGIN_FIELD":"email"
+}
+
+from datetime import timedelta
+
+# token expiration time
+SIMPLE_JWT= {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
+}
