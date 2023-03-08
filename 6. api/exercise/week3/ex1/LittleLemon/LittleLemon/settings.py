@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'djoser',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
 ]
 
 MIDDLEWARE = [
@@ -158,4 +159,11 @@ REST_FRAMEWORK = {
 DJOSER = {
     "USER_ID_FIELD": "username",
     # "LOGIN_FIELD":"email"
+}
+
+from datetime import timedelta
+
+# token expiration time
+SIMPLE_JWT= {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
 }

@@ -49,5 +49,6 @@ def throttle_check(request):
 @permission_classes([IsAuthenticated])
 @throttle_classes([TenCallsPerMinute])
 
+# protecting the route from repeatedly access
 def throttle_check_auth(request):
-    return Response({'message':'message for logged inuser only'})
+    return Response({'message':'message for logged in user only'})
